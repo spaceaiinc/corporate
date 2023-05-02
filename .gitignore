@@ -32,4 +32,7 @@ pnpm-lock.yaml
 /.firebase
 .firebaserc
 firebase.json
+
+# local env files
+/config
 ```

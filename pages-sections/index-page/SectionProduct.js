@@ -3,8 +3,8 @@ import makeStyles from "@mui/styles/makeStyles";
 
 // @mui/icons-material
 import Chat from "@mui/icons-material/Chat";
-import VerifiedUser from "@mui/icons-material/VerifiedUser";
-import Fingerprint from "@mui/icons-material/Fingerprint";
+import WatchLater from "@mui/icons-material/WatchLater";
+import Check from "@mui/icons-material/Check";
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
@@ -20,14 +20,14 @@ export default function SectionProduct() {
     <div className={classes.section}>
       <GridContainer justifyContent="center">
         <GridItem xs={12} sm={8} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
-          <h5 className={classes.description}>
+          <h2 className={classes.title}>About product</h2>
+          {/* <h5 className={classes.description}>
             This is the paragraph where you can write more details about your
             product. Keep you user engaged by providing meaningful information.
             Remember that by this time, the user is curious, otherwise he wouldn
             {"'"}t scroll to get here. Add a button if you want the user to see
             more.
-          </h5>
+          </h5> */}
         </GridItem>
       </GridContainer>
       <div>
@@ -35,7 +35,7 @@ export default function SectionProduct() {
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
               title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="You can use GPT in Slack to generate text, answer questions, and summarize documents. It's a great way to get started to work with GPT"
               icon={Chat}
               iconColor="info"
               vertical
@@ -43,19 +43,21 @@ export default function SectionProduct() {
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
+              className={classes.infoArea}
+              icon={WatchLater}
+              title="Long Memory"
+              description="You can make GPT remember things for you. It's a great way to get started to work with GPT"
+              iconColor="primary"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={4} md={4}>
             <InfoArea
-              title="Fingerprint"
+              className={classes.infoArea}
+              icon={Check}
+              title="Easy to Use"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
+              iconColor="black"
               vertical
             />
           </GridItem>

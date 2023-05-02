@@ -4,10 +4,6 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 import makeStyles from '@mui/styles/makeStyles';
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-// @mui/icons-material
-import Favorite from "@mui/icons-material/Favorite";
 // core components
 import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
@@ -18,14 +14,14 @@ import Button from "/components/CustomButtons/Button.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
 
-import landingPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/landingPageStyle.js";
+import indexStyle from "/styles/jss/nextjs-material-kit-pro/pages/indexStyle.js";
 
 // Sections for this page
-import SectionProduct from "/pages-sections/landing-page/SectionProduct.js";
-import SectionTeam from "/pages-sections/landing-page/SectionTeam.js";
-import SectionWork from "/pages-sections/landing-page/SectionWork.js";
+import SectionProduct from "/pages-sections/index-page/SectionProduct.js";
+import SectionTeam from "/pages-sections/index-page/SectionTeam.js";
+import SectionWork from "/pages-sections/index-page/SectionWork.js";
 
-const useStyles = makeStyles(landingPageStyle);
+const useStyles = makeStyles(indexStyle);
 
 export default function Index({ ...rest }) {
   React.useEffect(() => {
@@ -34,28 +30,26 @@ export default function Index({ ...rest }) {
   });
   const classes = useStyles();
   return (
-    <div>
+    <div style={{ backgroundColor: "#fff" }}>
       <Header
         color="transparent"
         brand="AI Start"
         links={<HeaderLinks dropdownHoverColor="info" />}
         fixed
-        changeColorOnScroll={{
-          height: 300,
-          color: "info"
-        }}
+        // changeColorOnScroll={{
+        //   height: 300,
+        //   color: "white"
+        // }}
         {...rest}
       />
-      <Parallax image="/img/bg8.jpg" filter="dark">
+      {/* <Parallax image="/img/bg8.jpg" filter="dark"> */}
+      <Parallax>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
+              <h1 className={classes.title}>AI Start</h1>
               <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
+                Make Work Easier With AI
               </h4>
               <br />
               <Button
@@ -71,12 +65,10 @@ export default function Index({ ...rest }) {
           </GridContainer>
         </div>
       </Parallax>
-      <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <SectionProduct />
-          <SectionTeam />
-          <SectionWork />
-        </div>
+        {/* <SectionTeam /> */}
+        {/* <SectionWork /> */}
       </div>
       <Footer
         content={<FooterLinks />}

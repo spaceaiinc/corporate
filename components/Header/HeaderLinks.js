@@ -92,7 +92,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
         <Button
-          href="/projects/slack"
+          href="/memo"
           className={classes.navLink}
           color="transparent"
         >
@@ -135,7 +135,7 @@ export default function HeaderLinks(props) {
                 Our projects
               </a>
             </Link>,
-            <Link href="/projects/slack">
+            <Link href="/memo">
               <a className={classes.dropdownLink}>
                 <LineStyle className={classes.dropdownIcons} /> Slack App
               </a>

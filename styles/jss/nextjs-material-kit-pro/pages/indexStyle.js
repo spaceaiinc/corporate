@@ -7,11 +7,11 @@ import {
   mainRaised
 } from "/styles/jss/nextjs-material-kit-pro.js";
 
-const landingPageStyle = {
+const indexStyle = {
   container: {
-    color: whiteColor,
+    color: blackColor,
     ...container,
-    zIndex: "2"
+    zIndex: "2",
   },
   title: {
     ...title,
@@ -28,7 +28,7 @@ const landingPageStyle = {
     margin: "10px auto 0",
   },
   main: {
-    ...main
+    ...main,
   },
   mainRaised: {
     ...mainRaised
@@ -71,4 +71,4 @@ const landingPageStyle = {
   }
 };
 
-export default landingPageStyle;
+export default indexStyle;

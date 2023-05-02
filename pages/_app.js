@@ -55,10 +55,10 @@ const theme = createTheme({
 Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   document.body.classList.add("body-page-transition");
-  ReactDOM.render(
-    <PageChange path={url} />,
-    document.getElementById("page-transition")
-  );
+  // ReactDOM.render(
+  //   <PageChange path={url} />,
+  //   document.getElementById("page-transition")
+  // );
 });
 Router.events.on("routeChangeComplete", () => {
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
@@ -108,7 +108,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" />
+          {/* <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" /> */}
           <title>AI Start</title>
         </Head>
         <ThemeProvider theme={theme}>

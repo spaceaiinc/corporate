@@ -21,8 +21,7 @@ import Button from "/components/CustomButtons/Button.js";
 import Footer from "/components/Footer/Footer.js";
 
 import contactUsStyle from "/styles/jss/nextjs-material-kit-pro/pages/contactUsStyle.js";
-import FooterLinks from "../components/Footer/FooterLinks";
-import { Input } from "@mui/material";
+import FooterLinks from "/components/Footer/FooterLinks";
 
 // const CustomSkinMap = () => {
 //   const mapRef = React.useRef(null);
@@ -162,7 +161,7 @@ export default function ContactUsPage() {
       </div> */}
       {/* <div className={classNames(classes.main, classes.mainRaised)}> */}
       <div className={classes.contactContent} style={{ marginTop: "100px" }}>
-          <div className={classes.container}>
+        <div className={classes.container}>
             <h2 className={classes.title}>Send us a message</h2>
             <GridContainer>
               <GridItem md={6} sm={6}>
@@ -270,8 +269,8 @@ export default function ContactUsPage() {
                 />
               </GridItem>
             </GridContainer>
-          </div>
         </div>
+      </div>
       {/* </div> */}
       <Footer
         content={<FooterLinks />}

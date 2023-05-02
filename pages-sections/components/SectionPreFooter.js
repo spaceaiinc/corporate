@@ -242,7 +242,7 @@ export default function SectionPreFooter() {
           classes.subscribeLine,
           classes.subscribeLineImage
         )}
-        style={{ backgroundImage: "url('/img/bg7.jpg')" }}
+        // style={{ backgroundImage: "url('/img/bg7.jpg')" }}
       >
         <div className={classes.container}>
           <GridContainer>
