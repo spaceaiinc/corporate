@@ -3,8 +3,8 @@ import {
   container,
   mrAuto,
   title,
-  blackColor,
   whiteColor,
+  blackColor,
   hexToRgb
 } from "/styles/jss/nextjs-material-kit-pro.js";
 
@@ -19,7 +19,7 @@ const headersSection = (theme) => ({
     zIndex: "2",
     position: "relative",
     "& h1, & h4, & h6": {
-      color: whiteColor
+      color: blackColor,
     }
   },
   conatinerHeader2: {
@@ -27,7 +27,7 @@ const headersSection = (theme) => ({
     zIndex: "2",
     position: "relative",
     "& h1, & h4, & h6": {
-      color: whiteColor
+      color: blackColor,
     },
     paddingTop: "25vh"
   },
@@ -45,9 +45,9 @@ const headersSection = (theme) => ({
     WebkitBoxAlign: "center",
     MsFlexAlign: "center",
     alignItems: "center",
-    "&:before": {
-      background: "rgba(" + hexToRgb(blackColor) + ", 0.5)"
-    },
+    // "&:before": {
+    //   background: "rgba(" + hexToRgb(whiteColor) + ", 0.5)"
+    // },
     "&:after,&:before": {
       position: "absolute",
       zIndex: "1",
@@ -64,11 +64,11 @@ const headersSection = (theme) => ({
       width: "100%",
       boxShadow:
         "0 16px 38px -12px rgba(" +
-        hexToRgb(blackColor) +
+        hexToRgb(whiteColor) +
         ", 0.56), 0 4px 25px 0px rgba(" +
-        hexToRgb(blackColor) +
+        hexToRgb(whiteColor) +
         ", 0.12), 0 8px 10px -5px rgba(" +
-        hexToRgb(blackColor) +
+        hexToRgb(whiteColor) +
         ", 0.2)"
     }
   },

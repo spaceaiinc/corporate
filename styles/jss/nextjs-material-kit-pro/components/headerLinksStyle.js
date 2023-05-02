@@ -1,6 +1,7 @@
 import {
   grayColor,
   whiteColor,
+  blackColor,
   mlAuto,
   hexToRgb
 } from "/styles/jss/nextjs-material-kit-pro.js";
@@ -30,7 +31,7 @@ const headerLinksStyle = (theme) => ({
   },
   listItem: {
     float: "left",
-    color: "inherit",
+    color: "black",
     position: "relative",
     display: "block",
     width: "auto",

@@ -29,6 +29,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
+    "export": "next export",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && rm -rf .next/ && npm install && npm run dev",
     "compile-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.css",
     "minify-sass": "sass styles/scss/nextjs-material-kit-pro.scss styles/css/nextjs-material-kit-pro.min.css --style compressed"

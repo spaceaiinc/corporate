@@ -9,15 +9,15 @@ import Favorite from "@mui/icons-material/Favorite";
 import Header from "/components/Header/Header.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Footer from "/components/Footer/Footer.js";
-import FooterLinks from "/components/Footer/FooterLinks.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 
-import errorPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/errorPageStyles.js";
+import privacyPolicyStyle from "/styles/jss/nextjs-material-kit-pro/pages/privacyPolicyStyles.js";
+import FooterLinks from "../components/Footer/FooterLinks";
 
-const useStyles = makeStyles(errorPageStyle);
+const useStyles = makeStyles(privacyPolicyStyle);
 
-export default function ErrorPage({ ...rest }) {
+export default function privacyPolicy({ ...rest }) {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
@@ -32,23 +32,17 @@ export default function ErrorPage({ ...rest }) {
         links={<HeaderLinks dropdownHoverColor="dark" />}
         {...rest}
       />
-      <div
-        className={classes.pageHeader}
-        style={{
-          backgroundImage: "url('/img/clint-mckoy.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "top center"
-        }}
-      >
-        {/* <div className={classes.container}> */}
-        <div className={classes.contentCenter}>
+      <div className={classes.contactContent}>
+        <div className={classes.container}>
+          <h2 className={classes.title}>Send us a message</h2>
           <GridContainer>
-            <GridItem md={12}>
-              <h1 className={classes.title}>404</h1>
-              <h2 className={classes.subTitle}>Page not found :(</h2>
-              <h4 className={classes.description}>
-                Ooooups! Looks like you got lost.
-              </h4>
+            <GridItem md={6} sm={6}>
+              <p>
+                You can contact us with anything related to our Products. We
+                {"'"}ll get in touch with you as soon as possible.
+                <br />
+                <br />
+              </p>
             </GridItem>
           </GridContainer>
         </div>

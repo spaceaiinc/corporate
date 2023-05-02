@@ -19,16 +19,16 @@ const testimonialsSection = {
   title,
   description,
   cardTitle,
-  sectionDark: {
-    ...sectionDark,
-    "& $cardDescription": {
-      color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)"
-    },
-    "& $cardTitle": {
-      color: whiteColor
-    },
-    backgroundSize: "550% 450%"
-  },
+  // sectionDark: {
+  //   ...sectionDark,
+  //   "& $cardDescription": {
+  //     color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)"
+  //   },
+  //   "& $cardTitle": {
+  //     color: whiteColor
+  //   },
+  //   backgroundSize: "550% 450%"
+  // },
   cardDescription: {
     ...description
   },

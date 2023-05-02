@@ -13,6 +13,8 @@ import SectionProjects from "/pages-sections/sections-page/SectionProjects.js";
 import SectionPricing from "/pages-sections/sections-page/SectionPricing.js";
 import SectionTestimonials from "/pages-sections/sections-page/SectionTestimonials.js";
 import SectionContacts from "/pages-sections/sections-page/SectionContacts.js";
+import Footer from "/components/Footer/Footer.js";
+import FooterLinks from "/components/Footer/FooterLinks.js";
 
 import sectionsPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsPageStyle.js";
 
@@ -31,11 +33,15 @@ export default function SectionsPage() {
         <SectionFeatures id="features" />
         {/* <SectionBlogs id="blogs" /> */}
         {/* <SectionTeams id="teams" /> */}
-        <SectionTestimonials id="testimonials" />
+        {/* <SectionTestimonials id="testimonials" /> */}
         {/* <SectionPricing id="pricing" /> */}
         {/* <SectionProjects id="projects" /> */}
-        <SectionContacts id="contacts" />
+        {/* <SectionContacts id="contacts" /> */}
       </div>
+      <Footer
+        content={<FooterLinks />}
+        theme="white"
+      />
     </div>
   );
 }

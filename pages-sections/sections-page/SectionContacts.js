@@ -21,107 +21,107 @@ import contactsStyle from "/styles/jss/nextjs-material-kit-pro/pages/sectionsSec
 
 const useStyles = makeStyles(contactsStyle);
 
-const RegularMap = () => {
-  const mapRef = React.useRef(null);
-  React.useEffect(() => {
-    let google = window.google;
-    let map = mapRef.current;
-    let lat = "44.43353";
-    let lng = "26.093928";
-    const myLatlng = new google.maps.LatLng(lat, lng);
-    const mapOptions = {
-      zoom: 14,
-      center: myLatlng,
-      scrollwheel: false,
-      zoomControl: true,
-      styles: [
-        {
-          featureType: "water",
-          stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: "#0088ff" }]
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.fill",
-          stylers: [{ hue: "#ff0000" }, { saturation: -100 }, { lightness: 99 }]
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#808080" }, { lightness: 54 }]
-        },
-        {
-          featureType: "landscape.man_made",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ece2d9" }]
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ccdca1" }]
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#767676" }]
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#ffffff" }]
-        },
-        { featureType: "poi", stylers: [{ visibility: "off" }] },
-        {
-          featureType: "landscape.natural",
-          elementType: "geometry.fill",
-          stylers: [{ visibility: "on" }, { color: "#b8cb93" }]
-        },
-        { featureType: "poi.park", stylers: [{ visibility: "on" }] },
-        {
-          featureType: "poi.sports_complex",
-          stylers: [{ visibility: "on" }]
-        },
-        { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
-        {
-          featureType: "poi.business",
-          stylers: [{ visibility: "simplified" }]
-        }
-      ]
-    };
+// const RegularMap = () => {
+//   const mapRef = React.useRef(null);
+//   React.useEffect(() => {
+//     let google = window.google;
+//     let map = mapRef.current;
+//     let lat = "44.43353";
+//     let lng = "26.093928";
+//     const myLatlng = new google.maps.LatLng(lat, lng);
+//     const mapOptions = {
+//       zoom: 14,
+//       center: myLatlng,
+//       scrollwheel: false,
+//       zoomControl: true,
+//       styles: [
+//         {
+//           featureType: "water",
+//           stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: "#0088ff" }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "geometry.fill",
+//           stylers: [{ hue: "#ff0000" }, { saturation: -100 }, { lightness: 99 }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "geometry.stroke",
+//           stylers: [{ color: "#808080" }, { lightness: 54 }]
+//         },
+//         {
+//           featureType: "landscape.man_made",
+//           elementType: "geometry.fill",
+//           stylers: [{ color: "#ece2d9" }]
+//         },
+//         {
+//           featureType: "poi.park",
+//           elementType: "geometry.fill",
+//           stylers: [{ color: "#ccdca1" }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "labels.text.fill",
+//           stylers: [{ color: "#767676" }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "labels.text.stroke",
+//           stylers: [{ color: "#ffffff" }]
+//         },
+//         { featureType: "poi", stylers: [{ visibility: "off" }] },
+//         {
+//           featureType: "landscape.natural",
+//           elementType: "geometry.fill",
+//           stylers: [{ visibility: "on" }, { color: "#b8cb93" }]
+//         },
+//         { featureType: "poi.park", stylers: [{ visibility: "on" }] },
+//         {
+//           featureType: "poi.sports_complex",
+//           stylers: [{ visibility: "on" }]
+//         },
+//         { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
+//         {
+//           featureType: "poi.business",
+//           stylers: [{ visibility: "simplified" }]
+//         }
+//       ]
+//     };
 
-    map = new google.maps.Map(map, mapOptions);
+//     map = new google.maps.Map(map, mapOptions);
 
-    const marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      animation: google.maps.Animation.DROP,
-      title: "NextJS Material Kit PRO!"
-    });
+//     const marker = new google.maps.Marker({
+//       position: myLatlng,
+//       map: map,
+//       animation: google.maps.Animation.DROP,
+//       title: "NextJS Material Kit PRO!"
+//     });
 
-    const contentString =
-      '<div class="info-window-content"><h2>NextJS Material Kit PRO</h2>' +
-      "<p>A premium Admin for React, Material-UI, and React Hooks.</p></div>";
+//     const contentString =
+//       '<div class="info-window-content"><h2>NextJS Material Kit PRO</h2>' +
+//       "<p>A premium Admin for React, Material-UI, and React Hooks.</p></div>";
 
-    const infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
+//     const infowindow = new google.maps.InfoWindow({
+//       content: contentString
+//     });
 
-    google.maps.event.addListener(marker, "click", function () {
-      infowindow.open(map, marker);
-    });
-  });
-  return (
-    <>
-      <div
-        style={{
-          height: `100%`,
-          borderRadius: "6px",
-          overflow: "hidden"
-        }}
-        ref={mapRef}
-      ></div>
-    </>
-  );
-};
+//     google.maps.event.addListener(marker, "click", function () {
+//       infowindow.open(map, marker);
+//     });
+//   });
+//   return (
+//     <>
+//       <div
+//         style={{
+//           height: `100%`,
+//           borderRadius: "6px",
+//           overflow: "hidden"
+//         }}
+//         ref={mapRef}
+//       ></div>
+//     </>
+//   );
+// };
 
 export default function SectionContacts({ ...rest }) {
   const [checked, setChecked] = React.useState([]);
@@ -141,40 +141,18 @@ export default function SectionContacts({ ...rest }) {
       {/* Contact us 1 START */}
       <div
         className={classes.contacts + " " + classes.section}
-        style={{ backgroundImage: "url('/img/examples/city.jpg')" }}
+        // style={{ backgroundImage: "url('/img/examples/city.jpg')" }}
       >
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={5} md={5}>
-              <h2 className={classes.title}>Get in Touch</h2>
-              <h5 className={classes.description}>
+              <h2 className={classes.title} style={{ textAlign: "center" }}>
+                Get in Touch
+              </h2>
+              <h5 className={classes.description} style={{ textAlign: "center" }}>
                 You need more information? Check what other persons are saying
                 about our product. They are very happy with their purchase.
               </h5>
-              <InfoArea
-                className={classes.infoArea}
-                title="Find us at the office"
-                description={
-                  <span>
-                    Bld Mihail Kogalniceanu, nr. 8,
-                    <br /> 7652 Bucharest,
-                    <br /> Romania
-                  </span>
-                }
-                icon={PinDrop}
-              />
-              <InfoArea
-                className={classes.infoArea}
-                title="Give us a ring"
-                description={
-                  <span>
-                    Michael Jordan
-                    <br /> +40 762 321 762
-                    <br /> Mon - Fri, 8:00-22:00
-                  </span>
-                }
-                icon={Phone}
-              />
             </GridItem>
             <GridItem xs={12} sm={5} md={5} className={classes.mlAuto}>
               <Card className={classes.card1}>

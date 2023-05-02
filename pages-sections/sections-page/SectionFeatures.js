@@ -37,8 +37,26 @@ export default function SectionFeatures({ ...rest }) {
                 <img src="/img/sections/iphone.png" alt="..." />
               </div>
             </GridItem>
+            {/* <GridItem xs={12} sm={6} md={6} pt={10} className={classes.mlAuto}>
+              <div className={classes.iframeContainer}>
+                <iframe
+                  height="300"
+                  width="100%"
+                  src="https://www.youtube.com/embed/IN6QnLpVEPI?ref=creativetim"
+                  frameBorder="0"
+                  allow="encrypted-media"
+                  allowFullScreen=""
+                  title="Tesla"
+                />
+              </div>
+            </GridItem> */}
             <GridItem xs={12} sm={6} md={6}>
-              <h2 className={classes.title}>Your work will be much easier</h2>
+              <h2
+                className={classes.title}
+                style={{
+                  textAlign: "center",
+                }}
+              >Your work will be much easier</h2>
               <InfoArea
                 className={classes.infoArea}
                 icon={Extension}

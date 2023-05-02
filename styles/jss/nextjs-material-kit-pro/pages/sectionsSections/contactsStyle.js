@@ -20,33 +20,33 @@ const contactsSection = {
   title,
   description,
   cardTitle,
-  section: {
-    ...sectionDark,
-    ...section,
-    position: "relative",
-    "& $container": {
-      zIndex: "2",
-      position: "relative"
-    },
-    "&:after": {
-      position: "absolute",
-      zIndex: "1",
-      width: "100%",
-      height: "100%",
-      display: "block",
-      left: "0",
-      top: "0",
-      content: "''",
-      backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7)"
-    },
-    "& $title": {
-      color: whiteColor
-    },
-    "& $description": {
-      color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)"
-    },
-    "& $infoArea": {}
-  },
+  // section: {
+  //   ...sectionDark,
+  //   ...section,
+  //   position: "relative",
+  //   "& $container": {
+  //     zIndex: "2",
+  //     position: "relative"
+  //   },
+  //   "&:after": {
+  //     position: "absolute",
+  //     zIndex: "1",
+  //     width: "100%",
+  //     height: "100%",
+  //     display: "block",
+  //     left: "0",
+  //     top: "0",
+  //     content: "''",
+  //     backgroundColor: "rgba(" + hexToRgb(blackColor) + ", 0.7)"
+  //   },
+  //   "& $title": {
+  //     color: whiteColor
+  //   },
+  //   "& $description": {
+  //     color: "rgba(" + hexToRgb(whiteColor) + ", 0.76)"
+  //   },
+  //   "& $infoArea": {}
+  // },
   contacts: {
     padding: "80px 0"
   },

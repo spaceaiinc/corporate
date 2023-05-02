@@ -91,21 +91,48 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       <ListItem className={classes.listItem}>
+        <Button
+          href="/projects/slack"
+          className={classes.navLink}
+          color="transparent"
+        >
+          Projects
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/"
+          className={classes.navLink}
+          color="transparent"
+        >
+          About us
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/contact-us"
+          className={classes.navLink}
+          color="transparent"
+        >
+          Contact
+        </Button>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Components"
+          buttonText="Projects"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={Apps}
+          // buttonIcon={Apps}
           dropdownList={[
             <Link href="/projects">
               <a className={classes.dropdownLink}>
                 <Layers className={classes.dropdownIcons} />
-                All projects
+                Our projects
               </a>
             </Link>,
             <Link href="/projects/slack">
@@ -121,12 +148,12 @@ export default function HeaderLinks(props) {
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Sections"
+          buttonText="About Us"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={ViewDay}
+          // buttonIcon={ViewDay}
           dropdownList={[
             <Link href="/sections#headers">
               <a
@@ -200,12 +227,12 @@ export default function HeaderLinks(props) {
           noLiPadding
           navDropdown
           hoverColor={dropdownHoverColor}
-          buttonText="Examples"
+          buttonText="Contact"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
-          buttonIcon={ViewCarousel}
+          // buttonIcon={ViewCarousel}
           dropdownList={[
             <Link href="/about-us">
               <a className={classes.dropdownLink}>
@@ -275,8 +302,8 @@ export default function HeaderLinks(props) {
             </Link>
           ]}
         />
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      </ListItem> */}
+      {/* <ListItem className={classes.listItem}>
         <Hidden lgDown>
           <Button
             href="https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-navbar"
@@ -299,7 +326,7 @@ export default function HeaderLinks(props) {
             <ShoppingCart className={classes.icons} /> buy now
           </Button>
         </Hidden>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

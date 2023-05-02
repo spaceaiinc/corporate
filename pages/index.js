@@ -11,6 +11,7 @@ import Favorite from "@mui/icons-material/Favorite";
 // core components
 import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
+import FooterLinks from "/components/Footer/FooterLinks.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
@@ -78,44 +79,7 @@ export default function Index({ ...rest }) {
         </div>
       </div>
       <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-landing"
-                    className={classes.block}
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-landing"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , All rights reserved{" "}by{" "}
-                AI Start
-            </div>
-          </div>
-        }
+        content={<FooterLinks />}
       />
     </div>
   );

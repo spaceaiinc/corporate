@@ -66,7 +66,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
-          <Link href="/presentation">
+          <Link href="/">
             <a>{brand}</a>
           </Link>
         </Button>
@@ -75,7 +75,7 @@ export default function Header(props) {
         </Hidden>
         <Hidden mdUp>
           <IconButton
-            color="inherit"
+            color="dark"
             aria-label="open drawer"
             onClick={handleDrawerToggle}
             size="large">

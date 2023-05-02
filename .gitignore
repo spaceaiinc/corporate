@@ -27,3 +27,9 @@ yarn-error.log*
 /dist
 /.next
 pnpm-lock.yaml
+
+# firebase
+/.firebase
+.firebaserc
+firebase.json
+```

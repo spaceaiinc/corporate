@@ -60,10 +60,11 @@ const headerStyle = (theme) => ({
       minWidth: "unset",
       lineHeight: "30px",
       fontSize: "18px",
+      fontWeight: "400",
       borderRadius: "3px",
       textTransform: "none",
       whiteSpace: "nowrap",
-      color: "inherit",
+      color: "black",
       "&:hover,&:focus": {
         color: "inherit",
         background: "transparent"

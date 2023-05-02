@@ -21,108 +21,110 @@ import Button from "/components/CustomButtons/Button.js";
 import Footer from "/components/Footer/Footer.js";
 
 import contactUsStyle from "/styles/jss/nextjs-material-kit-pro/pages/contactUsStyle.js";
+import FooterLinks from "../components/Footer/FooterLinks";
+import { Input } from "@mui/material";
 
-const CustomSkinMap = () => {
-  const mapRef = React.useRef(null);
-  React.useEffect(() => {
-    let google = window.google;
-    let map = mapRef.current;
-    let lat = "44.43353";
-    let lng = "26.093928";
-    const myLatlng = new google.maps.LatLng(lat, lng);
-    const mapOptions = {
-      zoom: 14,
-      center: myLatlng,
-      scrollwheel: false,
-      zoomControl: true,
-      styles: [
-        {
-          featureType: "water",
-          stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: "#0088ff" }]
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.fill",
-          stylers: [{ hue: "#ff0000" }, { saturation: -100 }, { lightness: 99 }]
-        },
-        {
-          featureType: "road",
-          elementType: "geometry.stroke",
-          stylers: [{ color: "#808080" }, { lightness: 54 }]
-        },
-        {
-          featureType: "landscape.man_made",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ece2d9" }]
-        },
-        {
-          featureType: "poi.park",
-          elementType: "geometry.fill",
-          stylers: [{ color: "#ccdca1" }]
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#767676" }]
-        },
-        {
-          featureType: "road",
-          elementType: "labels.text.stroke",
-          stylers: [{ color: "#ffffff" }]
-        },
-        { featureType: "poi", stylers: [{ visibility: "off" }] },
-        {
-          featureType: "landscape.natural",
-          elementType: "geometry.fill",
-          stylers: [{ visibility: "on" }, { color: "#b8cb93" }]
-        },
-        { featureType: "poi.park", stylers: [{ visibility: "on" }] },
-        {
-          featureType: "poi.sports_complex",
-          stylers: [{ visibility: "on" }]
-        },
-        { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
-        {
-          featureType: "poi.business",
-          stylers: [{ visibility: "simplified" }]
-        }
-      ]
-    };
+// const CustomSkinMap = () => {
+//   const mapRef = React.useRef(null);
+//   React.useEffect(() => {
+//     let google = window.google;
+//     let map = mapRef.current;
+//     let lat = "44.43353";
+//     let lng = "26.093928";
+//     const myLatlng = new google.maps.LatLng(lat, lng);
+//     const mapOptions = {
+//       zoom: 14,
+//       center: myLatlng,
+//       scrollwheel: false,
+//       zoomControl: true,
+//       styles: [
+//         {
+//           featureType: "water",
+//           stylers: [{ saturation: 43 }, { lightness: -11 }, { hue: "#0088ff" }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "geometry.fill",
+//           stylers: [{ hue: "#ff0000" }, { saturation: -100 }, { lightness: 99 }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "geometry.stroke",
+//           stylers: [{ color: "#808080" }, { lightness: 54 }]
+//         },
+//         {
+//           featureType: "landscape.man_made",
+//           elementType: "geometry.fill",
+//           stylers: [{ color: "#ece2d9" }]
+//         },
+//         {
+//           featureType: "poi.park",
+//           elementType: "geometry.fill",
+//           stylers: [{ color: "#ccdca1" }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "labels.text.fill",
+//           stylers: [{ color: "#767676" }]
+//         },
+//         {
+//           featureType: "road",
+//           elementType: "labels.text.stroke",
+//           stylers: [{ color: "#ffffff" }]
+//         },
+//         { featureType: "poi", stylers: [{ visibility: "off" }] },
+//         {
+//           featureType: "landscape.natural",
+//           elementType: "geometry.fill",
+//           stylers: [{ visibility: "on" }, { color: "#b8cb93" }]
+//         },
+//         { featureType: "poi.park", stylers: [{ visibility: "on" }] },
+//         {
+//           featureType: "poi.sports_complex",
+//           stylers: [{ visibility: "on" }]
+//         },
+//         { featureType: "poi.medical", stylers: [{ visibility: "on" }] },
+//         {
+//           featureType: "poi.business",
+//           stylers: [{ visibility: "simplified" }]
+//         }
+//       ]
+//     };
 
-    map = new google.maps.Map(map, mapOptions);
+//     map = new google.maps.Map(map, mapOptions);
 
-    const marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      animation: google.maps.Animation.DROP,
-      title: "NextJS Material Kit PRO!"
-    });
+//     const marker = new google.maps.Marker({
+//       position: myLatlng,
+//       map: map,
+//       animation: google.maps.Animation.DROP,
+//       title: "AI Start"
+//     });
 
-    const contentString =
-      '<div class="info-window-content"><h2>NextJS Material Kit PRO</h2>' +
-      "<p>A premium Admin for React, Material-UI, and React Hooks.</p></div>";
+//     const contentString =
+//       '<div class="info-window-content"><h2>AI Start</h2>' +
+//       "<p>AI Start.</p></div>";
 
-    const infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
+//     const infowindow = new google.maps.InfoWindow({
+//       content: contentString
+//     });
 
-    google.maps.event.addListener(marker, "click", function () {
-      infowindow.open(map, marker);
-    });
-  });
-  return (
-    <>
-      <div
-        style={{
-          height: `100%`,
-          borderRadius: "6px",
-          overflow: "hidden"
-        }}
-        ref={mapRef}
-      ></div>
-    </>
-  );
-};
+//     google.maps.event.addListener(marker, "click", function () {
+//       infowindow.open(map, marker);
+//     });
+//   });
+//   return (
+//     <>
+//       <div
+//         style={{
+//           height: `100%`,
+//           borderRadius: "6px",
+//           overflow: "hidden"
+//         }}
+//         ref={mapRef}
+//       ></div>
+//     </>
+//   );
+// };
 
 const useStyles = makeStyles(contactUsStyle);
 
@@ -132,19 +134,34 @@ export default function ContactUsPage() {
     document.body.scrollTop = 0;
   });
   const classes = useStyles();
+
+  // Submit form
+  const [name, setName] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!name || !email || !message) {
+      alert("Please fill all fields");
+      return;
+    }
+    console.log("submit", name, email, message);
+  };
+
   return (
     <div>
       <Header
-        brand="NextJS Material Kit PRO"
+        brand="AI Start"
         links={<HeaderLinks dropdownHoverColor="dark" />}
         fixed
-        color="dark"
+        color="transparent"
       />
-      <div className={classes.bigMap}>
+      {/* <div className={classes.bigMap}>
         <CustomSkinMap />
-      </div>
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.contactContent}>
+      </div> */}
+      {/* <div className={classNames(classes.main, classes.mainRaised)}> */}
+      <div className={classes.contactContent} style={{ marginTop: "100px" }}>
           <div className={classes.container}>
             <h2 className={classes.title}>Send us a message</h2>
             <GridContainer>
@@ -157,41 +174,60 @@ export default function ContactUsPage() {
                 </p>
                 <form>
                   <CustomInput
-                    labelText="Your Name"
+                  labelText="Your Name*"
                     id="float"
                     formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
+                      onChange: (e) => {
+                        e.preventDefault();
+                        setName(e.target.value);
+                      }
+                    }}
+                />
+                  <CustomInput
+                  labelText="Email address*"
+                    id="float"
+                    formControlProps={{
+                      fullWidth: true,
+                      onChange: (e) => {
+                        e.preventDefault();
+                        setEmail(e.target.value);
+                      }
                     }}
                   />
-                  <CustomInput
-                    labelText="Email address"
+                <CustomInput
+                  labelText="Your message*"
                     id="float"
                     formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Phone"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                  <CustomInput
-                    labelText="Your message"
-                    id="float"
-                    formControlProps={{
-                      fullWidth: true
+                      fullWidth: true,
+                      onChange: (e) => {
+                        e.preventDefault();
+                        setMessage(e.target.value);
+                      }
                     }}
                     inputProps={{
                       multiline: true,
                       rows: 6
                     }}
                   />
-                  <div className={classes.textCenter}>
-                    <Button color="primary" round>
+                <div className={classes.textCenter}>
+                  {!name || !email || !message ?
+                    <Button
+                      color="black"
+                      round
+                      onClick={handleSubmit}
+                    >
                       Contact us
                     </Button>
+                    :
+                    <Button
+                      color="primary"
+                      round
+                      onClick={handleSubmit}
+                    >
+                      Contact us
+                    </Button>
+                  }
                   </div>
                 </form>
               </GridItem>
@@ -206,7 +242,7 @@ export default function ContactUsPage() {
                     </p>
                   }
                   icon={PinDrop}
-                  iconColor="primary"
+                iconColor="black"
                 />
                 <InfoArea
                   className={classes.info}
@@ -218,7 +254,7 @@ export default function ContactUsPage() {
                     </p>
                   }
                   icon={Phone}
-                  iconColor="primary"
+                iconColor="black"
                 />
                 <InfoArea
                   className={classes.info}
@@ -230,68 +266,15 @@ export default function ContactUsPage() {
                     </p>
                   }
                   icon={BusinessCenter}
-                  iconColor="primary"
+                iconColor="black"
                 />
               </GridItem>
             </GridContainer>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       <Footer
-        content={
-          <div>
-            <div className={classes.left}>
-              <List className={classes.list}>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/?ref=njsmkp-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Creative Tim
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/presentation?ref=njsmkp-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    About us
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="http://blog.creative-tim.com/?ref=njsmkp-contact-us"
-                    className={classes.block}
-                  >
-                    Blog
-                  </a>
-                </ListItem>
-                <ListItem className={classes.inlineBlock}>
-                  <a
-                    href="https://www.creative-tim.com/license?ref=njsmkp-contact-us"
-                    target="_blank"
-                    className={classes.block}
-                  >
-                    Licenses
-                  </a>
-                </ListItem>
-              </List>
-            </div>
-            <div className={classes.right}>
-              &copy; {1900 + new Date().getYear()} , made with{" "}
-              <Favorite className={classes.icon} /> by{" "}
-              <a
-                href="https://www.creative-tim.com?ref=njsmkp-contact-us"
-                target="_blank"
-              >
-                Creative Tim
-              </a>{" "}
-              for a better web.
-            </div>
-          </div>
-        }
+        content={<FooterLinks />}
       />
     </div>
   );

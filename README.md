@@ -1,10 +1,10 @@
-# [NextJS Material Kit PRO](https://demos.creative-tim.com/nextjs-material-kit-pro?ref=njsmkp-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit-pro%2Fpresentation&text=NextJS%20Material%20Kit%20PRO&via=Creative%20Tim&hashtags=nextjs%20%23creativetim%20%23material-ui%20%23react%20%23reactjs%20%23materialdesign)
+# [AI Start PRO](https://demos.creative-tim.com/nextjs-material-kit-pro?ref=njsmkp-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/share?url=https%3A%2F%2Fdemos.creative-tim.com%2Fnextjs-material-kit-pro%2Fpresentation&text=NextJS%20Material%20Kit%20PRO&via=Creative%20Tim&hashtags=nextjs%20%23creativetim%20%23material-ui%20%23react%20%23reactjs%20%23materialdesign)
 
 ![version](https://img.shields.io/badge/version-1.3.1-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-nextjs-material-kit-pro.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-nextjs-material-kit-pro/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-nextjs-material-kit-pro.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-nextjs-material-kit-pro/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/creative-tim-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
 
 ![Product Presentation Image](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit-pro/nextjs-material-kit-pro.jpg)
 
-**NextJS Material Kit PRO** is a Premium UI Kit made for NextJS version 9.0.5, React version 16.9.0 and Material-UI version 4.3.2.
+**AI Start PRO** is a Premium UI Kit made for NextJS version 9.0.5, React version 16.9.0 and Material-UI version 4.3.2.
 
 If you like bright and fresh colors, you will love this Premium NextJS Material-UI Kit! It features a huge number of components that can help you create amazing websites.
 
@@ -13,7 +13,7 @@ If you like bright and fresh colors, you will love this Premium NextJS Material-
 - Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/?ref=creativetim)
 - Go to [creative tim website](https://creative-tim.com?ref=njsmkp-readme) and login into your account
 - Go to [downloads](https://www.creative-tim.com/downloads?ref=njsmkp-readme) section on creative tim website (be sure to be logged into your account) - after you've bought the theme
-- Press the download button near **NextJS Material Kit Pro** product (this will download onto your computer a zip file)
+- Press the download button near **AI Start Pro** product (this will download onto your computer a zip file)
 - Unzip the downloaded file to a folder in your computer
 - Open Terminal
 - Go to your file project (where you've unzipped the product)
@@ -28,7 +28,7 @@ If you like bright and fresh colors, you will love this Premium NextJS Material-
 
 **Fully Coded Components**
 
-NextJS Material Kit PRO is built with over frontend 1000 individual components, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS and JSS files and classes.
+AI Start PRO is built with over frontend 1000 individual components, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS and JSS files and classes.
 
 You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Premium NextJS Material-UI Kit is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
 
@@ -66,7 +66,7 @@ View [example pages here](https://demos.creative-tim.com/nextjs-material-kit-pro
 
 | React Native                                                                                                                                                                                                                                                | WordPress                                                                                                                                                                                                     | NextJS                                                                                                                                                                                                                                   | HTML                                                                                                                                                                                                                     |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-pro-react-native/material-kit-pro-react-native.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmkp-readme) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia-pro/?ref=creativetim) | [![NextJS Material Kit](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit-pro/nextjs-material-kit-pro.jpg)](https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-readme) | [![Material Kit  HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-pro-html/opt_mkp_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-pro?ref=njsmkp-readme) |
+| [![Material Kit React Native](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-pro-react-native/material-kit-pro-react-native.jpg?raw=true)](https://www.creative-tim.com/product/material-kit-react-native?ref=njsmkp-readme) | [![Material Kit WordPress](https://github.com/creativetimofficial/public-assets/blob/master/material-kit-wordpress/opt_smd_thumbnail.jpg?raw=true)](https://themeisle.com/themes/hestia-pro/?ref=creativetim) | [![AI Start](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/nextjs-material-kit-pro/nextjs-material-kit-pro.jpg)](https://www.creative-tim.com/product/nextjs-material-kit-pro?ref=njsmkp-readme) | [![Material Kit  HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-kit-pro-html/opt_mkp_thumbnail.jpg)](https://www.creative-tim.com/product/material-kit-pro?ref=njsmkp-readme) |
 
 | React                                                                                                                                                                                                                    | Vue                                                                                                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -89,7 +89,7 @@ View [example pages here](https://demos.creative-tim.com/nextjs-material-kit-pro
 
 ## Documentation
 
-The documentation for the NextJS Material Kit PRO is hosted at our [website](https://demos.creative-tim.com/nextjs-material-kit-pro/documentation/tutorial?ref=njsmkp-readme).
+The documentation for the AI Start PRO is hosted at our [website](https://demos.creative-tim.com/nextjs-material-kit-pro/documentation/tutorial?ref=njsmkp-readme).
 
 ## File Structure
 
@@ -314,9 +314,9 @@ At present, we officially aim to support the last two versions of the following 
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the NextJS Material Kit PRO. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the AI Start PRO. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the NextJS Material Kit PRO. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=njsmkp-readme).
+1. Make sure that you are using the latest version of the AI Start PRO. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=njsmkp-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
