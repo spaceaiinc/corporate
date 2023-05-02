@@ -271,7 +271,7 @@ export default function privacyPolicy({ ...rest }) {
             ・By email: info@ai-st.art
             <br />
             <br />
-            ・By visiting this page on our website: https://ai-st.art/contact-us
+            ・By visiting this page on our website: https://ai-st.art/contact
             <br />
             <br />
           </p>

@@ -89,7 +89,7 @@ export default function FooterLinks(props) {
           </ListItem>
           <ListItem className={classes.inlineBlock}>
             <a
-              href="/contact-us"
+              href="/contact"
               target="_blank"
               className={classes.block}
             >

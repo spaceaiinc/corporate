@@ -14,7 +14,7 @@ import productStyle from "/styles/jss/nextjs-material-kit-pro/pages/landingPageS
 
 const useStyles = makeStyles(productStyle);
 
-export default function SectionProduct() {
+export default function SectionFaq() {
   const classes = useStyles();
   return (
     <div className={classes.section}>

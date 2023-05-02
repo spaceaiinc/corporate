@@ -14,6 +14,7 @@ import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 
 import errorPageStyle from "/styles/jss/nextjs-material-kit-pro/pages/errorPageStyles.js";
+import { Button } from "@mui/material";
 
 const useStyles = makeStyles(errorPageStyle);
 
@@ -24,7 +25,7 @@ export default function ErrorPage({ ...rest }) {
   });
   const classes = useStyles();
   return (
-    <div>
+    <div style={{ backgroundColor: "#fff" }}>
       <Header
         absolute
         color="transparent"
@@ -35,7 +36,7 @@ export default function ErrorPage({ ...rest }) {
       <div
         className={classes.pageHeader}
         style={{
-          backgroundImage: "url('/img/clint-mckoy.jpg')",
+          // backgroundImage: "url('/img/clint-mckoy.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "top center"
         }}
@@ -45,10 +46,16 @@ export default function ErrorPage({ ...rest }) {
           <GridContainer>
             <GridItem md={12}>
               <h1 className={classes.title}>404</h1>
-              <h2 className={classes.subTitle}>Page not found :(</h2>
-              <h4 className={classes.description}>
-                Ooooups! Looks like you got lost.
-              </h4>
+              <h2 className={classes.subTitle}>Page not found</h2>
+              <Button
+                href="/"
+                color="primary"
+                size="lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Return Home
+              </Button>
             </GridItem>
           </GridContainer>
         </div>

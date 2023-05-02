@@ -235,7 +235,7 @@ export default function SectionFooter() {
                   </ListItem>
                   <ListItem className={classes.inlineBlock}>
                     <a
-                      href="https://www.creative-tim.com/contact-us?ref=njsmkp-footer-components"
+                      href="https://www.creative-tim.com/contact?ref=njsmkp-footer-components"
                       target="_blank"
                       className={classes.block}
                     >

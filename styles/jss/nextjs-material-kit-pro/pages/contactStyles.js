@@ -5,7 +5,7 @@ import {
   hexToRgb
 } from "/styles/jss/nextjs-material-kit-pro.js";
 
-const errorPageStyles = (theme) => ({
+const contactStyles = (theme) => ({
   contentCenter: {
     position: "absolute",
     top: "50%",
@@ -17,16 +17,6 @@ const errorPageStyles = (theme) => ({
     padding: "0 15px",
     width: "100%",
     maxWidth: "880px"
-  },
-  title: {
-    [theme.breakpoints.down('md')]: {
-      fontSize: "5.7em"
-    },
-    ...title,
-    fontSize: "13.7em",
-    color: blackColor,
-    letterSpacing: "14px !important",
-    fontWeight: "700"
   },
   subTitle: {
     fontSize: "2.25rem",
@@ -105,4 +95,4 @@ const errorPageStyles = (theme) => ({
   }
 });
 
-export default errorPageStyles;
+export default contactStyles;

@@ -110,7 +110,7 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/contact-us"
+          href="/contact"
           className={classes.navLink}
           color="transparent"
         >
@@ -249,7 +249,7 @@ export default function HeaderLinks(props) {
                 <ViewQuilt className={classes.dropdownIcons} /> Blog Posts
               </a>
             </Link>,
-            <Link href="/contact-us">
+            <Link href="/contact">
               <a className={classes.dropdownLink}>
                 <LocationOn className={classes.dropdownIcons} /> Contact Us
               </a>
