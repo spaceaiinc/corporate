@@ -57,7 +57,7 @@ export default function SectionProduct() {
               icon={Check}
               title="Easy to Use"
               description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              iconColor="black"
+              iconColor="success"
               vertical
             />
           </GridItem>

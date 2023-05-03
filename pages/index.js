@@ -23,6 +23,12 @@ export default function Index({ ...rest }) {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
+
+    //check if the url
+    if (window.location.hostname == "ai-start-hp.web.app" ||
+      window.location.hostname == "ai-start-hp.firebaseapp.com") {
+      window.location.href = 'https://ai-st.art';
+    }
   });
   const classes = useStyles();
   return (

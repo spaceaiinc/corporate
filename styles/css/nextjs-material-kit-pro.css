@@ -575,7 +575,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .noUi-pips {
   position: absolute;
-  color: #999; }
+  color: #999;
+  }
 
 /* Values;
  *

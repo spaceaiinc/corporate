@@ -57,7 +57,7 @@ export default function SectionProduct() {
               icon={Check}
               title="Always Free"
               description="You can use GPT and long memory function for free. It's a great way to get started to work with GPT"
-              iconColor="black"
+              iconColor="success"
               vertical
             />
           </GridItem>
