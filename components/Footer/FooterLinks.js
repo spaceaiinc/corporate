@@ -63,7 +63,6 @@ export default function FooterLinks(props) {
           <ListItem className={classes.inlineBlock}>
             <a
               href="/"
-              target="_blank"
               className={classes.block}
             >
               Home
@@ -72,7 +71,6 @@ export default function FooterLinks(props) {
           <ListItem className={classes.inlineBlock}>
             <a
               href="/"
-              target="_blank"
               className={classes.block}
             >
               Projects
@@ -81,7 +79,6 @@ export default function FooterLinks(props) {
           <ListItem className={classes.inlineBlock}>
             <a
               href="/about-us"
-              target="_blank"
               className={classes.block}
             >
               About us
@@ -90,7 +87,6 @@ export default function FooterLinks(props) {
           <ListItem className={classes.inlineBlock}>
             <a
               href="/contact"
-              target="_blank"
               className={classes.block}
             >
               Contact
@@ -99,7 +95,6 @@ export default function FooterLinks(props) {
           <ListItem className={classes.inlineBlock}>
             <a
               href="/privacy-policy"
-              target="_blank"
               className={classes.block}
             >
               Privacy Policy
@@ -108,7 +103,6 @@ export default function FooterLinks(props) {
           {/* <ListItem className={classes.inlineBlock}>
             <a
               href="/licenses"
-              target="_blank"
               className={classes.block}
             >
               Licenses

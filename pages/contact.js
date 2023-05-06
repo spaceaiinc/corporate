@@ -23,6 +23,11 @@ export default function Contact({ ...rest }) {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
+
+    //check the url
+    if (window.location.hostname.match(/hp-ai-start.vercel.app/)) {
+      window.location.href = 'https://ai-st.art';
+    }
   });
 
   // Submit form

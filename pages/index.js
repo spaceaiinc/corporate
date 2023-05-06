@@ -24,9 +24,8 @@ export default function Index({ ...rest }) {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
 
-    //check if the url
-    if (window.location.hostname == "ai-start-hp.web.app" ||
-      window.location.hostname == "ai-start-hp.firebaseapp.com") {
+    //check the url
+    if (window.location.hostname.match(/hp-ai-start.vercel.app/)) {
       window.location.href = 'https://ai-st.art';
     }
   });
@@ -45,7 +44,6 @@ export default function Index({ ...rest }) {
         // }}
         {...rest}
       />
-      {/* <Parallax image="/img/bg8.jpg" filter="dark"> */}
       <Parallax>
         <div className={classes.container}>
           <GridContainer>
