@@ -1,29 +1,29 @@
-import type { StaticImageData } from 'next/image'
-import { IconType } from 'react-icons'
+import type { StaticImageData } from "next/image";
+import { IconType } from "react-icons";
 
 export type PortfolioSliderType = {
-  title: string
-  subTitle: string
-  image: StaticImageData
-}
+  title: string;
+  subTitle: string;
+  image: StaticImageData;
+};
 
 export type StepType = {
-  title: string
-  description: string
-  icon: IconType
-}
+  title: string;
+  description: string;
+  icon: IconType;
+};
 
 export type TestimonialSlideType = {
-  name: string
-  position: string
-  description: string
-  image: StaticImageData
-}
+  name: string;
+  position: string;
+  description: string;
+  image: StaticImageData;
+};
 
 export type BlogType = {
-  title: string
-  description: string
-  date: string
-  type: string
-  image: StaticImageData
-}
+  title: string;
+  description: string;
+  date: string;
+  type: string;
+  image: StaticImageData;
+};

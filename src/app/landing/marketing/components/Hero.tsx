@@ -1,24 +1,24 @@
-'use client'
-import { LuArrowUpRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { useLayoutContext } from '@/context'
+"use client";
+import { LuArrowUpRight } from "react-icons/lu";
+import Link from "next/link";
+import { useLayoutContext } from "@/context";
 
-import backgroundImg from '@/assets/images/landing/marketing/bg-1.png'
-import backgroundDarkImg from '@/assets/images/landing/marketing/bg-1-dark.jpg'
+import backgroundImg from "@/assets/images/landing/marketing/bg-1.png";
+import backgroundDarkImg from "@/assets/images/landing/marketing/bg-1-dark.jpg";
 
-import marketing1 from '@/assets/images/landing/marketing/img-1.jpg'
-import marketing2 from '@/assets/images/landing/marketing/img-2.jpg'
-import marketing3 from '@/assets/images/landing/marketing/img-3.jpg'
-import Image from 'next/image'
+import marketing1 from "@/assets/images/landing/marketing/img-1.jpg";
+import marketing2 from "@/assets/images/landing/marketing/img-2.jpg";
+import marketing3 from "@/assets/images/landing/marketing/img-3.jpg";
+import Image from "next/image";
 
 const Hero = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section
       id="home"
       className="relative flex items-center justify-center overflow-hidden bg-cover bg-no-repeat py-40"
       style={{
-        backgroundImage: `url(${themeMode == 'light' ? backgroundImg.src : backgroundDarkImg.src})`,
+        backgroundImage: `url(${themeMode == "light" ? backgroundImg.src : backgroundDarkImg.src})`,
       }}
     >
       <div className="container">
@@ -72,7 +72,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

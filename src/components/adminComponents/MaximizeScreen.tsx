@@ -1,16 +1,16 @@
-'use client'
-import { useState } from 'react'
-import { LuMaximize, LuMinimize } from 'react-icons/lu'
+"use client";
+import { useState } from "react";
+import { LuMaximize, LuMinimize } from "react-icons/lu";
 
 const MaximizeScreen = () => {
-  const [fullScreenOn, setFullScreenOn] = useState(false)
+  const [fullScreenOn, setFullScreenOn] = useState(false);
 
   /*
    * toggle full screen mode
    */
   const toggleFullScreen = () => {
-    const document: any = window.document
-    document.body.classList.add('fullscreen-enable')
+    const document: any = window.document;
+    document.body.classList.add("fullscreen-enable");
     if (
       !document.fullscreenElement &&
       /* alternative standard method */ !document.mozFullScreenElement &&
@@ -18,22 +18,22 @@ const MaximizeScreen = () => {
     ) {
       // current working methods
       if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen()
+        document.documentElement.requestFullscreen();
       } else if (document.documentElement.mozRequestFullScreen) {
-        document.documentElement.mozRequestFullScreen()
+        document.documentElement.mozRequestFullScreen();
       } else if (document.documentElement.webkitRequestFullscreen) {
-        document.documentElement.webkitRequestFullscreen()
+        document.documentElement.webkitRequestFullscreen();
       }
-      setFullScreenOn(true)
+      setFullScreenOn(true);
     } else {
       if (document.cancelFullScreen) {
-        document.cancelFullScreen()
+        document.cancelFullScreen();
       } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen()
+        document.mozCancelFullScreen();
       } else if (document.webkitCancelFullScreen) {
-        document.webkitCancelFullScreen()
+        document.webkitCancelFullScreen();
       }
-      setFullScreenOn(false)
+      setFullScreenOn(false);
     }
 
     // handle fullscreen exit
@@ -43,14 +43,14 @@ const MaximizeScreen = () => {
         !document.mozFullScreen &&
         !document.msFullscreenElement
       ) {
-        setFullScreenOn(false)
-        document.body.classList.remove('fullscreen-enable')
+        setFullScreenOn(false);
+        document.body.classList.remove("fullscreen-enable");
       }
-    }
-    document.addEventListener('fullscreenchange', exitHandler)
-    document.addEventListener('webkitfullscreenchange', exitHandler)
-    document.addEventListener('mozfullscreenchange', exitHandler)
-  }
+    };
+    document.addEventListener("fullscreenchange", exitHandler);
+    document.addEventListener("webkitfullscreenchange", exitHandler);
+    document.addEventListener("mozfullscreenchange", exitHandler);
+  };
   return (
     <button
       onClick={toggleFullScreen}
@@ -63,7 +63,7 @@ const MaximizeScreen = () => {
         <LuMaximize className="size-5" />
       )}
     </button>
-  )
-}
+  );
+};
 
-export default MaximizeScreen
+export default MaximizeScreen;

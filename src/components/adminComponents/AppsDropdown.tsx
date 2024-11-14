@@ -1,7 +1,7 @@
-import { LuLayoutGrid } from 'react-icons/lu'
-import { apps } from './data'
-import Link from 'next/link'
-import Image from 'next/image'
+import { LuLayoutGrid } from "react-icons/lu";
+import { apps } from "./data";
+import Link from "next/link";
+import Image from "next/image";
 
 const AppsDropdown = () => {
   return (
@@ -31,12 +31,12 @@ const AppsDropdown = () => {
                 />
                 <span>{app.name}</span>
               </Link>
-            )
+            );
           })}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AppsDropdown
+export default AppsDropdown;

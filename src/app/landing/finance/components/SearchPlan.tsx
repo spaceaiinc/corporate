@@ -1,6 +1,6 @@
-import { LuSearch } from 'react-icons/lu'
+import { LuSearch } from "react-icons/lu";
 
-import backgroundLine2 from '@/assets/images/other/bg-lines-2.png'
+import backgroundLine2 from "@/assets/images/other/bg-lines-2.png";
 
 const SearchPlan = () => {
   return (
@@ -41,7 +41,7 @@ const SearchPlan = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SearchPlan
+export default SearchPlan;

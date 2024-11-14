@@ -1,18 +1,18 @@
-'use client'
-import { useState } from 'react'
-import ChatArea from './ChatArea'
-import ChatUsers from './ChatUsers'
-import { users, type ChatUser } from '../data'
+"use client";
+import { useState } from "react";
+import ChatArea from "./ChatArea";
+import ChatUsers from "./ChatUsers";
+import { users, type ChatUser } from "../data";
 
 const ChatApp = () => {
-  const [selectedUser, setSelectedUser] = useState<ChatUser>(users[1])
+  const [selectedUser, setSelectedUser] = useState<ChatUser>(users[1]);
 
   /**
    * On user change
    */
   const onUserChange = (user: ChatUser) => {
-    setSelectedUser(user)
-  }
+    setSelectedUser(user);
+  };
   return (
     <section>
       <div className="container">
@@ -31,7 +31,7 @@ const ChatApp = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ChatApp
+export default ChatApp;

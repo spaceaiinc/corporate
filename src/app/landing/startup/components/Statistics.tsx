@@ -1,18 +1,18 @@
-'use client'
-import { useLayoutContext } from '@/context'
-import backgroundLine from '@/assets/images/other/bg-lines-2.png'
-import backgroundLineDark from '@/assets/images/other/bg-lines-2-dark.png'
+"use client";
+import { useLayoutContext } from "@/context";
+import backgroundLine from "@/assets/images/other/bg-lines-2.png";
+import backgroundLineDark from "@/assets/images/other/bg-lines-2-dark.png";
 
-import { statistics } from '../data'
+import { statistics } from "../data";
 
 const Statistics = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section className="p-8 md:p-16">
       <div
         className="rounded-xl bg-default-100 bg-cover bg-no-repeat px-6 py-20 dark:bg-default-50"
         style={{
-          backgroundImage: `url(${themeMode == 'light' ? backgroundLine.src : backgroundLineDark.src})`,
+          backgroundImage: `url(${themeMode == "light" ? backgroundLine.src : backgroundLineDark.src})`,
         }}
       >
         <div className="container">
@@ -32,7 +32,7 @@ const Statistics = () => {
                         {item.title}
                       </p>
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -40,7 +40,7 @@ const Statistics = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Statistics
+export default Statistics;

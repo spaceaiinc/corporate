@@ -1,1 +1,1 @@
-export * from './change-casing'
+export * from "./change-casing";

@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import { BlogType } from '../type'
-import { LuCalendarDays, LuMessageSquare } from 'react-icons/lu'
+import Image from "next/image";
+import { BlogType } from "../type";
+import { LuCalendarDays, LuMessageSquare } from "react-icons/lu";
 
 const BlogCard = ({ blog }: { blog: BlogType }) => {
-  const { date, image, title, type, description } = blog
+  const { date, image, title, type, description } = blog;
   return (
     <div className="overflow-hidden rounded-lg border border-default-200 p-6">
       <div className="group relative overflow-hidden">
@@ -30,7 +30,7 @@ const BlogCard = ({ blog }: { blog: BlogType }) => {
         <p className="mt-4 text-base">{description}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

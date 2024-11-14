@@ -1,5 +1,5 @@
-import { ComponentContainerCard } from '@/components'
-import Link from 'next/link'
+import { ComponentContainerCard } from "@/components";
+import Link from "next/link";
 
 const Tooltips = () => {
   return (
@@ -68,7 +68,7 @@ const Tooltips = () => {
         </ComponentContainerCard>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tooltips
+export default Tooltips;

@@ -1,10 +1,10 @@
-import { LuChevronUp } from 'react-icons/lu'
+import { LuChevronUp } from "react-icons/lu";
 
-import agency11 from '@/assets/images/landing/agency/img-11.jpg'
-import agency12 from '@/assets/images/landing/agency/img-12.jpg'
-import { faqContents } from '../data'
-import { cn } from '@/utils'
-import Image from 'next/image'
+import agency11 from "@/assets/images/landing/agency/img-11.jpg";
+import agency12 from "@/assets/images/landing/agency/img-12.jpg";
+import { faqContents } from "../data";
+import { cn } from "@/utils";
+import Image from "next/image";
 
 const FAQs = () => {
   return (
@@ -32,8 +32,8 @@ const FAQs = () => {
                     <div
                       key={idx}
                       className={cn(
-                        'hs-accordion overflow-hidden rounded-lg border  border-default-200 bg-default-50',
-                        { active: idx == 0 }
+                        "hs-accordion overflow-hidden rounded-lg border  border-default-200 bg-default-50",
+                        { active: idx == 0 },
                       )}
                       id={`faq-${idx}`}
                     >
@@ -49,8 +49,8 @@ const FAQs = () => {
                       <div
                         id={`faq-accordion-${idx}`}
                         className={cn(
-                          'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                          { hidden: idx != 0 }
+                          "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                          { hidden: idx != 0 },
                         )}
                         aria-labelledby={`faq-${idx}`}
                       >
@@ -59,7 +59,7 @@ const FAQs = () => {
                         </div>
                       </div>
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -87,7 +87,7 @@ const FAQs = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

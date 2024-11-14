@@ -1,5 +1,5 @@
-import { allReviews } from '../data'
-import ReviewCard from './ReviewCard'
+import { allReviews } from "../data";
+import ReviewCard from "./ReviewCard";
 
 const Since = () => {
   return (
@@ -56,7 +56,7 @@ const Since = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Since
+export default Since;

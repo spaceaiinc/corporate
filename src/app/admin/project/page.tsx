@@ -1,11 +1,11 @@
-import { AdminBreadcrumb } from '@/components'
-import { projects } from './data'
-import ProjectCard from './components/ProjectCard'
-import type { Metadata } from 'next'
+import { AdminBreadcrumb } from "@/components";
+import { projects } from "./data";
+import ProjectCard from "./components/ProjectCard";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Project',
-}
+  title: "Project",
+};
 const Project = () => {
   return (
     <>
@@ -22,7 +22,7 @@ const Project = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

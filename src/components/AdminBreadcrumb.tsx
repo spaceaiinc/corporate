@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { LuChevronsRight } from 'react-icons/lu'
+import Link from "next/link";
+import { LuChevronsRight } from "react-icons/lu";
 
 const AdminBreadcrumb = ({ title }: { title: string }) => {
   return (
@@ -34,7 +34,7 @@ const AdminBreadcrumb = ({ title }: { title: string }) => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AdminBreadcrumb
+export default AdminBreadcrumb;

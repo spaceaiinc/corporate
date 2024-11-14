@@ -1,8 +1,8 @@
-import dynamic from 'next/dynamic'
-import { type ReactNode, Suspense } from 'react'
-const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
+import dynamic from "next/dynamic";
+import { type ReactNode, Suspense } from "react";
+const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 
-const loading = () => <div />
+const loading = () => <div />;
 
 const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
@@ -13,7 +13,7 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
         <Footer />
       </Suspense>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

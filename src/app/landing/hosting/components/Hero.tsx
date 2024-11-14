@@ -1,6 +1,6 @@
-import hosting4 from '@/assets/images/landing/hosting/4.svg'
-import Image from 'next/image'
-import Link from 'next/link'
+import hosting4 from "@/assets/images/landing/hosting/4.svg";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

@@ -1,5 +1,5 @@
-import { blogs } from '../data'
-import BlogCard from './BlogCard'
+import { blogs } from "../data";
+import BlogCard from "./BlogCard";
 
 const Blog = () => {
   return (
@@ -27,7 +27,7 @@ const Blog = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

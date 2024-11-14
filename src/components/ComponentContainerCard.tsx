@@ -1,11 +1,11 @@
-import { type ReactNode } from 'react'
+import { type ReactNode } from "react";
 
 const ComponentContainerCard = ({
   title,
   children,
 }: {
-  title: string
-  children: ReactNode
+  title: string;
+  children: ReactNode;
 }) => {
   return (
     <div className="rounded-lg border border-default-200 bg-white dark:bg-default-50">
@@ -14,7 +14,7 @@ const ComponentContainerCard = ({
       </div>
       <div className="p-6">{children}</div>
     </div>
-  )
-}
+  );
+};
 
-export default ComponentContainerCard
+export default ComponentContainerCard;

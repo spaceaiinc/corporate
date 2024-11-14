@@ -1,6 +1,6 @@
-import ThirdPartyAuth from '@/components/ThirdPartyAuth'
-import Link from 'next/link'
-import LoginForm from './LoginForm'
+import ThirdPartyAuth from "@/components/ThirdPartyAuth";
+import Link from "next/link";
+import LoginForm from "./LoginForm";
 
 const SignIn = () => {
   return (
@@ -16,7 +16,7 @@ const SignIn = () => {
         </Link>
       </p>
     </>
-  )
-}
+  );
+};
 
-export default SignIn
+export default SignIn;

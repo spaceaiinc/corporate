@@ -1,15 +1,15 @@
-import webDesignerDark from '@/assets/images/demo/web-designer-dark.png'
-import webDesigner from '@/assets/images/demo/web-designer.png'
-import PreviewCard from './PreviewCard'
-import { landingDemos, type DemoType } from './data'
+import webDesignerDark from "@/assets/images/demo/web-designer-dark.png";
+import webDesigner from "@/assets/images/demo/web-designer.png";
+import PreviewCard from "./PreviewCard";
+import { landingDemos, type DemoType } from "./data";
 
 const LandingDemos = () => {
   const webDemo: DemoType = {
     darkImage: webDesignerDark,
     lightImage: webDesigner,
-    link: '/landing/web-designer',
-    name: 'Web Designer',
-  }
+    link: "/landing/web-designer",
+    name: "Web Designer",
+  };
   return (
     <section id="demos" className="py-20">
       <div className="mx-20">
@@ -26,7 +26,7 @@ const LandingDemos = () => {
         </div>
         <div className="justify-content-center grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {landingDemos.map((demo, idx) => {
-            return <PreviewCard demo={demo} key={idx} />
+            return <PreviewCard demo={demo} key={idx} />;
           })}
           <div className="justify-center gap-3 lg:col-span-3 lg:flex">
             <div className="lg:w-1/3">
@@ -36,7 +36,7 @@ const LandingDemos = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default LandingDemos
+export default LandingDemos;

@@ -1,7 +1,7 @@
-import web8 from '@/assets/images/landing/web-designer/img-8.jpg'
-import { LuDot, LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import Image from 'next/image'
+import web8 from "@/assets/images/landing/web-designer/img-8.jpg";
+import { LuDot, LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -56,7 +56,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

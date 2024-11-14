@@ -1,4 +1,4 @@
-import { LuLineChart, LuMail, LuPhone, LuSave } from 'react-icons/lu'
+import { LuLineChart, LuMail, LuPhone, LuSave } from "react-icons/lu";
 
 const Contact = () => {
   return (
@@ -44,7 +44,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

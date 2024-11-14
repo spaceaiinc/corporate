@@ -1,8 +1,8 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import finance8 from '@/assets/images/landing/finance/img-8.png'
-import Image from 'next/image'
+import finance8 from "@/assets/images/landing/finance/img-8.png";
+import Image from "next/image";
 
 const Feature1 = () => {
   return (
@@ -19,7 +19,7 @@ const Feature1 = () => {
             <p className="mt-5 text-base text-default-900">
               Save time on financial tasks by automating them with Vault.
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.{' '}
+              labore et dolore magna aliqua.{" "}
             </p>
             <div className="group mt-5">
               <Link
@@ -41,7 +41,7 @@ const Feature1 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature1
+export default Feature1;

@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import Link from 'next/link'
+import Image from "next/image";
+import Link from "next/link";
 
-import ebook16 from '@/assets/images/landing/ebook/img-16.jpg'
-import ebook17 from '@/assets/images/landing/ebook/img-17.jpg'
-import ebookBackground from '@/assets/images/landing/ebook/bg-2.png'
+import ebook16 from "@/assets/images/landing/ebook/img-16.jpg";
+import ebook17 from "@/assets/images/landing/ebook/img-17.jpg";
+import ebookBackground from "@/assets/images/landing/ebook/bg-2.png";
 
 const Hero = () => {
   return (
@@ -74,7 +74,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

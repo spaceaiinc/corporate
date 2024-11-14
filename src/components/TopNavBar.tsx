@@ -68,7 +68,7 @@ const TopNavBar = ({
         id="navbar"
         className={cn(
           position,
-          "inset-x-0 top-0 z-[60] w-full  border-b border-transparent bg-white transition-all duration-300 dark:bg-default-50 lg:bg-transparent [&.nav-sticky]:bg-white/90 [&.nav-sticky]:shadow-md [&.nav-sticky]:backdrop-blur-3xl dark:[&.nav-sticky]:bg-default-50/80"
+          "inset-x-0 top-0 z-[60] w-full  border-b border-transparent bg-white transition-all duration-300 dark:bg-default-50 lg:bg-transparent [&.nav-sticky]:bg-white/90 [&.nav-sticky]:shadow-md [&.nav-sticky]:backdrop-blur-3xl dark:[&.nav-sticky]:bg-default-50/80",
         )}
       >
         <div className="flex h-full items-center py-4">
@@ -118,7 +118,7 @@ const TopNavBar = ({
                       key={idx}
                       className={cn(
                         "menu-item mx-2 text-default-800 transition-all duration-300 hover:text-primary [&.active]:text-primary",
-                        activation === item && "active"
+                        activation === item && "active",
                       )}
                     >
                       <Link
@@ -211,7 +211,7 @@ const TopNavBar = ({
                     key={idx}
                     className={cn(
                       "rounded text-sm font-medium capitalize text-default-900 transition-all duration-300 hover:bg-default-100 hover:text-primary [&.active]:bg-default-100 [&.active]:text-primary",
-                      activation == `${item}` && "active"
+                      activation == `${item}` && "active",
                     )}
                   >
                     <a className="block w-full px-4 py-2.5" href={`#${item}`}>

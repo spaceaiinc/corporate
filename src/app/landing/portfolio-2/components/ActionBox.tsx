@@ -1,5 +1,5 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
 const ActionBox = () => {
   return (
@@ -31,7 +31,7 @@ const ActionBox = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ActionBox
+export default ActionBox;

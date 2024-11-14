@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import Image from "next/image";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import photography11 from '@/assets/images/landing/photography/img-11.jpg'
+import photography11 from "@/assets/images/landing/photography/img-11.jpg";
 
 const ActionBox = () => {
   return (
@@ -37,7 +37,7 @@ const ActionBox = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ActionBox
+export default ActionBox;

@@ -1,6 +1,6 @@
-import { ThirdPartyAuth } from '@/components'
-import Link from 'next/link'
-import ResetPasswordForm from './ResetPasswordForm'
+import { ThirdPartyAuth } from "@/components";
+import Link from "next/link";
+import ResetPasswordForm from "./ResetPasswordForm";
 
 const ResetPassword = () => {
   return (
@@ -14,7 +14,7 @@ const ResetPassword = () => {
         </Link>
       </p>
     </>
-  )
-}
+  );
+};
 
-export default ResetPassword
+export default ResetPassword;

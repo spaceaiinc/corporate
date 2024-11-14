@@ -1,4 +1,4 @@
-import { LuSearch } from 'react-icons/lu'
+import { LuSearch } from "react-icons/lu";
 
 const DomainNames = () => {
   return (
@@ -41,7 +41,7 @@ const DomainNames = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DomainNames
+export default DomainNames;

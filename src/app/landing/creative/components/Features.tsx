@@ -6,8 +6,8 @@ import {
   LuMonitor,
   LuMoveRight,
   LuPaintbrush,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
 const Features = () => {
   return (
@@ -51,7 +51,7 @@ const Features = () => {
                 Web Design
               </h2>
               <p className="mb-6  text-base">
-                {' '}
+                {" "}
                 In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
                 Nullam dictum felis eu pede mollis pretium.
               </p>
@@ -136,7 +136,7 @@ const Features = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

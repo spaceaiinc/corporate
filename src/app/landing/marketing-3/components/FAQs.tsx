@@ -1,7 +1,7 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { faqContent } from '../data'
-import { cn } from '@/utils'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import { faqContent } from "../data";
+import { cn } from "@/utils";
 
 const FAQs = () => {
   return (
@@ -15,8 +15,8 @@ const FAQs = () => {
                   <div
                     key={idx}
                     className={cn(
-                      'hs-accordion overflow-hidden rounded-lg border border-default-200 bg-white dark:bg-default-50',
-                      { active: idx == 0 }
+                      "hs-accordion overflow-hidden rounded-lg border border-default-200 bg-white dark:bg-default-50",
+                      { active: idx == 0 },
                     )}
                     id="faq-1"
                   >
@@ -46,8 +46,8 @@ const FAQs = () => {
                     <div
                       id="faq-accordion-1"
                       className={cn(
-                        'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                        { hidden: idx != 0 }
+                        "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                        { hidden: idx != 0 },
                       )}
                       aria-labelledby="faq-1"
                     >
@@ -56,7 +56,7 @@ const FAQs = () => {
                       </div>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -83,7 +83,7 @@ const FAQs = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

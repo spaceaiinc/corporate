@@ -1,8 +1,8 @@
-import { LuUpload } from 'react-icons/lu'
-import Link from 'next/link'
-import { cn } from '@/utils'
+import { LuUpload } from "react-icons/lu";
+import Link from "next/link";
+import { cn } from "@/utils";
 
-import { recentOrders } from '../data'
+import { recentOrders } from "../data";
 
 const RecentOrders = () => {
   return (
@@ -73,19 +73,19 @@ const RecentOrders = () => {
                       <td className="whitespace-nowrap px-4 py-4 text-start text-default-600">
                         <span
                           className={cn(
-                            'inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-xs font-medium',
-                            order.status === 'Declined'
-                              ? 'bg-red-500/10 text-red-500'
-                              : order.status === 'Pending'
-                                ? 'bg-yellow-500/10 text-yellow-500'
-                                : 'bg-teal-500/10 text-teal-500'
+                            "inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-xs font-medium",
+                            order.status === "Declined"
+                              ? "bg-red-500/10 text-red-500"
+                              : order.status === "Pending"
+                                ? "bg-yellow-500/10 text-yellow-500"
+                                : "bg-teal-500/10 text-teal-500",
                           )}
                         >
                           {order.status}
                         </span>
                       </td>
                     </tr>
-                  )
+                  );
                 })}
               </tbody>
             </table>
@@ -93,7 +93,7 @@ const RecentOrders = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default RecentOrders
+export default RecentOrders;

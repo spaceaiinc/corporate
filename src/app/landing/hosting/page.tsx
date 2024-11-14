@@ -1,24 +1,24 @@
-import TopNavBar from '@/components/TopNavBar'
-import Brands from './components/Brands'
-import DiscoverServices from './components/DiscoverServices'
-import DomainNames from './components/DomainNames'
-import FAQs from './components/FAQs'
-import Features from './components/Features'
-import Hero from './components/Hero'
-import Pricing from './components/Pricing'
-import Services from './components/Services'
-import TestimonialSlider from './components/TestimonialSlider'
-import type { Metadata } from 'next'
+import TopNavBar from "@/components/TopNavBar";
+import Brands from "./components/Brands";
+import DiscoverServices from "./components/DiscoverServices";
+import DomainNames from "./components/DomainNames";
+import FAQs from "./components/FAQs";
+import Features from "./components/Features";
+import Hero from "./components/Hero";
+import Pricing from "./components/Pricing";
+import Services from "./components/Services";
+import TestimonialSlider from "./components/TestimonialSlider";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Hosting',
-}
+  title: "Hosting",
+};
 
 const Hosting = () => {
   return (
     <>
       <TopNavBar
-        menuItems={['home', 'pricing', 'services', 'features', 'testimonial']}
+        menuItems={["home", "pricing", "services", "features", "testimonial"]}
         position="fixed"
         hasDownloadButton
       />
@@ -41,7 +41,7 @@ const Hosting = () => {
 
       <DiscoverServices />
     </>
-  )
-}
+  );
+};
 
-export default Hosting
+export default Hosting;

@@ -1,8 +1,8 @@
-import charity2 from '@/assets/images/landing/charity/img-2.jpg'
-import charity4 from '@/assets/images/landing/charity/img-4.jpg'
-import charity5 from '@/assets/images/landing/charity/img-5.jpg'
-import Image from 'next/image'
-import { LuPlay } from 'react-icons/lu'
+import charity2 from "@/assets/images/landing/charity/img-2.jpg";
+import charity4 from "@/assets/images/landing/charity/img-4.jpg";
+import charity5 from "@/assets/images/landing/charity/img-5.jpg";
+import Image from "next/image";
+import { LuPlay } from "react-icons/lu";
 
 const JoinUs = () => {
   return (
@@ -14,7 +14,7 @@ const JoinUs = () => {
               Starting with a Child
             </span>
             <h2 className="mt-4 text-3xl/snug font-medium text-default-950">
-              Starting with a Child{' '}
+              Starting with a Child{" "}
             </h2>
             <p className="mt-5 text-base">
               Children growing up in poverty encounter significant challenges
@@ -93,7 +93,7 @@ const JoinUs = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default JoinUs
+export default JoinUs;

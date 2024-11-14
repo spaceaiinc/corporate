@@ -1,14 +1,14 @@
-'use client'
-import portfolio1 from '@/assets/images/landing/portfolio-2/img-1.jpg'
-import { LuChevronLeft, LuChevronRight, LuStar } from 'react-icons/lu'
-import { FreeMode, Navigation } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+"use client";
+import portfolio1 from "@/assets/images/landing/portfolio-2/img-1.jpg";
+import { LuChevronLeft, LuChevronRight, LuStar } from "react-icons/lu";
+import { FreeMode, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import { testimonialSlides } from '../data'
+import { testimonialSlides } from "../data";
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import Image from 'next/image'
+import "swiper/css";
+import "swiper/css/navigation";
+import Image from "next/image";
 
 const TestimonialSlider = () => {
   return (
@@ -44,8 +44,8 @@ const TestimonialSlider = () => {
               <Swiper
                 modules={[FreeMode, Navigation]}
                 navigation={{
-                  prevEl: '.testimonials-button-prev',
-                  nextEl: '.testimonials-button-next',
+                  prevEl: ".testimonials-button-prev",
+                  nextEl: ".testimonials-button-next",
                 }}
                 loop
                 className="testimonials relative rounded-md"
@@ -77,12 +77,12 @@ const TestimonialSlider = () => {
                                 key={idx}
                                 className="size-5 stroke-yellow-300"
                               />
-                            )
+                            );
                           })}
                         </div>
                       </div>
                     </SwiperSlide>
-                  )
+                  );
                 })}
               </Swiper>
               <div className="relative flex items-center justify-start gap-5 py-4 pe-10">
@@ -102,7 +102,7 @@ const TestimonialSlider = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

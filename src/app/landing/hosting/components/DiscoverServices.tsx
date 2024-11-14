@@ -1,13 +1,13 @@
-'use client'
-import { useLayoutContext } from '@/context'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+"use client";
+import { useLayoutContext } from "@/context";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import bgLine from '@/assets/images/other/bg-lines-2.png'
-import bgLineDark from '@/assets/images/other/bg-lines-2-dark.png'
+import bgLine from "@/assets/images/other/bg-lines-2.png";
+import bgLineDark from "@/assets/images/other/bg-lines-2-dark.png";
 
 const DiscoverServices = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
 
   return (
     <section className="py-10 lg:py-20">
@@ -33,7 +33,7 @@ const DiscoverServices = () => {
           <div
             className="bg-cover bg-no-repeat p-10 text-center md:p-20"
             style={{
-              backgroundImage: `url(${themeMode == 'light' ? bgLine.src : bgLineDark.src})`,
+              backgroundImage: `url(${themeMode == "light" ? bgLine.src : bgLineDark.src})`,
             }}
           >
             <h2 className="text-3xl font-medium text-default-950 md:text-4xl">
@@ -65,7 +65,7 @@ const DiscoverServices = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DiscoverServices
+export default DiscoverServices;

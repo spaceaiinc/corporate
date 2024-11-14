@@ -1,6 +1,6 @@
-import creative3 from '@/assets/images/landing/creative/img-3.jpg'
-import Image from 'next/image'
-import { LuMoveRight } from 'react-icons/lu'
+import creative3 from "@/assets/images/landing/creative/img-3.jpg";
+import Image from "next/image";
+import { LuMoveRight } from "react-icons/lu";
 
 const Services = () => {
   return (
@@ -87,7 +87,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

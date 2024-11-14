@@ -1,11 +1,11 @@
-'use client'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { blogSlides } from '../data'
-import Link from 'next/link'
-import { FreeMode, Thumbs } from 'swiper/modules'
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { blogSlides } from "../data";
+import Link from "next/link";
+import { FreeMode, Thumbs } from "swiper/modules";
 
-import 'swiper/css'
-import Image from 'next/image'
+import "swiper/css";
+import Image from "next/image";
 
 const Blogs = () => {
   return (
@@ -63,13 +63,13 @@ const Blogs = () => {
                     </Link>
                   </div>
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Blogs
+export default Blogs;

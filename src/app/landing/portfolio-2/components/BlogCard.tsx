@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import { BlogType } from '../types'
-import Image from 'next/image'
-import { LuCalendarDays } from 'react-icons/lu'
+import Link from "next/link";
+import { BlogType } from "../types";
+import Image from "next/image";
+import { LuCalendarDays } from "react-icons/lu";
 
 const BlogCard = ({ blog }: { blog: BlogType }) => {
   return (
@@ -22,7 +22,7 @@ const BlogCard = ({ blog }: { blog: BlogType }) => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

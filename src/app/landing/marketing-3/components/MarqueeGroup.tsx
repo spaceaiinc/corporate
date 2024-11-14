@@ -1,4 +1,4 @@
-const marketing = ['eCommerce', 'Development', 'Social media', 'Consultation']
+const marketing = ["eCommerce", "Development", "Social media", "Consultation"];
 const MarqueeGroup = () => {
   return (
     <section className="pb-10 pt-20">
@@ -32,7 +32,7 @@ const MarqueeGroup = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MarqueeGroup
+export default MarqueeGroup;

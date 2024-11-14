@@ -1,5 +1,5 @@
-import { valuableAssets } from '../data'
-import AssetCard from './AssetCard'
+import { valuableAssets } from "../data";
+import AssetCard from "./AssetCard";
 
 const ValuableAssets = () => {
   return (
@@ -22,7 +22,7 @@ const ValuableAssets = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ValuableAssets
+export default ValuableAssets;

@@ -1,6 +1,6 @@
-import { ComponentContainerCard } from '@/components'
-import { cn } from '@/utils'
-import { LuChevronDown, LuMinus, LuPlus } from 'react-icons/lu'
+import { ComponentContainerCard } from "@/components";
+import { cn } from "@/utils";
+import { LuChevronDown, LuMinus, LuPlus } from "react-icons/lu";
 
 const AccordionExample = () => {
   return (
@@ -11,7 +11,7 @@ const AccordionExample = () => {
             return (
               <div
                 key={idx}
-                className={cn('hs-accordion', idx === 0 && 'active')}
+                className={cn("hs-accordion", idx === 0 && "active")}
               >
                 <button
                   className="hs-accordion-toggle inline-flex w-full items-center gap-x-3 rounded-lg py-3 text-start font-semibold text-default-800 hover:text-default-950 disabled:pointer-events-none disabled:opacity-50 hs-accordion-active:text-primary"
@@ -23,8 +23,8 @@ const AccordionExample = () => {
                 </button>
                 <div
                   className={cn(
-                    'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                    idx != 0 && 'hidden'
+                    "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                    idx != 0 && "hidden",
                   )}
                 >
                   <p className="text-default-800">
@@ -36,20 +36,20 @@ const AccordionExample = () => {
                   </p>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const CardAccordion = () => {
   const faqs = [
-    'What is Lorem Ipsum?',
-    ' Why do we use it?',
-    'Where does it come from?',
-  ]
+    "What is Lorem Ipsum?",
+    " Why do we use it?",
+    "Where does it come from?",
+  ];
   return (
     <ComponentContainerCard title="Card Accordion">
       <div>
@@ -57,7 +57,7 @@ const CardAccordion = () => {
           {faqs.map((faq, idx) => {
             return (
               <div key={idx} className="rounded-md border border-default-200">
-                <div className={cn('hs-accordion', { active: idx === 0 })}>
+                <div className={cn("hs-accordion", { active: idx === 0 })}>
                   <button
                     className="hs-accordion-toggle group inline-flex w-full items-center gap-x-3 p-3 text-left font-semibold text-default-600 transition hover:text-default-950"
                     aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one"
@@ -67,8 +67,8 @@ const CardAccordion = () => {
                   </button>
                   <div
                     className={cn(
-                      'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                      { hidden: idx != 0 }
+                      "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                      { hidden: idx != 0 },
                     )}
                     aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one"
                   >
@@ -91,13 +91,13 @@ const CardAccordion = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const Accordions = () => {
   return (
@@ -108,7 +108,7 @@ const Accordions = () => {
         <CardAccordion />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Accordions
+export default Accordions;

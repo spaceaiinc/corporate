@@ -1,22 +1,22 @@
-'use client'
-import TextFormInput from '@/components/form/TextFormInput'
-import PasswordFormInput from '@/components/form/PasswordFormInput'
-import { yupResolver } from '@hookform/resolvers/yup'
-import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
+"use client";
+import TextFormInput from "@/components/form/TextFormInput";
+import PasswordFormInput from "@/components/form/PasswordFormInput";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 const SignUpForm = () => {
   const registerFormSchema = yup.object({
-    name: yup.string().required('Please enter your full name'),
+    name: yup.string().required("Please enter your full name"),
     email: yup
       .string()
-      .email('Please enter a valid email')
-      .required('Please enter your email'),
-    password: yup.string().required('Please enter your password'),
-  })
+      .email("Please enter a valid email")
+      .required("Please enter your email"),
+    password: yup.string().required("Please enter your password"),
+  });
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(registerFormSchema),
-  })
+  });
   return (
     <form onSubmit={handleSubmit(() => {})} className="shrink">
       <TextFormInput
@@ -73,7 +73,7 @@ const SignUpForm = () => {
         </button>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default SignUpForm
+export default SignUpForm;

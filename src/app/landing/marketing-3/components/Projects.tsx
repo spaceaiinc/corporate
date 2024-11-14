@@ -1,7 +1,7 @@
-import marketing2 from '@/assets/images/landing/marketing-3/img-2.jpg'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import Image from 'next/image'
+import marketing2 from "@/assets/images/landing/marketing-3/img-2.jpg";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

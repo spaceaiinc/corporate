@@ -1,25 +1,25 @@
-'use client'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { yupResolver } from '@hookform/resolvers/yup'
-import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
-import TextFormInput from '@/components/form/TextFormInput'
+"use client";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import TextFormInput from "@/components/form/TextFormInput";
 
 const Contact = () => {
   const contactFormSchema = yup.object({
     email: yup
       .string()
-      .email('Please enter a valid email')
-      .required('Please enter your email'),
-    name: yup.string().required('Please enter your name'),
-    subject: yup.string().required('Please enter your subject name'),
-    requirement: yup.string().required('Please enter your requirements'),
-  })
+      .email("Please enter a valid email")
+      .required("Please enter your email"),
+    name: yup.string().required("Please enter your name"),
+    subject: yup.string().required("Please enter your subject name"),
+    requirement: yup.string().required("Please enter your requirements"),
+  });
 
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(contactFormSchema),
-  })
+  });
   return (
     <section className="bg-default-100 bg-[url('../images/other/bg-lines-2.png')] bg-cover bg-no-repeat py-10 dark:bg-default-50 dark:bg-[url('../images/other/bg-lines-2-dark.png')] lg:py-20">
       <div className="container">
@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

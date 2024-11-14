@@ -1,15 +1,15 @@
-'use client'
-import Image from 'next/image'
-import ebook18 from '@/assets/images/landing/ebook/img-18.png'
-import { LuChevronLeft, LuChevronRight, LuStar } from 'react-icons/lu'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules'
+"use client";
+import Image from "next/image";
+import ebook18 from "@/assets/images/landing/ebook/img-18.png";
+import { LuChevronLeft, LuChevronRight, LuStar } from "react-icons/lu";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
 
-import { testimonialSlides } from '../data'
+import { testimonialSlides } from "../data";
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const TestimonialSlider = () => {
   return (
@@ -45,12 +45,12 @@ const TestimonialSlider = () => {
                 modules={[FreeMode, Navigation, Thumbs, Pagination]}
                 loop
                 navigation={{
-                  prevEl: '.testimonials-button-prev',
-                  nextEl: '.testimonials-button-next',
+                  prevEl: ".testimonials-button-prev",
+                  nextEl: ".testimonials-button-next",
                 }}
                 pagination={{
                   clickable: true,
-                  el: '.swiper-pagination',
+                  el: ".swiper-pagination",
                 }}
                 className="testimonials relative rounded-md"
               >
@@ -85,12 +85,12 @@ const TestimonialSlider = () => {
                                 key={idx}
                                 className="h-5 w-5 fill-yellow-400 stroke-yellow-400"
                               />
-                            )
+                            );
                           })}
                         </div>
                       </div>
                     </SwiperSlide>
-                  )
+                  );
                 })}
               </Swiper>
               <div className="hidden lg:block">
@@ -114,7 +114,7 @@ const TestimonialSlider = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { LuEye, LuPartyPopper } from 'react-icons/lu'
+import Image from "next/image";
+import Link from "next/link";
+import { LuEye, LuPartyPopper } from "react-icons/lu";
 
-import dashboardHero from '@/assets/images/other/dashboard-hero.png'
+import dashboardHero from "@/assets/images/other/dashboard-hero.png";
 
 const ProgressCard = () => {
   return (
@@ -45,7 +45,7 @@ const ProgressCard = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProgressCard
+export default ProgressCard;

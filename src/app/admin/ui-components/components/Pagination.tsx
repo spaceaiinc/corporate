@@ -1,5 +1,5 @@
-import { ComponentContainerCard } from '@/components'
-import { LuChevronLeft, LuChevronRight } from 'react-icons/lu'
+import { ComponentContainerCard } from "@/components";
+import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 
 const SimplePagination = () => {
   return (
@@ -40,8 +40,8 @@ const SimplePagination = () => {
         </button>
       </nav>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const BorderGroupPagination = () => {
   return (
@@ -80,8 +80,8 @@ const BorderGroupPagination = () => {
         </button>
       </nav>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 const Pagination = () => {
   return (
     <div id="pagination" className="scroll-mt-40">
@@ -91,7 +91,7 @@ const Pagination = () => {
         <BorderGroupPagination />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Pagination
+export default Pagination;

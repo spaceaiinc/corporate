@@ -1,9 +1,9 @@
-import portfolio2 from '@/assets/images/landing/portfolio-2/img-2.jpg'
-import portfolio3 from '@/assets/images/landing/portfolio-2/img-3.jpg'
-import portfolio4 from '@/assets/images/landing/portfolio-2/img-4.jpg'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import Image from 'next/image'
+import portfolio2 from "@/assets/images/landing/portfolio-2/img-2.jpg";
+import portfolio3 from "@/assets/images/landing/portfolio-2/img-3.jpg";
+import portfolio4 from "@/assets/images/landing/portfolio-2/img-4.jpg";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import Image from "next/image";
 const Projects = () => {
   return (
     <section id="project" className="py-10 lg:py-20">
@@ -79,7 +79,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

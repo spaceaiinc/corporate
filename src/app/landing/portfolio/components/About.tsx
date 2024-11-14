@@ -1,14 +1,14 @@
-import { LuCheck } from 'react-icons/lu'
-import Image from 'next/image'
+import { LuCheck } from "react-icons/lu";
+import Image from "next/image";
 
-import portfolio6 from '@/assets/images/landing/portfolio/img-6.jpg'
+import portfolio6 from "@/assets/images/landing/portfolio/img-6.jpg";
 
 const about = [
-  'Boot Your Business',
-  'Marketing Support',
-  'Talented Teams',
-  '24/7 Strong Support',
-]
+  "Boot Your Business",
+  "Marketing Support",
+  "Talented Teams",
+  "24/7 Strong Support",
+];
 const About = () => {
   return (
     <section id="about" className="py-10 lg:py-20">
@@ -71,7 +71,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

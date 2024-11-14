@@ -1,5 +1,5 @@
-import PreviewCard from './PreviewCard'
-import { authDemos } from './data'
+import PreviewCard from "./PreviewCard";
+import { authDemos } from "./data";
 
 const SecurityDemos = () => {
   return (
@@ -32,7 +32,7 @@ const SecurityDemos = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SecurityDemos
+export default SecurityDemos;

@@ -1,4 +1,4 @@
-import charityBackgroundImg from '@/assets/images/landing/charity/bg-2.png'
+import charityBackgroundImg from "@/assets/images/landing/charity/bg-2.png";
 
 const Counter = () => {
   return (
@@ -27,7 +27,7 @@ const Counter = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;

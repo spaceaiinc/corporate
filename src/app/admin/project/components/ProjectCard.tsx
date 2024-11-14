@@ -1,7 +1,7 @@
-import { cn } from '@/utils'
-import { LuAlignJustify, LuCalendar, LuMessageSquare } from 'react-icons/lu'
-import { ProjectType } from '../data'
-import Image from 'next/image'
+import { cn } from "@/utils";
+import { LuAlignJustify, LuCalendar, LuMessageSquare } from "react-icons/lu";
+import { ProjectType } from "../data";
+import Image from "next/image";
 
 const ProjectCard = ({ project }: { project: ProjectType }) => {
   const {
@@ -16,19 +16,19 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
     task,
     title,
     text,
-  } = project
+  } = project;
   return (
     <div className="overflow-hidden rounded-md border border-default-200 bg-white dark:bg-default-50">
       <div className="flex items-center justify-between border-b border-default-200 px-4 py-3">
         <h5 className="text-lg text-default-900">{title}</h5>
         <div
           className={cn(
-            'rounded-md px-1.5 py-1 text-xs font-medium text-white',
-            status === 'Pending'
-              ? 'bg-amber-500'
-              : status === 'In Progress'
-                ? 'bg-primary'
-                : 'bg-teal-500'
+            "rounded-md px-1.5 py-1 text-xs font-medium text-white",
+            status === "Pending"
+              ? "bg-amber-500"
+              : status === "In Progress"
+                ? "bg-primary"
+                : "bg-teal-500",
           )}
           role="alert"
         >
@@ -82,7 +82,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
             </div>
             <div className="flex items-center gap-2">
               <div className="h-1.5 w-full rounded-full bg-default-200">
-                <div className={cn(progressClassName, 'h-1.5 rounded-full')} />
+                <div className={cn(progressClassName, "h-1.5 rounded-full")} />
               </div>
               <span>{progress}%</span>
             </div>
@@ -90,7 +90,7 @@ const ProjectCard = ({ project }: { project: ProjectType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

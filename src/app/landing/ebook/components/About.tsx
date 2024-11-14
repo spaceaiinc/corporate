@@ -1,8 +1,8 @@
-import { LuDot, LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuDot, LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import ebook15 from '@/assets/images/landing/ebook/img-15.jpg'
-import Image from 'next/image'
+import ebook15 from "@/assets/images/landing/ebook/img-15.jpg";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -39,7 +39,7 @@ const About = () => {
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-10 w-10 text-primary" />
                 <p className="text-base">
-                  Lorem ipsum is smiply dummy text of the printing and lorem{' '}
+                  Lorem ipsum is smiply dummy text of the printing and lorem{" "}
                   <br /> Donec posuere vulputate.
                 </p>
               </li>
@@ -67,7 +67,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -3,8 +3,8 @@ import {
   LuLayers,
   LuLayoutGrid,
   LuMoveRight,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
 const Features = () => {
   return (
@@ -78,7 +78,7 @@ const Features = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

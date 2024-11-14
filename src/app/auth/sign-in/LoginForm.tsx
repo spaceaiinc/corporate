@@ -1,11 +1,11 @@
-'use client'
-import TextFormInput from '@/components/form/TextFormInput'
-import PasswordFormInput from '@/components/form/PasswordFormInput'
-import useLogin from './useLogin'
-import Link from 'next/link'
+"use client";
+import TextFormInput from "@/components/form/TextFormInput";
+import PasswordFormInput from "@/components/form/PasswordFormInput";
+import useLogin from "./useLogin";
+import Link from "next/link";
 
 const LoginForm = () => {
-  const { loading, login, control } = useLogin()
+  const { loading, login, control } = useLogin();
 
   return (
     <form className="shrink" onSubmit={login}>
@@ -61,7 +61,7 @@ const LoginForm = () => {
         </button>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default LoginForm
+export default LoginForm;

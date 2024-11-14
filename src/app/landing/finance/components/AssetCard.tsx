@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import type { AssetType } from '../types'
-import { LuMoveRight } from 'react-icons/lu'
-import Image from 'next/image'
+import Link from "next/link";
+import type { AssetType } from "../types";
+import { LuMoveRight } from "react-icons/lu";
+import Image from "next/image";
 
 const AssetCard = ({ asset }: { asset: AssetType }) => {
   return (
@@ -29,7 +29,7 @@ const AssetCard = ({ asset }: { asset: AssetType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AssetCard
+export default AssetCard;

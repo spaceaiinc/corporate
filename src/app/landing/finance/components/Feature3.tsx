@@ -1,8 +1,8 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import finance10 from '@/assets/images/landing/finance/img-10.jpg'
-import Image from 'next/image'
+import finance10 from "@/assets/images/landing/finance/img-10.jpg";
+import Image from "next/image";
 
 const Feature3 = () => {
   return (
@@ -14,13 +14,13 @@ const Feature3 = () => {
               Access Advisors
             </span>
             <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
-              {' '}
+              {" "}
               Personalized Expert Support and Feedback
             </h2>
             <p className="mt-5 text-base">
               Receive expert support and valuable feedback tailored to your
               business&apos;s needs. Our advisors are here to help you navigate
-              financial challenges and make informed decisions.{' '}
+              financial challenges and make informed decisions.{" "}
             </p>
             <div className="group mt-5">
               <Link
@@ -62,7 +62,7 @@ const Feature3 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature3
+export default Feature3;

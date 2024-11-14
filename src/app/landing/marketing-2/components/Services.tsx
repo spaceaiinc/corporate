@@ -4,8 +4,8 @@ import {
   LuFileText,
   LuMoveRight,
   LuRocket,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -159,7 +159,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

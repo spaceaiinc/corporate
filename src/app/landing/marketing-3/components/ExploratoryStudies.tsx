@@ -1,5 +1,5 @@
-import Marketing3 from '@/assets/images/landing/marketing-3/img-3.jpg'
-import Image from 'next/image'
+import Marketing3 from "@/assets/images/landing/marketing-3/img-3.jpg";
+import Image from "next/image";
 
 const ExploratoryStudies = () => {
   return (
@@ -35,7 +35,7 @@ const ExploratoryStudies = () => {
                   <div
                     className="flex flex-col justify-center overflow-hidden bg-primary"
                     role="progressbar"
-                    style={{ width: '75%' }}
+                    style={{ width: "75%" }}
                     aria-valuenow={46}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -53,7 +53,7 @@ const ExploratoryStudies = () => {
                   <div
                     className="flex flex-col justify-center overflow-hidden bg-primary"
                     role="progressbar"
-                    style={{ width: '95%' }}
+                    style={{ width: "95%" }}
                     aria-valuenow={46}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -71,7 +71,7 @@ const ExploratoryStudies = () => {
                   <div
                     className="flex flex-col justify-center overflow-hidden bg-primary"
                     role="progressbar"
-                    style={{ width: '85%' }}
+                    style={{ width: "85%" }}
                     aria-valuenow={46}
                     aria-valuemin={0}
                     aria-valuemax={100}
@@ -83,7 +83,7 @@ const ExploratoryStudies = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ExploratoryStudies
+export default ExploratoryStudies;

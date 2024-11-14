@@ -1,7 +1,7 @@
-import ebook5 from '@/assets/images/landing/ebook/img-5.jpg'
-import { allCourse } from '../data'
-import CourseCard from './CourseCard'
-import Image from 'next/image'
+import ebook5 from "@/assets/images/landing/ebook/img-5.jpg";
+import { allCourse } from "../data";
+import CourseCard from "./CourseCard";
+import Image from "next/image";
 
 const Courses = () => {
   return (
@@ -33,7 +33,7 @@ const Courses = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Courses
+export default Courses;

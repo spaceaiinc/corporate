@@ -1,4 +1,4 @@
-import { services } from '../data'
+import { services } from "../data";
 
 const Services = () => {
   return (
@@ -20,7 +20,7 @@ const Services = () => {
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, idx) => {
-            const Icon = service.icon
+            const Icon = service.icon;
             return (
               <div
                 key={idx}
@@ -36,12 +36,12 @@ const Services = () => {
                 </h2>
                 <p className="mt-3 text-base">{service.description}</p>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

@@ -1,11 +1,11 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import charity8 from '@/assets/images/landing/charity/img-8.png'
-import charityBackground3 from '@/assets/images/landing/charity/bg-3.png'
-import charityBackground4 from '@/assets/images/landing/charity/bg-4.png'
-import charityBackground5 from '@/assets/images/landing/charity/bg-5.png'
-import Image from 'next/image'
+import charity8 from "@/assets/images/landing/charity/img-8.png";
+import charityBackground3 from "@/assets/images/landing/charity/bg-3.png";
+import charityBackground4 from "@/assets/images/landing/charity/bg-4.png";
+import charityBackground5 from "@/assets/images/landing/charity/bg-5.png";
+import Image from "next/image";
 
 const Blog = () => {
   return (
@@ -53,7 +53,7 @@ const Blog = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

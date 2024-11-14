@@ -1,30 +1,30 @@
-'use client'
-import { useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { LuArrowUpRight } from 'react-icons/lu'
-import Link from 'next/link'
-import type { Swiper as SwiperType } from 'swiper'
-import { Thumbs, Controller, Autoplay, EffectFade } from 'swiper/modules'
+"use client";
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { LuArrowUpRight } from "react-icons/lu";
+import Link from "next/link";
+import type { Swiper as SwiperType } from "swiper";
+import { Thumbs, Controller, Autoplay, EffectFade } from "swiper/modules";
 
-import { homeSwiperSlides } from '../data'
+import { homeSwiperSlides } from "../data";
 
-import bgLineImg from '@/assets/images/other/bg-lines-1.svg'
+import bgLineImg from "@/assets/images/other/bg-lines-1.svg";
 
-import agency1 from '@/assets/images/landing/agency/img-1.jpg'
-import agency2 from '@/assets/images/landing/agency/img-2.jpg'
-import agency3 from '@/assets/images/landing/agency/img-3.jpg'
+import agency1 from "@/assets/images/landing/agency/img-1.jpg";
+import agency2 from "@/assets/images/landing/agency/img-2.jpg";
+import agency3 from "@/assets/images/landing/agency/img-3.jpg";
 
-import 'swiper/css'
-import 'swiper/css/effect-fade'
-import Image from 'next/image'
+import "swiper/css";
+import "swiper/css/effect-fade";
+import Image from "next/image";
 
-const swiperImages = [agency1, agency2, agency3]
+const swiperImages = [agency1, agency2, agency3];
 const Home = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   return (
     <section
       id="home"
-      className={'bg-cover bg-no-repeat'}
+      className={"bg-cover bg-no-repeat"}
       style={{ backgroundImage: `url(${bgLineImg.src})` }}
     >
       <div className="relative grid grid-cols-1 items-center xl:grid-cols-5">
@@ -68,7 +68,7 @@ const Home = () => {
                         </Link>
                       </div>
                     </SwiperSlide>
-                  )
+                  );
                 })}
               </Swiper>
             </div>
@@ -90,13 +90,13 @@ const Home = () => {
                   <Image alt="heroImg" src={image} className="h-full w-full" />
                   <div className="absolute inset-0 bg-black/25" />
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,9 +1,9 @@
-import creative2 from '@/assets/images/landing/creative/img-2.jpg'
-import creative7 from '@/assets/images/landing/creative/img-7.jpg'
-import { faqContent } from '../data'
-import { LuChevronUp, LuHelpCircle } from 'react-icons/lu'
-import { cn } from '@/utils'
-import Image from 'next/image'
+import creative2 from "@/assets/images/landing/creative/img-2.jpg";
+import creative7 from "@/assets/images/landing/creative/img-7.jpg";
+import { faqContent } from "../data";
+import { LuChevronUp, LuHelpCircle } from "react-icons/lu";
+import { cn } from "@/utils";
+import Image from "next/image";
 
 const FAQs = () => {
   return (
@@ -52,8 +52,8 @@ const FAQs = () => {
                     <div
                       key={idx}
                       className={cn(
-                        'hs-accordion overflow-hidden rounded-lg border border-default-200 bg-default-50 backdrop-blur-3xl',
-                        { active: idx == 0 }
+                        "hs-accordion overflow-hidden rounded-lg border border-default-200 bg-default-50 backdrop-blur-3xl",
+                        { active: idx == 0 },
                       )}
                       id="faq-2"
                     >
@@ -70,8 +70,8 @@ const FAQs = () => {
                       <div
                         id="faq-2"
                         className={cn(
-                          'hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300',
-                          { hidden: idx != 0 }
+                          "hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300",
+                          { hidden: idx != 0 },
                         )}
                         aria-labelledby="faq-2"
                       >
@@ -80,7 +80,7 @@ const FAQs = () => {
                         </div>
                       </div>
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -88,7 +88,7 @@ const FAQs = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

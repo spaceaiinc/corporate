@@ -1,6 +1,6 @@
-import { LuMoveRight, LuPlay } from 'react-icons/lu'
-import Link from 'next/link'
-import marketing5 from '@/assets/images/landing/marketing/img-5.jpg'
+import { LuMoveRight, LuPlay } from "react-icons/lu";
+import Link from "next/link";
+import marketing5 from "@/assets/images/landing/marketing/img-5.jpg";
 
 const About = () => {
   return (
@@ -71,7 +71,7 @@ const About = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

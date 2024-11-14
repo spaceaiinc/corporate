@@ -1,6 +1,6 @@
-import { ComponentContainerCard } from '@/components'
-import { LuX } from 'react-icons/lu'
-import Link from 'next/link'
+import { ComponentContainerCard } from "@/components";
+import { LuX } from "react-icons/lu";
+import Link from "next/link";
 
 const Modals = () => {
   return (
@@ -88,7 +88,7 @@ const Modals = () => {
         </ComponentContainerCard>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Modals
+export default Modals;

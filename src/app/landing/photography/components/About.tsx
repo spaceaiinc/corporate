@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { LuMoveRight } from 'react-icons/lu'
+import Image from "next/image";
+import Link from "next/link";
+import { LuMoveRight } from "react-icons/lu";
 
-import photography13 from '@/assets/images/landing/photography/img-13.jpg'
-import photography14 from '@/assets/images/landing/photography/img-14.jpg'
-import photography7 from '@/assets/images/landing/photography/img-7.jpg'
+import photography13 from "@/assets/images/landing/photography/img-13.jpg";
+import photography14 from "@/assets/images/landing/photography/img-14.jpg";
+import photography7 from "@/assets/images/landing/photography/img-7.jpg";
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

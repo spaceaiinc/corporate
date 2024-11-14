@@ -1,9 +1,9 @@
-import { cn } from '@/utils'
-import { faqContent } from '../data'
-import { LuChevronUp } from 'react-icons/lu'
+import { cn } from "@/utils";
+import { faqContent } from "../data";
+import { LuChevronUp } from "react-icons/lu";
 
-import agencyImg from '@/assets/images/landing/agency-2/4.svg'
-import Image from 'next/image'
+import agencyImg from "@/assets/images/landing/agency-2/4.svg";
+import Image from "next/image";
 
 const FAQs = () => {
   return (
@@ -30,8 +30,8 @@ const FAQs = () => {
                   <div
                     key={idx}
                     className={cn(
-                      'hs-accordion overflow-hidden rounded-lg border border-default-200',
-                      { active: idx == 0 }
+                      "hs-accordion overflow-hidden rounded-lg border border-default-200",
+                      { active: idx == 0 },
                     )}
                     id="faq-1"
                   >
@@ -47,8 +47,8 @@ const FAQs = () => {
                     <div
                       id="faq-accordion-1"
                       className={cn(
-                        'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                        { hidden: idx != 0 }
+                        "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                        { hidden: idx != 0 },
                       )}
                       aria-labelledby="faq-1"
                     >
@@ -57,14 +57,14 @@ const FAQs = () => {
                       </div>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

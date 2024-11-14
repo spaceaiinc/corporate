@@ -1,52 +1,50 @@
-'use client'
-import { LayoutProvider } from '@/context'
-import { SessionProvider } from 'next-auth/react'
-import { usePathname } from 'next/navigation'
-import { useEffect, type ReactNode } from 'react'
+"use client";
+import { LayoutProvider } from "@/context";
+import { SessionProvider } from "next-auth/react";
+import { usePathname } from "next/navigation";
+import { useEffect, type ReactNode } from "react";
 
 const handleChangeTitle = () => {
-  if (document.visibilityState == 'hidden')
-    document.title = 'SpaceAI - Come back!'
-  else
-    document.title =
-      'SpaceAI'
-}
+  if (document.visibilityState == "hidden")
+    document.title = "SpaceAI - Come back!";
+  else document.title = "SpaceAI";
+};
 
 const AppsProviderWrapper = ({
   children,
 }: Readonly<{ children: ReactNode }>) => {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   useEffect(() => {
     if (document) {
-      const e = document.querySelector<HTMLDivElement>('#__next_splash')
+      const e = document.querySelector<HTMLDivElement>("#__next_splash");
       if (e?.hasChildNodes()) {
-        document.querySelector('#splash-screen')?.classList.add('remove')
+        document.querySelector("#splash-screen")?.classList.add("remove");
       }
       // e?.addEventListener('DOMNodeInserted', () => {
       //   document.querySelector('#splash-screen')?.classList.add('remove')
       // })
     }
 
-    import('preline/preline')
+    import("preline/preline");
 
-    document.addEventListener('visibilitychange', handleChangeTitle)
+    document.addEventListener("visibilitychange", handleChangeTitle);
     return () => {
-      document.removeEventListener('visibilitychange', handleChangeTitle)
-    }
-  }, [])
+      document.removeEventListener("visibilitychange", handleChangeTitle);
+    };
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
-      if (window.HSStaticMethods) window.HSStaticMethods.autoInit()
-    }, 400)
-  }, [pathname])
+      if (window.HSStaticMethods) window.HSStaticMethods.autoInit();
+    }, 400);
+  }, [pathname]);
 
   return (
     <SessionProvider>
       <LayoutProvider>{children}</LayoutProvider>
     </SessionProvider>
-  )
-}
+  );
+};
 
-export default AppsProviderWrapper
+export default AppsProviderWrapper;

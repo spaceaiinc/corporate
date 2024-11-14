@@ -1,14 +1,14 @@
-import Link from 'next/link'
+import Link from "next/link";
 import {
   LuClapperboard,
   LuLayers,
   LuMoveRight,
   LuShield,
   LuUserCheck2,
-} from 'react-icons/lu'
+} from "react-icons/lu";
 
-import ebook1 from '@/assets/images/landing/ebook/img-1.jpg'
-import Image from 'next/image'
+import ebook1 from "@/assets/images/landing/ebook/img-1.jpg";
+import Image from "next/image";
 
 const Benefits = () => {
   return (
@@ -146,7 +146,7 @@ const Benefits = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Benefits
+export default Benefits;

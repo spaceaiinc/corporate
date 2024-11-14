@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { topPerformers } from '../data'
-import { LuLogOut, LuMoreVertical, LuPencil, LuTrash2 } from 'react-icons/lu'
+import Image from "next/image";
+import Link from "next/link";
+import { topPerformers } from "../data";
+import { LuLogOut, LuMoreVertical, LuPencil, LuTrash2 } from "react-icons/lu";
 
 const TopPerformers = () => {
   return (
@@ -56,11 +56,11 @@ const TopPerformers = () => {
                 </div>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TopPerformers
+export default TopPerformers;

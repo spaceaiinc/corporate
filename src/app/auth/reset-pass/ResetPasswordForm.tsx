@@ -1,24 +1,24 @@
-'use client'
-import PasswordFormInput from '@/components/form/PasswordFormInput'
-import { yupResolver } from '@hookform/resolvers/yup'
-import Link from 'next/link'
-import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
+"use client";
+import PasswordFormInput from "@/components/form/PasswordFormInput";
+import { yupResolver } from "@hookform/resolvers/yup";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 const ResetPasswordForm = () => {
   const resetFormSchema = yup.object({
-    newPassword: yup.string().required('Please enter your new password'),
+    newPassword: yup.string().required("Please enter your new password"),
     confirmPassword: yup
       .string()
-      .oneOf([yup.ref('newPassword')], 'Passwords must match'),
-  })
+      .oneOf([yup.ref("newPassword")], "Passwords must match"),
+  });
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(resetFormSchema),
     defaultValues: {
-      newPassword: 'password',
-      confirmPassword: 'password',
+      newPassword: "password",
+      confirmPassword: "password",
     },
-  })
+  });
   return (
     <form onSubmit={handleSubmit(() => {})} className="mt-10 shrink">
       <PasswordFormInput
@@ -49,7 +49,7 @@ const ResetPasswordForm = () => {
         </button>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default ResetPasswordForm
+export default ResetPasswordForm;

@@ -1,4 +1,4 @@
-import { features } from '../data'
+import { features } from "../data";
 
 const Features = () => {
   return (
@@ -31,13 +31,13 @@ const Features = () => {
                   </h2>
                   <p className="mt-4 text-base">{feature.description}</p>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

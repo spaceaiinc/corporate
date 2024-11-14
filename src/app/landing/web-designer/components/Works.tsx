@@ -1,25 +1,25 @@
-'use client'
-import { useState } from 'react'
-import { WorkType } from '../types'
-import { works } from '../data'
-import Link from 'next/link'
-import { LuMoveRight } from 'react-icons/lu'
-import Image from 'next/image'
+"use client";
+import { useState } from "react";
+import { WorkType } from "../types";
+import { works } from "../data";
+import Link from "next/link";
+import { LuMoveRight } from "react-icons/lu";
+import Image from "next/image";
 
 const Works = () => {
-  const [work, setWork] = useState<WorkType[]>(works)
-  const [category, setCategory] = useState<string>('all')
+  const [work, setWork] = useState<WorkType[]>(works);
+  const [category, setCategory] = useState<string>("all");
 
   const filterImages = (category: string) => {
-    setCategory(category)
+    setCategory(category);
     setTimeout(() => {
       const workAlbums =
-        category === 'all'
+        category === "all"
           ? works
-          : works.filter((album) => album.category?.includes(category))
-      setWork(workAlbums)
-    }, 300)
-  }
+          : works.filter((album) => album.category?.includes(category));
+      setWork(workAlbums);
+    }, 300);
+  };
 
   return (
     <section id="work" className="py-20">
@@ -32,36 +32,36 @@ const Works = () => {
                 <div className="filter-options flex list-none flex-wrap justify-center gap-4">
                   <Link
                     href=""
-                    className={`${category === 'all' ? 'active' : ''}`}
-                    onClick={() => filterImages('all')}
+                    className={`${category === "all" ? "active" : ""}`}
+                    onClick={() => filterImages("all")}
                   >
                     All
                   </Link>
                   <Link
                     href=""
-                    className={`${category === 'Web-Design' ? 'active' : ''}`}
-                    onClick={() => filterImages('Web-Design')}
+                    className={`${category === "Web-Design" ? "active" : ""}`}
+                    onClick={() => filterImages("Web-Design")}
                   >
                     Web Design
                   </Link>
                   <Link
                     href=""
-                    className={`${category === 'Graphic-Design' ? 'active' : ''}`}
-                    onClick={() => filterImages('Graphic-Design')}
+                    className={`${category === "Graphic-Design" ? "active" : ""}`}
+                    onClick={() => filterImages("Graphic-Design")}
                   >
                     Graphic Design
                   </Link>
                   <Link
                     href=""
-                    className={`${category === 'Illustrator' ? 'active' : ''}`}
-                    onClick={() => filterImages('Illustrator')}
+                    className={`${category === "Illustrator" ? "active" : ""}`}
+                    onClick={() => filterImages("Illustrator")}
                   >
                     Illustrator
                   </Link>
                   <Link
                     href=""
-                    className={`${category === 'Photography' ? 'active' : ''}`}
-                    onClick={() => filterImages('Photography')}
+                    className={`${category === "Photography" ? "active" : ""}`}
+                    onClick={() => filterImages("Photography")}
                   >
                     Photography
                   </Link>
@@ -111,7 +111,7 @@ const Works = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
           {/* <div className="picture-item w-full p-3 xl:w-1/2" data-groups="[&quot;graphic design&quot;]">
             <div className="group space-y-6 overflow-hidden rounded-lg bg-default-200 p-3">
@@ -197,7 +197,7 @@ const Works = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Works
+export default Works;

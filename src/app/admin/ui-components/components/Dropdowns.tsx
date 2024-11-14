@@ -1,4 +1,4 @@
-import { ComponentContainerCard } from '@/components'
+import { ComponentContainerCard } from "@/components";
 import {
   LuChevronDown,
   LuCog,
@@ -6,11 +6,11 @@ import {
   LuMic,
   LuMoreVertical,
   LuUserCircle,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import Image from 'next/image'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import Image from "next/image";
 
 const DefaultDropDowns = () => {
   const DropdownMenu = () => {
@@ -52,8 +52,8 @@ const DefaultDropDowns = () => {
           </li>
         </ul>
       </div>
-    )
-  }
+    );
+  };
   return (
     <ComponentContainerCard title="Default Dropdowns">
       <div className="flex flex-wrap gap-2">
@@ -129,8 +129,8 @@ const DefaultDropDowns = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const DropdownVariants = () => {
   return (
@@ -385,8 +385,8 @@ const DropdownVariants = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const Dropdowns = () => {
   return (
@@ -397,7 +397,7 @@ const Dropdowns = () => {
         <DropdownVariants />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Dropdowns
+export default Dropdowns;

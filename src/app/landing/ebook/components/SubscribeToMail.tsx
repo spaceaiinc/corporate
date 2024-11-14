@@ -1,28 +1,28 @@
-'use client'
-import TextFormInput from '@/components/form/TextFormInput'
-import { yupResolver } from '@hookform/resolvers/yup'
-import { useForm } from 'react-hook-form'
-import Image from 'next/image'
-import * as yup from 'yup'
+"use client";
+import TextFormInput from "@/components/form/TextFormInput";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
+import Image from "next/image";
+import * as yup from "yup";
 
-import ebook6 from '@/assets/images/landing/ebook/img-6.jpg'
-import ebook7 from '@/assets/images/landing/ebook/img-7.jpg'
-import ebook8 from '@/assets/images/landing/ebook/img-8.jpg'
-import ebook9 from '@/assets/images/landing/ebook/img-9.jpg'
-import ebook10 from '@/assets/images/landing/ebook/img-10.jpg'
+import ebook6 from "@/assets/images/landing/ebook/img-6.jpg";
+import ebook7 from "@/assets/images/landing/ebook/img-7.jpg";
+import ebook8 from "@/assets/images/landing/ebook/img-8.jpg";
+import ebook9 from "@/assets/images/landing/ebook/img-9.jpg";
+import ebook10 from "@/assets/images/landing/ebook/img-10.jpg";
 
-const bookImages = [ebook6, ebook7, ebook8, ebook9, ebook10]
+const bookImages = [ebook6, ebook7, ebook8, ebook9, ebook10];
 const SubscribeToMail = () => {
   const subscribeFormSchema = yup.object({
     email: yup
       .string()
-      .email('Please enter a valid email')
-      .required('Please enter your email'),
-  })
+      .email("Please enter a valid email")
+      .required("Please enter your email"),
+  });
 
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(subscribeFormSchema),
-  })
+  });
   return (
     <section className="bg-default-100 dark:bg-default-50">
       <div className="container">
@@ -117,7 +117,7 @@ const SubscribeToMail = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default SubscribeToMail
+export default SubscribeToMail;

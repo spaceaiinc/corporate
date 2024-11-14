@@ -1,10 +1,10 @@
-'use client'
-import { LuTrendingDown, LuTrendingUp } from 'react-icons/lu'
-import { StatisticType } from '../types'
-import ReactApexChart from 'react-apexcharts'
+"use client";
+import { LuTrendingDown, LuTrendingUp } from "react-icons/lu";
+import { StatisticType } from "../types";
+import ReactApexChart from "react-apexcharts";
 
 const StatisticWidget = ({ statistic }: { statistic: StatisticType }) => {
-  const { change, state, title, variant, chartOptions } = statistic
+  const { change, state, title, variant, chartOptions } = statistic;
 
   return (
     <div className="rounded-md border border-default-200 bg-white dark:bg-default-50">
@@ -15,7 +15,7 @@ const StatisticWidget = ({ statistic }: { statistic: StatisticType }) => {
               {title}
             </span>
             <span className={variant}>
-              {variant === 'text-teal-500' ? (
+              {variant === "text-teal-500" ? (
                 <>
                   <LuTrendingUp className="me-1 inline size-4" /> +
                 </>
@@ -40,7 +40,7 @@ const StatisticWidget = ({ statistic }: { statistic: StatisticType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StatisticWidget
+export default StatisticWidget;

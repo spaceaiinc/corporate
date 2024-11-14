@@ -1,19 +1,19 @@
-'use client'
-import TextFormInput from '@/components/form/TextFormInput'
-import { yupResolver } from '@hookform/resolvers/yup'
-import Link from 'next/link'
-import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
+"use client";
+import TextFormInput from "@/components/form/TextFormInput";
+import { yupResolver } from "@hookform/resolvers/yup";
+import Link from "next/link";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 const ForgotPasswordForm = () => {
   const resetFormSchema = yup.object({
-    email: yup.string().required('Please enter your email'),
-  })
+    email: yup.string().required("Please enter your email"),
+  });
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(resetFormSchema),
     defaultValues: {
-      email: 'user@demo.com',
+      email: "user@demo.com",
     },
-  })
+  });
   return (
     <form onSubmit={handleSubmit(() => {})} className="mt-10 shrink">
       <TextFormInput
@@ -41,7 +41,7 @@ const ForgotPasswordForm = () => {
         </Link>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default ForgotPasswordForm
+export default ForgotPasswordForm;

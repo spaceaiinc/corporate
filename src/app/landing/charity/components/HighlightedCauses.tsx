@@ -1,7 +1,7 @@
-import { LuArrowUpRight, LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { allCauses } from '../data'
-import Image from 'next/image'
+import { LuArrowUpRight, LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import { allCauses } from "../data";
+import Image from "next/image";
 
 const HighlightedCauses = () => {
   return (
@@ -49,7 +49,7 @@ const HighlightedCauses = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
         <div className="mt-10 rounded-xl bg-default-100 p-10 dark:bg-default-50 lg:mt-20">
@@ -72,7 +72,7 @@ const HighlightedCauses = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HighlightedCauses
+export default HighlightedCauses;

@@ -1,7 +1,7 @@
-import finance9 from '@/assets/images/landing/finance/img-9.png'
-import { LuCircle, LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import Image from 'next/image'
+import finance9 from "@/assets/images/landing/finance/img-9.png";
+import { LuCircle, LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import Image from "next/image";
 
 const Feature2 = () => {
   return (
@@ -61,7 +61,7 @@ const Feature2 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature2
+export default Feature2;

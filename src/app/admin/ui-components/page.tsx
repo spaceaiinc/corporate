@@ -1,23 +1,23 @@
-import type { Metadata } from 'next'
-const FloatingMenu = dynamic(() => import('./components/FloatingMenu'), {
+import type { Metadata } from "next";
+const FloatingMenu = dynamic(() => import("./components/FloatingMenu"), {
   ssr: false,
-})
-import AdminBreadcrumb from '@/components/AdminBreadcrumb'
-import Buttons from './components/Buttons'
-import Badges from './components/Badges'
-import Alerts from './components/Alerts'
-import Dropdowns from './components/Dropdowns'
-import Accordions from './components/Accordions'
-import NavTabs from './components/NavTabs'
-import Pagination from './components/Pagination'
-import Modals from './components/Modals'
-import Popovers from './components/Popovers'
-import Tooltips from './components/Tooltips'
-import dynamic from 'next/dynamic'
+});
+import AdminBreadcrumb from "@/components/AdminBreadcrumb";
+import Buttons from "./components/Buttons";
+import Badges from "./components/Badges";
+import Alerts from "./components/Alerts";
+import Dropdowns from "./components/Dropdowns";
+import Accordions from "./components/Accordions";
+import NavTabs from "./components/NavTabs";
+import Pagination from "./components/Pagination";
+import Modals from "./components/Modals";
+import Popovers from "./components/Popovers";
+import Tooltips from "./components/Tooltips";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
-  title: 'Ui Components',
-}
+  title: "Ui Components",
+};
 
 const UIComponents = () => {
   return (
@@ -47,7 +47,7 @@ const UIComponents = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default UIComponents
+export default UIComponents;

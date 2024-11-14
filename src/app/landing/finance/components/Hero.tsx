@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import { LuMoveRight, LuPlay } from 'react-icons/lu'
-import Image from 'next/image'
-import TestimonialSlider from './TestimonialSlider'
+import Link from "next/link";
+import { LuMoveRight, LuPlay } from "react-icons/lu";
+import Image from "next/image";
+import TestimonialSlider from "./TestimonialSlider";
 
-import financeBackground from '@/assets/images/landing/finance/bg-1.png'
-import financeBackground2 from '@/assets/images/landing/finance/bg-2.png'
-import finance from '@/assets/images/landing/finance/img-1.png'
+import financeBackground from "@/assets/images/landing/finance/bg-1.png";
+import financeBackground2 from "@/assets/images/landing/finance/bg-2.png";
+import finance from "@/assets/images/landing/finance/img-1.png";
 
-import 'swiper/css'
+import "swiper/css";
 
 const Hero = () => {
   return (
@@ -103,7 +103,7 @@ const Hero = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

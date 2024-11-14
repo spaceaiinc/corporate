@@ -1,6 +1,6 @@
-'use client'
-import Image from 'next/image'
-import { allFeatures } from './data'
+"use client";
+import Image from "next/image";
+import { allFeatures } from "./data";
 
 const Features = () => {
   return (
@@ -16,7 +16,7 @@ const Features = () => {
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {allFeatures.map((feature, idx) => {
-            const Icon = feature.icon
+            const Icon = feature.icon;
             return (
               <div
                 key={idx}
@@ -25,7 +25,7 @@ const Features = () => {
                 <div className="p-6">
                   <div className="flex flex-col items-center justify-center gap-4 text-center">
                     <div className="shrink">
-                      {typeof feature.icon === 'object' ? (
+                      {typeof feature.icon === "object" ? (
                         <div className="inline-flex h-12 w-12 items-center justify-center rounded-md bg-primary-500/20 text-primary-600">
                           <Image
                             src={feature.icon}
@@ -48,7 +48,7 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
         <p className="mt-6 text-center text-base font-medium text-primary-900">
@@ -56,7 +56,7 @@ const Features = () => {
         </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

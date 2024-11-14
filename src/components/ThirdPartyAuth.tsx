@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 const ThirdPartyAuth = () => {
   return (
@@ -106,7 +106,7 @@ const ThirdPartyAuth = () => {
         </ul>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default ThirdPartyAuth
+export default ThirdPartyAuth;

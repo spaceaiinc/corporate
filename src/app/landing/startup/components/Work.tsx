@@ -1,12 +1,12 @@
-'use client'
-import GlightBox from '@/components/GlightBox'
-import Image from 'next/image'
+"use client";
+import GlightBox from "@/components/GlightBox";
+import Image from "next/image";
 
-import startup1 from '@/assets/images/landing/startup/img-1.jpg'
-import startup2 from '@/assets/images/landing/startup/img-2.jpg'
-import startup5 from '@/assets/images/landing/startup/img-5.jpg'
-import startup6 from '@/assets/images/landing/startup/img-6.jpg'
-import startup7 from '@/assets/images/landing/startup/img-7.jpg'
+import startup1 from "@/assets/images/landing/startup/img-1.jpg";
+import startup2 from "@/assets/images/landing/startup/img-2.jpg";
+import startup5 from "@/assets/images/landing/startup/img-5.jpg";
+import startup6 from "@/assets/images/landing/startup/img-6.jpg";
+import startup7 from "@/assets/images/landing/startup/img-7.jpg";
 
 const Work = () => {
   return (
@@ -156,7 +156,7 @@ const Work = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

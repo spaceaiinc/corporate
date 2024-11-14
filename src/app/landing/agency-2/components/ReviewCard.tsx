@@ -1,6 +1,6 @@
-import { LuStar } from 'react-icons/lu'
-import type { ReviewType } from '../types'
-import Image from 'next/image'
+import { LuStar } from "react-icons/lu";
+import type { ReviewType } from "../types";
+import Image from "next/image";
 
 const ReviewCard = ({ review }: { review: ReviewType }) => {
   return (
@@ -26,7 +26,7 @@ const ReviewCard = ({ review }: { review: ReviewType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ReviewCard
+export default ReviewCard;

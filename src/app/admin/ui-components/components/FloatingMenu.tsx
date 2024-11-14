@@ -1,19 +1,19 @@
-'use client'
-import { useEffect } from 'react'
-import { floatingMenu } from '../data'
+"use client";
+import { useEffect } from "react";
+import { floatingMenu } from "../data";
 
-import Gumshoe from 'gumshoejs'
+import Gumshoe from "gumshoejs";
 
 const FloatingMenu = () => {
   useEffect(() => {
-    initgumshoes()
-  }, [])
+    initgumshoes();
+  }, []);
 
   function initgumshoes() {
-    if (document.querySelector('#ui-nav a')) {
-      new Gumshoe('#ui-nav a', {
+    if (document.querySelector("#ui-nav a")) {
+      new Gumshoe("#ui-nav a", {
         offset: 150,
-      })
+      });
     }
   }
 
@@ -30,11 +30,11 @@ const FloatingMenu = () => {
                 {item.name}
               </a>
             </li>
-          )
+          );
         })}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default FloatingMenu
+export default FloatingMenu;

@@ -1,20 +1,20 @@
-const RevenueChart = dynamic(() => import('./components/RevenueChart'), {
+const RevenueChart = dynamic(() => import("./components/RevenueChart"), {
   ssr: false,
-})
-const Statistics = dynamic(() => import('./components/Statistics'), {
+});
+const Statistics = dynamic(() => import("./components/Statistics"), {
   ssr: false,
-})
-import AdminBreadcrumb from '@/components/AdminBreadcrumb'
-import ProgressCard from './components/ProgressCard'
-import RecentOrders from './components/RecentOrders'
-import Sources from './components/Sources'
-import TopPerformers from './components/TopPerformers'
-import dynamic from 'next/dynamic'
-import type { Metadata } from 'next'
+});
+import AdminBreadcrumb from "@/components/AdminBreadcrumb";
+import ProgressCard from "./components/ProgressCard";
+import RecentOrders from "./components/RecentOrders";
+import Sources from "./components/Sources";
+import TopPerformers from "./components/TopPerformers";
+import dynamic from "next/dynamic";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Dashboard',
-}
+  title: "Dashboard",
+};
 
 const Dashboard = () => {
   return (
@@ -43,7 +43,7 @@ const Dashboard = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Dashboard
+export default Dashboard;
