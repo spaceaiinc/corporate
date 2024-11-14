@@ -1,8 +1,8 @@
-import companyHero from '@/assets/images/landing/company/hero-img.png'
-import { LuBell } from 'react-icons/lu'
-import Link from 'next/link'
-import { features } from '../data'
-import Image from 'next/image'
+import companyHero from "@/assets/images/landing/company/hero-img.png";
+import { LuBell } from "react-icons/lu";
+import Link from "next/link";
+import { features } from "../data";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
         <div className="grid gap-6 lg:grid-cols-3">
           {features.map((feature, idx) => {
-            const Icon = feature.icon
+            const Icon = feature.icon;
             return (
               <div
                 key={idx}
@@ -64,12 +64,12 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

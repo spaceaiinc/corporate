@@ -1,22 +1,22 @@
-'use client'
-import { LuMoveRight } from 'react-icons/lu'
-import * as yup from 'yup'
-import { yupResolver } from '@hookform/resolvers/yup'
-import charity3 from '@/assets/images/landing/charity/img-3.jpg'
-import { useForm } from 'react-hook-form'
-import TextFormInput from '@/components/form/TextFormInput'
+"use client";
+import { LuMoveRight } from "react-icons/lu";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
+import charity3 from "@/assets/images/landing/charity/img-3.jpg";
+import { useForm } from "react-hook-form";
+import TextFormInput from "@/components/form/TextFormInput";
 
 const Newsletter = () => {
   const newsLetterFormSchema = yup.object({
     email: yup
       .string()
-      .email('Please enter a valid email')
-      .required('Please enter your email'),
-  })
+      .email("Please enter a valid email")
+      .required("Please enter your email"),
+  });
 
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(newsLetterFormSchema),
-  })
+  });
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-20"
@@ -54,7 +54,7 @@ const Newsletter = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Newsletter
+export default Newsletter;

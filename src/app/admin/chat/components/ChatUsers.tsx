@@ -1,13 +1,13 @@
-import { cn } from '@/utils'
-import { users, type ChatUser } from '../data'
-import Image from 'next/image'
+import { cn } from "@/utils";
+import { users, type ChatUser } from "../data";
+import Image from "next/image";
 
 const ChatUsers = ({
   onUserSelect,
   selectedUser,
 }: {
-  onUserSelect: (value: ChatUser) => void
-  selectedUser: ChatUser
+  onUserSelect: (value: ChatUser) => void;
+  selectedUser: ChatUser;
 }) => {
   /**
    * Activates the user
@@ -15,9 +15,9 @@ const ChatUsers = ({
    */
   const activateUser = (user: ChatUser) => {
     if (onUserSelect) {
-      onUserSelect(user)
+      onUserSelect(user);
     }
-  }
+  };
 
   return (
     <div className="overflow-hidden rounded-xl border border-default-200 bg-white dark:bg-default-50 lg:min-w-96">
@@ -30,14 +30,14 @@ const ChatUsers = ({
             <div
               className="cursor-pointer"
               onClick={() => {
-                activateUser(user)
+                activateUser(user);
               }}
               key={idx}
             >
               <div
                 className={cn(
-                  'flex items-center gap-3 px-4 py-3',
-                  selectedUser === user && 'bg-default-100'
+                  "flex items-center gap-3 px-4 py-3",
+                  selectedUser === user && "bg-default-100",
                 )}
               >
                 <Image
@@ -69,11 +69,11 @@ const ChatUsers = ({
                 </div>
               </div>
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ChatUsers
+export default ChatUsers;

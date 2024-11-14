@@ -1,5 +1,5 @@
-import { clients } from '../data'
-import ClientCard from './ClientCard'
+import { clients } from "../data";
+import ClientCard from "./ClientCard";
 
 const Testimonial = () => {
   return (
@@ -38,7 +38,7 @@ const Testimonial = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Testimonial
+export default Testimonial;

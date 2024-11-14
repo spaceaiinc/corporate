@@ -1,12 +1,12 @@
-import logoLight from '@/assets/images/logo-light.svg'
-import AdminMenu from '@/components/adminComponents/AdminMenu'
-import Image from 'next/image'
-import Link from 'next/link'
-import { LuSearch } from 'react-icons/lu'
-import AppsDropdown from './AppsDropdown'
-import EmailDropdown from './EmailDropdown'
-import MaximizeScreen from './MaximizeScreen'
-import ProfileDropdown from './ProfileDropdown'
+import logoLight from "@/assets/images/logo-light.svg";
+import AdminMenu from "@/components/adminComponents/AdminMenu";
+import Image from "next/image";
+import Link from "next/link";
+import { LuSearch } from "react-icons/lu";
+import AppsDropdown from "./AppsDropdown";
+import EmailDropdown from "./EmailDropdown";
+import MaximizeScreen from "./MaximizeScreen";
+import ProfileDropdown from "./ProfileDropdown";
 
 const TopBar = () => {
   return (
@@ -52,7 +52,7 @@ const TopBar = () => {
 
       <AdminMenu />
     </header>
-  )
-}
+  );
+};
 
-export default TopBar
+export default TopBar;

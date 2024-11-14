@@ -4,8 +4,8 @@ import {
   LuMoveRight,
   LuShoppingBag,
   LuToggleRight,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
 const Feature2 = () => {
   return (
@@ -71,7 +71,7 @@ const Feature2 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature2
+export default Feature2;

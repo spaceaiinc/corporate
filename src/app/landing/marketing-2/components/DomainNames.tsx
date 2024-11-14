@@ -1,7 +1,7 @@
-import { LuSearch } from 'react-icons/lu'
+import { LuSearch } from "react-icons/lu";
 
-import backgroundImg1 from '@/assets/images/landing/marketing-2/bg-1.png'
-import backgroundImg2 from '@/assets/images/landing/marketing-2/bg-2.png'
+import backgroundImg1 from "@/assets/images/landing/marketing-2/bg-1.png";
+import backgroundImg2 from "@/assets/images/landing/marketing-2/bg-2.png";
 
 const DomainNames = () => {
   return (
@@ -52,7 +52,7 @@ const DomainNames = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DomainNames
+export default DomainNames;

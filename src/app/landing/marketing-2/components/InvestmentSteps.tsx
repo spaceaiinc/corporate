@@ -1,5 +1,5 @@
-import { LuPlay } from 'react-icons/lu'
-import { investmentSteps } from '../data'
+import { LuPlay } from "react-icons/lu";
+import { investmentSteps } from "../data";
 
 const InvestmentSteps = () => {
   return (
@@ -18,7 +18,7 @@ const InvestmentSteps = () => {
                   </h2>
                   <div className="mt-10 grid grid-cols-1 gap-6">
                     {investmentSteps.map((step, idx) => {
-                      const Icon = step.icon
+                      const Icon = step.icon;
                       return (
                         <div
                           key={idx}
@@ -38,7 +38,7 @@ const InvestmentSteps = () => {
                             </div>
                           </div>
                         </div>
-                      )
+                      );
                     })}
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const InvestmentSteps = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default InvestmentSteps
+export default InvestmentSteps;

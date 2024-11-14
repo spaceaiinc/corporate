@@ -1,35 +1,32 @@
-import type { Metadata } from 'next'
-import { REM } from 'next/font/google'
-import { type ReactNode } from 'react'
-import NextTopLoader from 'nextjs-toploader'
-import dynamic from 'next/dynamic'
-import { Toaster } from 'sonner'
+import type { Metadata } from "next";
+import { REM } from "next/font/google";
+import { type ReactNode } from "react";
+import NextTopLoader from "nextjs-toploader";
+import dynamic from "next/dynamic";
+import { Toaster } from "sonner";
 
-import '@/assets/css/style.css'
+import "@/assets/css/style.css";
 
 const AppProvidersWrapper = dynamic(
-  () => import('@/components/AppsProviderWrapper'),
-  { ssr: false }
-)
-const BackToTop = dynamic(() => import('@/components/BackToTop'))
+  () => import("@/components/AppsProviderWrapper"),
+  { ssr: false },
+);
+const BackToTop = dynamic(() => import("@/components/BackToTop"));
 
 const rem = REM({
-  weight: ['200', '300', '400', '500', '600', '700'],
-  display: 'swap',
+  weight: ["200", "300", "400", "500", "600", "700"],
+  display: "swap",
   adjustFontFallback: false,
-  subsets: ['latin'],
-})
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: {
-    default:
-      'SpaceAI',
-    template:
-      '%s | SpaceAI',
+    default: "SpaceAI",
+    template: "%s | SpaceAI",
   },
-  description:
-    'SpaceAI',
-}
+  description: "SpaceAI",
+};
 
 const splashScreenStyles = `
 #splash-screen {
@@ -60,7 +57,7 @@ const splashScreenStyles = `
     visibility: hidden;
   }
 }
-`
+`;
 
 export default function RootLayout({
   children,
@@ -91,5 +88,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  )
+  );
 }

@@ -1,6 +1,6 @@
-import marketing1 from '@/assets/images/landing/marketing-3/img-1.jpg'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import marketing1 from "@/assets/images/landing/marketing-3/img-1.jpg";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -42,7 +42,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

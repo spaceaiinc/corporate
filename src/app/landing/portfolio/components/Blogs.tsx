@@ -1,9 +1,9 @@
-import portfolio3 from '@/assets/images/landing/portfolio/img-3.jpg'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { blogs } from '../data'
-import BlogCard from './BlogCard'
-import Image from 'next/image'
+import portfolio3 from "@/assets/images/landing/portfolio/img-3.jpg";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import { blogs } from "../data";
+import BlogCard from "./BlogCard";
+import Image from "next/image";
 
 const Blogs = () => {
   return (
@@ -50,7 +50,7 @@ const Blogs = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Blogs
+export default Blogs;

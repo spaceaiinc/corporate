@@ -1,6 +1,6 @@
-import { LuStar } from 'react-icons/lu'
-import type { TestimonialType } from '../types'
-import Image from 'next/image'
+import { LuStar } from "react-icons/lu";
+import type { TestimonialType } from "../types";
+import Image from "next/image";
 
 const ClientCard = ({ client }: { client: TestimonialType }) => {
   return (
@@ -32,7 +32,7 @@ const ClientCard = ({ client }: { client: TestimonialType }) => {
                       key={idx}
                       className="h-5 w-5 fill-yellow-300 text-yellow-300"
                     />
-                  )
+                  );
                 })}
                 <LuStar className="h-5 w-5 text-yellow-300" />
               </div>
@@ -42,7 +42,7 @@ const ClientCard = ({ client }: { client: TestimonialType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ClientCard
+export default ClientCard;

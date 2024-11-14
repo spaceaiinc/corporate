@@ -1,9 +1,9 @@
-import { ComponentContainerCard } from '@/components'
-import { toSentenceCase } from '@/helpers'
-import Link from 'next/link'
+import { ComponentContainerCard } from "@/components";
+import { toSentenceCase } from "@/helpers";
+import Link from "next/link";
 
 const Popovers = () => {
-  const placements = ['top', 'bottom', 'left', 'right']
+  const placements = ["top", "bottom", "left", "right"];
   return (
     <div id="popover" className="scroll-mt-40">
       <h4 className="mb-4 text-xl text-default-900">Popover</h4>
@@ -28,13 +28,13 @@ const Popovers = () => {
                     </div>
                   </Link>
                 </div>
-              )
+              );
             })}
           </div>
         </ComponentContainerCard>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Popovers
+export default Popovers;

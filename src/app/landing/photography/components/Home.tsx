@@ -1,13 +1,13 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { LuImage } from 'react-icons/lu'
+import Link from "next/link";
+import Image from "next/image";
+import { LuImage } from "react-icons/lu";
 
-import photography1 from '@/assets/images/landing/photography/img-1.jpg'
-import photography2 from '@/assets/images/landing/photography/img-2.jpg'
-import photography3 from '@/assets/images/landing/photography/img-3.jpg'
-import photography4 from '@/assets/images/landing/photography/img-4.jpg'
-import photography5 from '@/assets/images/landing/photography/img-5.jpg'
-import photography6 from '@/assets/images/landing/photography/img-6.jpg'
+import photography1 from "@/assets/images/landing/photography/img-1.jpg";
+import photography2 from "@/assets/images/landing/photography/img-2.jpg";
+import photography3 from "@/assets/images/landing/photography/img-3.jpg";
+import photography4 from "@/assets/images/landing/photography/img-4.jpg";
+import photography5 from "@/assets/images/landing/photography/img-5.jpg";
+import photography6 from "@/assets/images/landing/photography/img-6.jpg";
 
 const photographyImages = [
   photography1,
@@ -16,7 +16,7 @@ const photographyImages = [
   photography4,
   photography5,
   photography6,
-]
+];
 const Home = () => {
   return (
     <section id="home" className="relative overflow-hidden px-4 md:px-10">
@@ -105,7 +105,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

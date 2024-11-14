@@ -1,12 +1,12 @@
-import { ComponentContainerCard } from '@/components'
+import { ComponentContainerCard } from "@/components";
 import {
   LuAlertOctagon,
   LuAlertTriangle,
   LuCheckCircle,
   LuCircleDotDashed,
   LuSkull,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
 const DefaultAlerts = () => {
   return (
@@ -77,8 +77,8 @@ const DefaultAlerts = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const OutlineAlerts = () => {
   return (
@@ -149,8 +149,8 @@ const OutlineAlerts = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const SoftAlerts = () => {
   return (
@@ -221,8 +221,8 @@ const SoftAlerts = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const AlertWithIcon = () => {
   return (
@@ -278,8 +278,8 @@ const AlertWithIcon = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const AlertWithLink = () => {
   return (
@@ -332,8 +332,8 @@ const AlertWithLink = () => {
         </div>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const Alerts = () => {
   return (
@@ -347,7 +347,7 @@ const Alerts = () => {
         <AlertWithLink />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Alerts
+export default Alerts;

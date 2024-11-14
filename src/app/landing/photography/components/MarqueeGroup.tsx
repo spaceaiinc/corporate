@@ -1,11 +1,11 @@
 const photography = [
-  'Wildlife photography',
-  'Pet portraits',
-  'Nature photography',
-  'Wildlife photography',
-  'Pet portraits',
-  'Nature photography',
-]
+  "Wildlife photography",
+  "Pet portraits",
+  "Nature photography",
+  "Wildlife photography",
+  "Pet portraits",
+  "Nature photography",
+];
 const MarqueeGroup = () => {
   return (
     <section>
@@ -29,7 +29,7 @@ const MarqueeGroup = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MarqueeGroup
+export default MarqueeGroup;

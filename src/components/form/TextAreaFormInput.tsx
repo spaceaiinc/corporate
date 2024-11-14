@@ -1,14 +1,14 @@
-'use client'
-import { DetailedHTMLProps, TextareaHTMLAttributes } from 'react'
-import { FieldPath, FieldValues, Controller, PathValue } from 'react-hook-form'
-import { LuAlertCircle } from 'react-icons/lu'
-import { cn } from '@/utils'
-import { FormInputProps } from './TextFormInput'
+"use client";
+import { DetailedHTMLProps, TextareaHTMLAttributes } from "react";
+import { FieldPath, FieldValues, Controller, PathValue } from "react-hook-form";
+import { LuAlertCircle } from "react-icons/lu";
+import { cn } from "@/utils";
+import { FormInputProps } from "./TextFormInput";
 
 type BaseInputProps = DetailedHTMLProps<
   TextareaHTMLAttributes<HTMLTextAreaElement>,
   HTMLTextAreaElement
->
+>;
 
 const TextAreaFormInput = <
   TFieldValues extends FieldValues = FieldValues,
@@ -28,35 +28,35 @@ const TextAreaFormInput = <
   return (
     <Controller<TFieldValues, TName>
       control={control}
-      defaultValue={'' as PathValue<TFieldValues, TName>}
+      defaultValue={"" as PathValue<TFieldValues, TName>}
       render={({ field, fieldState }) => (
         <div
-          className={cn(containerClassName, 'relative', fullWidth && 'w-full')}
+          className={cn(containerClassName, "relative", fullWidth && "w-full")}
         >
           {label && (
             <label
               className={cn(
-                'mb-2 block text-sm font-medium text-default-900',
-                labelClassName
+                "mb-2 block text-sm font-medium text-default-900",
+                labelClassName,
               )}
               htmlFor={name}
             >
               {label}
             </label>
           )}
-          <div className={cn('relative', fullWidth && 'w-full')}>
+          <div className={cn("relative", fullWidth && "w-full")}>
             <textarea
               {...other}
               {...field}
               rows={rows ?? 3}
               className={cn(
-                'rounded-md border-default-200 px-3 py-2  text-default-950 focus:border-default-200 focus:ring-0',
+                "rounded-md border-default-200 px-3 py-2  text-default-950 focus:border-default-200 focus:ring-0",
                 className,
-                fullWidth && 'w-full',
+                fullWidth && "w-full",
                 {
-                  'border-red-500 focus:border-red-500':
+                  "border-red-500 focus:border-red-500":
                     !noValidate && fieldState.error?.message,
-                }
+                },
               )}
             />
             {!noValidate && fieldState.error?.message && (
@@ -74,6 +74,6 @@ const TextAreaFormInput = <
       )}
       name={name as TName}
     />
-  )
-}
-export default TextAreaFormInput
+  );
+};
+export default TextAreaFormInput;

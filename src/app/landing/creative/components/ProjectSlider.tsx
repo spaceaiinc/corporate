@@ -1,5 +1,5 @@
-import ProjectSwiper from '@/components/ProjectSwiper'
-import { portfolioSlides } from '../data'
+import ProjectSwiper from "@/components/ProjectSwiper";
+import { portfolioSlides } from "../data";
 
 const ProjectSlider = () => {
   return (
@@ -18,7 +18,7 @@ const ProjectSlider = () => {
         <ProjectSwiper slides={portfolioSlides} bgBlack />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectSlider
+export default ProjectSlider;

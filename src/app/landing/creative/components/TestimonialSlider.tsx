@@ -1,13 +1,13 @@
-'use client'
-import creative6 from '@/assets/images/landing/creative/img-6.png'
-import { LuStar } from 'react-icons/lu'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Thumbs } from 'swiper/modules'
+"use client";
+import creative6 from "@/assets/images/landing/creative/img-6.png";
+import { LuStar } from "react-icons/lu";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Thumbs } from "swiper/modules";
 
-import { testimonialSlides } from '../data'
+import { testimonialSlides } from "../data";
 
-import 'swiper/css'
-import Image from 'next/image'
+import "swiper/css";
+import Image from "next/image";
 
 const TestimonialSlider = () => {
   return (
@@ -61,19 +61,19 @@ const TestimonialSlider = () => {
                               data-lucide="star"
                               className="h-5 w-5 fill-current text-yellow-300"
                             />
-                          )
+                          );
                         })}
                       </div>
                     </div>
                   </SwiperSlide>
-                )
+                );
               })}
             </Swiper>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

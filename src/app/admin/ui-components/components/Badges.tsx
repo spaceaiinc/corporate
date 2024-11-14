@@ -1,4 +1,4 @@
-import { ComponentContainerCard } from '@/components'
+import { ComponentContainerCard } from "@/components";
 
 const DefaultBadges = () => {
   return (
@@ -39,8 +39,8 @@ const DefaultBadges = () => {
         </span>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const RoundedBadges = () => {
   return (
@@ -81,8 +81,8 @@ const RoundedBadges = () => {
         </span>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const OutlineBadges = () => {
   return (
@@ -123,8 +123,8 @@ const OutlineBadges = () => {
         </span>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const OutlineRoundedBadges = () => {
   return (
@@ -165,8 +165,8 @@ const OutlineRoundedBadges = () => {
         </span>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const SoftBadges = () => {
   return (
@@ -207,8 +207,8 @@ const SoftBadges = () => {
         </span>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const SoftRoundedBadges = () => {
   return (
@@ -249,8 +249,8 @@ const SoftRoundedBadges = () => {
         </span>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const Badges = () => {
   return (
@@ -265,7 +265,7 @@ const Badges = () => {
         <SoftRoundedBadges />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Badges
+export default Badges;

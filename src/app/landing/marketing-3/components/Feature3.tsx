@@ -1,6 +1,6 @@
-import marketing5 from '@/assets/images/landing/marketing-3/img-5.jpg'
-import marketing6 from '@/assets/images/landing/marketing-3/img-6.jpg'
-import Image from 'next/image'
+import marketing5 from "@/assets/images/landing/marketing-3/img-5.jpg";
+import marketing6 from "@/assets/images/landing/marketing-3/img-6.jpg";
+import Image from "next/image";
 
 const Feature3 = () => {
   return (
@@ -71,7 +71,7 @@ const Feature3 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature3
+export default Feature3;

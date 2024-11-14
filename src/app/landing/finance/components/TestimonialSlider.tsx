@@ -1,14 +1,14 @@
-'use client'
-import Image from 'next/image'
-import React from 'react'
-import { FaQuoteRight } from 'react-icons/fa6'
-import { LuStar } from 'react-icons/lu'
-import { Swiper, SwiperSlide } from 'swiper/react'
+"use client";
+import Image from "next/image";
+import React from "react";
+import { FaQuoteRight } from "react-icons/fa6";
+import { LuStar } from "react-icons/lu";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import avatar3 from '@/assets/images/avatars/img-3.jpg'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import avatar3 from "@/assets/images/avatars/img-3.jpg";
 
-const slideImages = [avatar1, avatar3]
+const slideImages = [avatar1, avatar3];
 
 const TestimonialSlider = () => {
   return (
@@ -37,7 +37,7 @@ const TestimonialSlider = () => {
                               data-lucide="star"
                               className="h-5 w-5 fill-yellow-300"
                             />
-                          )
+                          );
                         })}
                         <LuStar className="h-5 w-5" />
                       </span>
@@ -50,10 +50,10 @@ const TestimonialSlider = () => {
               </div>
             </div>
           </SwiperSlide>
-        )
+        );
       })}
     </Swiper>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

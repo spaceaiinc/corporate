@@ -1,6 +1,6 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { services } from '../data'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import { services } from "../data";
 
 const Services = () => {
   return (
@@ -10,11 +10,11 @@ const Services = () => {
           <div className="xl:col-span-3">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
               {services.map((service, idx) => {
-                const Icon = service.icon
+                const Icon = service.icon;
                 return (
                   <div
                     key={idx}
-                    className={`${idx % 2 == 0 ? 'xl:-mt-8' : ''}`}
+                    className={`${idx % 2 == 0 ? "xl:-mt-8" : ""}`}
                   >
                     <div className="group relative cursor-pointer rounded-xl border border-default-200 p-6">
                       <Icon className="size-10 text-default-950" />
@@ -33,7 +33,7 @@ const Services = () => {
                       </div>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -61,7 +61,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

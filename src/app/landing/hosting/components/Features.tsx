@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import hosting3 from '@/assets/images/landing/hosting/3.svg'
-import hosting5 from '@/assets/images/landing/hosting/5.svg'
-import { LuMoveRight } from 'react-icons/lu'
+import Link from "next/link";
+import Image from "next/image";
+import hosting3 from "@/assets/images/landing/hosting/3.svg";
+import hosting5 from "@/assets/images/landing/hosting/5.svg";
+import { LuMoveRight } from "react-icons/lu";
 
 const Features = () => {
   return (
@@ -67,7 +67,7 @@ const Features = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

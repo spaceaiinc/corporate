@@ -1,9 +1,9 @@
-import { LuDot } from 'react-icons/lu'
-import { PricingPlan } from '../types'
-import Link from 'next/link'
+import { LuDot } from "react-icons/lu";
+import { PricingPlan } from "../types";
+import Link from "next/link";
 
 const PricingCard = ({ pricingPlan }: { pricingPlan: PricingPlan }) => {
-  const { features, name, price, subTitle, title } = pricingPlan
+  const { features, name, price, subTitle, title } = pricingPlan;
 
   return (
     <div className="relative mx-auto w-full lg:w-full">
@@ -35,7 +35,7 @@ const PricingCard = ({ pricingPlan }: { pricingPlan: PricingPlan }) => {
                       {feature}
                     </span>
                   </li>
-                )
+                );
               })}
             </ul>
             <div className="relative z-20 mx-auto mt-5 w-full lg:w-56">
@@ -55,7 +55,7 @@ const PricingCard = ({ pricingPlan }: { pricingPlan: PricingPlan }) => {
         <div className="absolute left-0 top-0 -z-10 h-full w-full bg-default-950" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PricingCard
+export default PricingCard;

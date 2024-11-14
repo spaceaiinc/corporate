@@ -1,4 +1,4 @@
-import { services } from '../data'
+import { services } from "../data";
 
 const BusinessSolutions = () => {
   return (
@@ -20,7 +20,7 @@ const BusinessSolutions = () => {
         <div className="relative m-auto flex gap-8 overflow-hidden">
           <div className="marquee__group flex min-w-full flex-shrink-0 items-center justify-around gap-8">
             {services.map((item, idx) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <div key={idx} className="w-60 py-5">
                   <div className="rounded-xl bg-white p-6 text-center shadow-lg dark:bg-default-50">
@@ -32,7 +32,7 @@ const BusinessSolutions = () => {
                     </h4>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
           <div
@@ -40,7 +40,7 @@ const BusinessSolutions = () => {
             className="marquee__group flex min-w-full flex-shrink-0 items-center justify-around gap-8"
           >
             {services.map((item, idx) => {
-              const Icon = item.icon
+              const Icon = item.icon;
               return (
                 <div key={idx} className="w-60 py-5">
                   <div className="rounded-xl bg-white p-6 text-center shadow-lg dark:bg-default-50">
@@ -52,13 +52,13 @@ const BusinessSolutions = () => {
                     </h4>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default BusinessSolutions
+export default BusinessSolutions;

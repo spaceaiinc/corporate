@@ -1,13 +1,13 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import Image from 'next/image'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import Image from "next/image";
 
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import avatar2 from '@/assets/images/avatars/img-2.jpg'
-import avatar3 from '@/assets/images/avatars/img-3.jpg'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import avatar2 from "@/assets/images/avatars/img-2.jpg";
+import avatar3 from "@/assets/images/avatars/img-3.jpg";
 
-import portfolio1 from '@/assets/images/landing/portfolio/img-1.jpg'
-import portfolio2 from '@/assets/images/landing/portfolio/img-2.jpg'
+import portfolio1 from "@/assets/images/landing/portfolio/img-1.jpg";
+import portfolio2 from "@/assets/images/landing/portfolio/img-2.jpg";
 
 const Hero = () => {
   return (
@@ -95,7 +95,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

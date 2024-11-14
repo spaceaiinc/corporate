@@ -1,14 +1,14 @@
-import agency4 from '@/assets/images/landing/agency-2/img-4.jpg'
-import { LuChevronRight, LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import Image from 'next/image'
+import agency4 from "@/assets/images/landing/agency-2/img-4.jpg";
+import { LuChevronRight, LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import Image from "next/image";
 
 const services = [
-  'Graphic Design',
-  'Web Design',
-  'Digital Marketing',
-  'UI/UX Design',
-]
+  "Graphic Design",
+  "Web Design",
+  "Digital Marketing",
+  "UI/UX Design",
+];
 const Services = () => {
   return (
     <section id="service" className="py-10 lg:py-20">
@@ -42,7 +42,7 @@ const Services = () => {
                           <LuChevronRight className="h-6 w-6" />
                         </div>
                       </div>
-                    )
+                    );
                   })}
                 </div>
               </div>
@@ -62,7 +62,7 @@ const Services = () => {
                 <p className="mb-5 text-base">
                   Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel,
                   lacus. Sed augue ipsum, egestas nec, vestibulum et, malesuada
-                  adipiscing, dui.{' '}
+                  adipiscing, dui.{" "}
                 </p>
                 <Link href="" className=" text-lg font-medium text-default-950">
                   Read More
@@ -74,7 +74,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

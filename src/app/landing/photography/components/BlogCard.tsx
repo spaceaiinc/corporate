@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import type { BlogType } from '../types'
-import Image from 'next/image'
+import Link from "next/link";
+import type { BlogType } from "../types";
+import Image from "next/image";
 
 const BlogCard = ({ blog }: { blog: BlogType }) => {
-  const { description, image, time, title, type } = blog
+  const { description, image, time, title, type } = blog;
   return (
     <div className="overflow-hidden border border-default-200">
       <Link href="" className="group relative overflow-hidden">
@@ -28,7 +28,7 @@ const BlogCard = ({ blog }: { blog: BlogType }) => {
         </div>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

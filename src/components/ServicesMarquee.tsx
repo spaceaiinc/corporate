@@ -59,7 +59,7 @@ const ServicesMarquee = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ServicesMarquee
+export default ServicesMarquee;

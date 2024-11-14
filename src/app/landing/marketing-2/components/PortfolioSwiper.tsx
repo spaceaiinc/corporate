@@ -1,13 +1,13 @@
-'use client'
-import { LuArrowRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode } from 'swiper/modules'
+"use client";
+import { LuArrowRight } from "react-icons/lu";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
 
-import { portfolioSlides } from '../data'
+import { portfolioSlides } from "../data";
 
-import 'swiper/css'
-import Image from 'next/image'
+import "swiper/css";
+import Image from "next/image";
 
 const PortfolioSwiper = () => {
   return (
@@ -68,7 +68,7 @@ const PortfolioSwiper = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </div>
@@ -83,7 +83,7 @@ const PortfolioSwiper = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default PortfolioSwiper
+export default PortfolioSwiper;

@@ -1,6 +1,6 @@
-import marketing10 from '@/assets/images/landing/marketing-2/img-10.jpg'
-import { LuCheckCircle2 } from 'react-icons/lu'
-import Link from 'next/link'
+import marketing10 from "@/assets/images/landing/marketing-2/img-10.jpg";
+import { LuCheckCircle2 } from "react-icons/lu";
+import Link from "next/link";
 
 const ActionBox = () => {
   return (
@@ -57,7 +57,7 @@ const ActionBox = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ActionBox
+export default ActionBox;

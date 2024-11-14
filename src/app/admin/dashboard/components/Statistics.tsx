@@ -1,6 +1,6 @@
-'use client'
-import { statisticData } from '../data'
-import StatisticWidget from './StatisticWidget'
+"use client";
+import { statisticData } from "../data";
+import StatisticWidget from "./StatisticWidget";
 
 const Statistics = () => {
   return (
@@ -9,7 +9,7 @@ const Statistics = () => {
         <StatisticWidget statistic={statistic} key={idx} />
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Statistics
+export default Statistics;

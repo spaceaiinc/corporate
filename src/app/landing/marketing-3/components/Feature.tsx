@@ -1,7 +1,7 @@
-import { LuActivitySquare, LuDot } from 'react-icons/lu'
+import { LuActivitySquare, LuDot } from "react-icons/lu";
 
-import marketing4 from '@/assets/images/landing/marketing-3/img-4.svg'
-import Image from 'next/image'
+import marketing4 from "@/assets/images/landing/marketing-3/img-4.svg";
+import Image from "next/image";
 
 const Feature = () => {
   return (
@@ -47,7 +47,7 @@ const Feature = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

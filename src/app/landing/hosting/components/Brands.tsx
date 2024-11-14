@@ -1,16 +1,16 @@
-'use client'
-import { FreeMode, Thumbs } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+"use client";
+import { FreeMode, Thumbs } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import brand1 from '@/assets/images/brand/1.png'
-import brand2 from '@/assets/images/brand/2.png'
-import brand3 from '@/assets/images/brand/3.png'
-import brand4 from '@/assets/images/brand/4.png'
-import brand5 from '@/assets/images/brand/5.png'
-import brand6 from '@/assets/images/brand/6.png'
-import Image from 'next/image'
+import brand1 from "@/assets/images/brand/1.png";
+import brand2 from "@/assets/images/brand/2.png";
+import brand3 from "@/assets/images/brand/3.png";
+import brand4 from "@/assets/images/brand/4.png";
+import brand5 from "@/assets/images/brand/5.png";
+import brand6 from "@/assets/images/brand/6.png";
+import Image from "next/image";
 
-const brands = [brand1, brand2, brand3, brand4, brand5, brand6]
+const brands = [brand1, brand2, brand3, brand4, brand5, brand6];
 const Brands = () => {
   return (
     <section className="py-10 lg:py-20">
@@ -49,7 +49,7 @@ const Brands = () => {
         </Swiper>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Brands
+export default Brands;

@@ -1,6 +1,6 @@
-import { cn } from '@/utils'
-import { faqContent } from '../data'
-import { LuPlus } from 'react-icons/lu'
+import { cn } from "@/utils";
+import { faqContent } from "../data";
+import { LuPlus } from "react-icons/lu";
 
 const FAQs = () => {
   return (
@@ -28,8 +28,8 @@ const FAQs = () => {
                 <div
                   key={idx}
                   className={cn(
-                    'hs-accordion overflow-hidden border border-primary/20 hs-accordion-active:bg-primary/10',
-                    { active: idx == 0 }
+                    "hs-accordion overflow-hidden border border-primary/20 hs-accordion-active:bg-primary/10",
+                    { active: idx == 0 },
                   )}
                   id="faq-1"
                 >
@@ -43,8 +43,8 @@ const FAQs = () => {
                   <div
                     id="faq-accordion-1"
                     className={cn(
-                      'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                      { hidden: idx != 0 }
+                      "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                      { hidden: idx != 0 },
                     )}
                     aria-labelledby="faq-1"
                   >
@@ -53,13 +53,13 @@ const FAQs = () => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

@@ -1,13 +1,13 @@
-import { cn } from '@/utils'
+import { cn } from "@/utils";
 
 const faqs = [
-  'Is Subscription Upgrading Possible?',
-  'Guaranteed First-Page Google Placement?',
-  'Tailored Marketing Approaches?',
-  'Do You Offer Local SEO Services?',
-  'Is Blogging Crucial For SEO Success?',
+  "Is Subscription Upgrading Possible?",
+  "Guaranteed First-Page Google Placement?",
+  "Tailored Marketing Approaches?",
+  "Do You Offer Local SEO Services?",
+  "Is Blogging Crucial For SEO Success?",
   "What's The ROI Of Digital Marketing?",
-]
+];
 const FAQs = () => {
   return (
     <section id="faq" className="py-10 lg:py-20">
@@ -33,8 +33,8 @@ const FAQs = () => {
                 <div
                   key={idx}
                   className={cn(
-                    'hs-accordion overflow-hidden rounded-lg border border-primary/20 hs-accordion-active:bg-primary/10',
-                    { active: idx === 0 }
+                    "hs-accordion overflow-hidden rounded-lg border border-primary/20 hs-accordion-active:bg-primary/10",
+                    { active: idx === 0 },
                   )}
                 >
                   <button
@@ -61,8 +61,8 @@ const FAQs = () => {
                   <div
                     id="faq-accordion-1"
                     className={cn(
-                      'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                      { hidden: idx != 0 }
+                      "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                      { hidden: idx != 0 },
                     )}
                     aria-labelledby="faq-1"
                   >
@@ -77,13 +77,13 @@ const FAQs = () => {
                     </div>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

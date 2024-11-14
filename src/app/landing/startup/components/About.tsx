@@ -1,9 +1,9 @@
-import { LuMinus, LuMoveRight } from 'react-icons/lu'
-import Image from 'next/image'
-import Link from 'next/link'
+import { LuMinus, LuMoveRight } from "react-icons/lu";
+import Image from "next/image";
+import Link from "next/link";
 
-import startup3 from '@/assets/images/landing/startup/img-3.jpg'
-import startup10 from '@/assets/images/landing/startup/img-10.jpg'
+import startup3 from "@/assets/images/landing/startup/img-3.jpg";
+import startup10 from "@/assets/images/landing/startup/img-10.jpg";
 
 const About = () => {
   return (
@@ -80,7 +80,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import { LuChevronLeft, LuChevronRight } from 'react-icons/lu'
-import Image from 'next/image'
+import Link from "next/link";
+import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
+import Image from "next/image";
 
-import startup11 from '@/assets/images/landing/startup/img-11.jpg'
-import startup12 from '@/assets/images/landing/startup/img-12.jpg'
+import startup11 from "@/assets/images/landing/startup/img-11.jpg";
+import startup12 from "@/assets/images/landing/startup/img-12.jpg";
 
-const sliderImages = [startup11, startup12]
+const sliderImages = [startup11, startup12];
 const Home = () => {
   return (
     <>
@@ -88,7 +88,7 @@ const Home = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,26 +1,26 @@
-import Link from 'next/link'
-import { LuMoveRight } from 'react-icons/lu'
+import Link from "next/link";
+import { LuMoveRight } from "react-icons/lu";
 
-import photography2 from '@/assets/images/landing/photography/img-2.jpg'
-import photography3 from '@/assets/images/landing/photography/img-3.jpg'
-import photography5 from '@/assets/images/landing/photography/img-5.jpg'
-import photography6 from '@/assets/images/landing/photography/img-6.jpg'
-import photography9 from '@/assets/images/landing/photography/img-9.jpg'
-import photography10 from '@/assets/images/landing/photography/img-10.jpg'
-import Image from 'next/image'
+import photography2 from "@/assets/images/landing/photography/img-2.jpg";
+import photography3 from "@/assets/images/landing/photography/img-3.jpg";
+import photography5 from "@/assets/images/landing/photography/img-5.jpg";
+import photography6 from "@/assets/images/landing/photography/img-6.jpg";
+import photography9 from "@/assets/images/landing/photography/img-9.jpg";
+import photography10 from "@/assets/images/landing/photography/img-10.jpg";
+import Image from "next/image";
 
 const portfolioImages = [
   photography3,
   photography2,
   photography6,
   photography10,
-]
+];
 const portfolioImages2 = [
   photography9,
   photography2,
   photography5,
   photography10,
-]
+];
 
 const Portfolio = () => {
   return (
@@ -111,7 +111,7 @@ const Portfolio = () => {
         </Link>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

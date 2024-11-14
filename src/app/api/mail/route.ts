@@ -23,8 +23,10 @@ export async function POST(req: NextRequest) {
   const mailOptionsToUser = {
     from: process.env.EMAIL_ADDRESS,
     to: email,
-    subject: "お問い合わせありがとうございます / Thank you for your inquiry",
-    text: `お問い合わせありがとうございます。\n3営業日以内にご返信いたします。\n\n\nDear ${name},\n\nThank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${content}`,
+    subject: "Thank you for your inquiry",
+    text: `Thank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${content}`,
+    // subject: "お問い合わせありがとうございます / Thank you for your inquiry",
+    // text: `お問い合わせありがとうございます。\n3営業日以内にご返信いたします。\n\n,\n\nThank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${content}`,
   };
 
   try {

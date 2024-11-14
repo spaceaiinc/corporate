@@ -1,20 +1,20 @@
-'use client'
-import Image from 'next/image'
-import { LuMoveLeft, LuMoveRight, LuStar } from 'react-icons/lu'
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { useLayoutContext } from '@/context'
+"use client";
+import Image from "next/image";
+import { LuMoveLeft, LuMoveRight, LuStar } from "react-icons/lu";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useLayoutContext } from "@/context";
 
-import bgLine from '@/assets/images/other/bg-lines-2.png'
-import bgLineDark from '@/assets/images/other/bg-lines-2-dark.png'
+import bgLine from "@/assets/images/other/bg-lines-2.png";
+import bgLineDark from "@/assets/images/other/bg-lines-2-dark.png";
 
-import { testimonialSlides } from '../data'
+import { testimonialSlides } from "../data";
 
-import 'swiper/css'
-import 'swiper/css/navigation'
+import "swiper/css";
+import "swiper/css/navigation";
 
 const TestimonialSlider = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section id="testimonial">
       <div className="container">
@@ -22,7 +22,7 @@ const TestimonialSlider = () => {
           <div
             className="bg-cover bg-no-repeat py-20"
             style={{
-              backgroundImage: `url(${themeMode == 'light' ? bgLine : bgLineDark})`,
+              backgroundImage: `url(${themeMode == "light" ? bgLine : bgLineDark})`,
             }}
           >
             <div className="relative">
@@ -35,8 +35,8 @@ const TestimonialSlider = () => {
                 modules={[Thumbs, FreeMode, Navigation]}
                 loop
                 navigation={{
-                  nextEl: '.testimonials-button-next',
-                  prevEl: '.testimonials-button-prev',
+                  nextEl: ".testimonials-button-next",
+                  prevEl: ".testimonials-button-prev",
                 }}
                 className="testimonials relative"
               >
@@ -64,13 +64,13 @@ const TestimonialSlider = () => {
                                   key={idx}
                                   className="h-5 w-5 stroke-yellow-300"
                                 />
-                              )
+                              );
                             })}
                           </div>
                         </div>
                       </div>
                     </SwiperSlide>
-                  )
+                  );
                 })}
               </Swiper>
               <div className="absolute start-0 top-1/2 z-10 -translate-y-1/2 translate-x-1/2">
@@ -94,7 +94,7 @@ const TestimonialSlider = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

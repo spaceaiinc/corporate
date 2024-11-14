@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { services } from '../data'
-import { LuMoveRight } from 'react-icons/lu'
+import Link from "next/link";
+import { services } from "../data";
+import { LuMoveRight } from "react-icons/lu";
 
 const Services = () => {
   return (
@@ -45,12 +45,12 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

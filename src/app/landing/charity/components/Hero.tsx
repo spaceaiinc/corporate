@@ -1,23 +1,23 @@
-'use client'
-import charityImg1 from '@/assets/images/landing/charity/img-1.jpg'
-import charityImg2 from '@/assets/images/landing/charity/img-2.jpg'
-import charityImg3 from '@/assets/images/landing/charity/img-3.jpg'
-import charityBackgroundImg from '@/assets/images/landing/charity/bg-1.png'
-import backgroundLine from '@/assets/images/other/bg-lines-2.png'
-import backgroundLineDark from '@/assets/images/other/bg-lines-2-dark.png'
-import Link from 'next/link'
-import { LuMoveRight } from 'react-icons/lu'
-import { useLayoutContext } from '@/context'
-import Image from 'next/image'
+"use client";
+import charityImg1 from "@/assets/images/landing/charity/img-1.jpg";
+import charityImg2 from "@/assets/images/landing/charity/img-2.jpg";
+import charityImg3 from "@/assets/images/landing/charity/img-3.jpg";
+import charityBackgroundImg from "@/assets/images/landing/charity/bg-1.png";
+import backgroundLine from "@/assets/images/other/bg-lines-2.png";
+import backgroundLineDark from "@/assets/images/other/bg-lines-2-dark.png";
+import Link from "next/link";
+import { LuMoveRight } from "react-icons/lu";
+import { useLayoutContext } from "@/context";
+import Image from "next/image";
 
 const Hero = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section
       id="home"
       className="relative bg-default-100 bg-cover bg-no-repeat py-24 dark:bg-default-50 lg:py-32"
       style={{
-        backgroundImage: `url(${themeMode === 'light' ? backgroundLine.src : backgroundLineDark.src})`,
+        backgroundImage: `url(${themeMode === "light" ? backgroundLine.src : backgroundLineDark.src})`,
       }}
     >
       <div className="flex items-center overflow-hidden before:absolute before:inset-0 before:left-[63.67%] before:hidden before:rounded-bl-3xl before:bg-primary/80 lg:before:block">
@@ -34,7 +34,7 @@ const Hero = () => {
                 </h2>
                 <p className="mt-5  text-base">
                   Sed consequat, leo eget bibendum sodales, augue velit cursus
-                  nunc, quis gravida magna mi a libero.{' '}
+                  nunc, quis gravida magna mi a libero.{" "}
                 </p>
                 <div className="mt-10">
                   <Link
@@ -74,7 +74,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

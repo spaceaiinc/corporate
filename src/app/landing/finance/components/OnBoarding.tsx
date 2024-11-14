@@ -1,14 +1,14 @@
-import brand1 from '@/assets/images/brand/1.png'
-import brand2 from '@/assets/images/brand/2.png'
-import brand3 from '@/assets/images/brand/3.png'
-import brand4 from '@/assets/images/brand/4.png'
-import brand5 from '@/assets/images/brand/5.png'
-import brand6 from '@/assets/images/brand/6.png'
-import finance6 from '@/assets/images/landing/finance/img-6.jpg'
-import finance7 from '@/assets/images/landing/finance/img-7.png'
-import Image from 'next/image'
+import brand1 from "@/assets/images/brand/1.png";
+import brand2 from "@/assets/images/brand/2.png";
+import brand3 from "@/assets/images/brand/3.png";
+import brand4 from "@/assets/images/brand/4.png";
+import brand5 from "@/assets/images/brand/5.png";
+import brand6 from "@/assets/images/brand/6.png";
+import finance6 from "@/assets/images/landing/finance/img-6.jpg";
+import finance7 from "@/assets/images/landing/finance/img-7.png";
+import Image from "next/image";
 
-const brands = [brand1, brand2, brand3, brand4, brand5, brand6]
+const brands = [brand1, brand2, brand3, brand4, brand5, brand6];
 const OnBoarding = () => {
   return (
     <section id="onboarding" className="py-10 lg:py-20">
@@ -36,7 +36,7 @@ const OnBoarding = () => {
                   >
                     <Image alt="brand-image" src={image} />
                   </div>
-                )
+                );
               })}
             </div>
           </div>
@@ -59,7 +59,7 @@ const OnBoarding = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default OnBoarding
+export default OnBoarding;

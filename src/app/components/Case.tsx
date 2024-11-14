@@ -1,15 +1,14 @@
-'use client'
-import { LuArrowRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode } from 'swiper/modules'
+"use client";
+import { LuArrowRight } from "react-icons/lu";
+import Link from "next/link";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode } from "swiper/modules";
 
-import 'swiper/css'
-import Image from 'next/image'
-import { portfolioSlides } from '../data'
+import "swiper/css";
+import Image from "next/image";
+import { portfolioSlides } from "../data";
 
 const Case = () => {
-
   return (
     <section id="portfolio" className="py-10 lg:py-20">
       <div className="container">
@@ -68,7 +67,7 @@ const Case = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </div>
@@ -83,7 +82,7 @@ const Case = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Case
+export default Case;

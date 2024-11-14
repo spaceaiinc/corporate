@@ -1,6 +1,6 @@
-import { LuMoveRight } from 'react-icons/lu'
-import { services } from '../data'
-import Link from 'next/link'
+import { LuMoveRight } from "react-icons/lu";
+import { services } from "../data";
+import Link from "next/link";
 
 const Services = () => {
   return (
@@ -21,7 +21,7 @@ const Services = () => {
         </div>
         <div className="grid grid-cols-1 items-center divide-y divide-default-200 overflow-hidden rounded-md bg-default-100 dark:bg-default-50 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
           {services.map((service, idx) => {
-            const Icon = service.icon
+            const Icon = service.icon;
             return (
               <div key={idx} className="group">
                 <div className="p-8 sm:p-10">
@@ -38,12 +38,12 @@ const Services = () => {
                   </Link>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

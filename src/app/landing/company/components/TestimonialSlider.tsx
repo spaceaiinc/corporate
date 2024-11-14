@@ -1,12 +1,12 @@
-'use client'
-import { LuMoveLeft, LuMoveRight, LuQuote } from 'react-icons/lu'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { testimonialSlides } from '../data'
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
+"use client";
+import { LuMoveLeft, LuMoveRight, LuQuote } from "react-icons/lu";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { testimonialSlides } from "../data";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import Image from 'next/image'
+import "swiper/css";
+import "swiper/css/navigation";
+import Image from "next/image";
 
 const TestimonialSlider = () => {
   return (
@@ -27,8 +27,8 @@ const TestimonialSlider = () => {
                 modules={[Thumbs, FreeMode, Navigation]}
                 loop
                 navigation={{
-                  nextEl: '.testimonials-button-next',
-                  prevEl: '.testimonials-button-prev',
+                  nextEl: ".testimonials-button-next",
+                  prevEl: ".testimonials-button-prev",
                 }}
                 className="testimonials relative"
               >
@@ -53,7 +53,7 @@ const TestimonialSlider = () => {
                         </div>
                       </div>
                     </SwiperSlide>
-                  )
+                  );
                 })}
               </Swiper>
               <div className="absolute start-0 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
@@ -77,7 +77,7 @@ const TestimonialSlider = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

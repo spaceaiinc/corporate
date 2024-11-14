@@ -1,29 +1,29 @@
-import ServicesMarquee from '@/components/ServicesMarquee'
-import TopNavBar from '@/components/TopNavBar'
-import type { Metadata } from 'next'
-import Blogs from './components/Blogs'
-import FAQs from './components/FAQs'
-import Features from './components/Features'
-import HeroSwiper from './components/HeroSwiper'
-import ProjectSlider from './components/ProjectSlider'
-import Services from './components/Services'
-import TestimonialSlider from './components/TestimonialSlider'
+import ServicesMarquee from "@/components/ServicesMarquee";
+import TopNavBar from "@/components/TopNavBar";
+import type { Metadata } from "next";
+import Blogs from "./components/Blogs";
+import FAQs from "./components/FAQs";
+import Features from "./components/Features";
+import HeroSwiper from "./components/HeroSwiper";
+import ProjectSlider from "./components/ProjectSlider";
+import Services from "./components/Services";
+import TestimonialSlider from "./components/TestimonialSlider";
 
 export const metadata: Metadata = {
-  title: 'Creative',
-}
+  title: "Creative",
+};
 
 const Creative = () => {
   return (
     <>
       <TopNavBar
         menuItems={[
-          'home',
-          'features',
-          'portfolio',
-          'testimonial',
-          'faq',
-          'blog',
+          "home",
+          "features",
+          "portfolio",
+          "testimonial",
+          "faq",
+          "blog",
         ]}
         position="sticky"
         hasDownloadButton
@@ -47,7 +47,7 @@ const Creative = () => {
 
       <Blogs />
     </>
-  )
-}
+  );
+};
 
-export default Creative
+export default Creative;

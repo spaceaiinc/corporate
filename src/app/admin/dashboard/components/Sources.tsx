@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { sources } from '../data'
-import { LuUpload } from 'react-icons/lu'
+import Link from "next/link";
+import { sources } from "../data";
+import { LuUpload } from "react-icons/lu";
 
 const Sources = () => {
   return (
@@ -37,13 +37,13 @@ const Sources = () => {
                   <td className="p-2">{source.session}</td>
                   <td className="p-2">{source.view}</td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </table>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sources
+export default Sources;

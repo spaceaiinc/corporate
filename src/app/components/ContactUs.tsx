@@ -6,11 +6,10 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { LuSend } from "react-icons/lu";
 import * as yup from "yup";
-import backgroundImg2 from "@/assets/images/landing/marketing-2/bg-2.png";
 
 const ContactUs = () => {
   const contactFormSchema = yup.object({
-    name: yup.string().required("Please enter your name"),
+    // name: yup.string().required("Please enter your name"),
     email: yup
       .string()
       .email("Please enter a valid email")
@@ -56,9 +55,7 @@ const ContactUs = () => {
         </div>
         <div className="mx-auto mt-16 max-w-3xl">
           <div>
-            <div
-              className="rounded-md border border-default-200 p-8"
-            >
+            <div className="rounded-md border border-default-200 p-8">
               <form onSubmit={handleSubmit(onSubmit)} className="relative">
                 {/* <h2 className="mb-5 text-2xl font-medium text-default-950">
                   We welcome your feedback

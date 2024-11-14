@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import { accolades } from '../data'
-import { LuArrowUpRight } from 'react-icons/lu'
-import { cn } from '@/utils'
+import Link from "next/link";
+import { accolades } from "../data";
+import { LuArrowUpRight } from "react-icons/lu";
+import { cn } from "@/utils";
 
 const Accolades = () => {
   return (
@@ -29,8 +29,8 @@ const Accolades = () => {
                   <Link key={idx} href="" className="group">
                     <div
                       className={cn(
-                        'flex items-center justify-between p-5',
-                        item.divider ? 'border-y border-default-200' : ''
+                        "flex items-center justify-between p-5",
+                        item.divider ? "border-y border-default-200" : "",
                       )}
                     >
                       <div>
@@ -46,7 +46,7 @@ const Accolades = () => {
                       </div>
                     </div>
                   </Link>
-                )
+                );
               })}
             </div>
             <div>
@@ -55,8 +55,8 @@ const Accolades = () => {
                   <Link key={idx} href="" className="group">
                     <div
                       className={cn(
-                        'flex items-center justify-between p-5',
-                        item.divider ? 'border-y border-default-200' : ''
+                        "flex items-center justify-between p-5",
+                        item.divider ? "border-y border-default-200" : "",
                       )}
                     >
                       <div>
@@ -72,14 +72,14 @@ const Accolades = () => {
                       </div>
                     </div>
                   </Link>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Accolades
+export default Accolades;

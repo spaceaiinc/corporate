@@ -1,7 +1,7 @@
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import Image from 'next/image'
-import Link from 'next/link'
-import { LuLogOut, LuNewspaper, LuSettings, LuUser } from 'react-icons/lu'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import Image from "next/image";
+import Link from "next/link";
+import { LuLogOut, LuNewspaper, LuSettings, LuUser } from "react-icons/lu";
 
 const ProfileDropdown = () => {
   return (
@@ -54,7 +54,7 @@ const ProfileDropdown = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProfileDropdown
+export default ProfileDropdown;

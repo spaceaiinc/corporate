@@ -1,4 +1,4 @@
-import { ComponentContainerCard } from '@/components'
+import { ComponentContainerCard } from "@/components";
 import {
   LuCodesandbox,
   LuDribbble,
@@ -6,8 +6,8 @@ import {
   LuGithub,
   LuInstagram,
   LuLinkedin,
-} from 'react-icons/lu'
-import Link from 'next/link'
+} from "react-icons/lu";
+import Link from "next/link";
 
 const DefaultButtons = () => {
   return (
@@ -87,8 +87,8 @@ const DefaultButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const RoundedButtons = () => {
   return (
@@ -168,8 +168,8 @@ const RoundedButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const OutlineButtons = () => {
   return (
@@ -249,8 +249,8 @@ const OutlineButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const OutlineRoundedButtons = () => {
   return (
@@ -330,8 +330,8 @@ const OutlineRoundedButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const SoftButtons = () => {
   return (
@@ -411,8 +411,8 @@ const SoftButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const SoftRoundedButtons = () => {
   return (
@@ -492,8 +492,8 @@ const SoftRoundedButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const GhostButtons = () => {
   return (
@@ -573,8 +573,8 @@ const GhostButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const GhostRoundedButtons = () => {
   return (
@@ -654,8 +654,8 @@ const GhostRoundedButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const ButtonSizes = () => {
   return (
@@ -681,8 +681,8 @@ const ButtonSizes = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const IconButtons = () => {
   return (
@@ -726,8 +726,8 @@ const IconButtons = () => {
         </Link>
       </div>
     </ComponentContainerCard>
-  )
-}
+  );
+};
 
 const Buttons = () => {
   return (
@@ -746,7 +746,7 @@ const Buttons = () => {
         <IconButtons />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Buttons
+export default Buttons;

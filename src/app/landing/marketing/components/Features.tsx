@@ -1,8 +1,8 @@
-import { LuBoxes, LuLayers, LuMonitor, LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuBoxes, LuLayers, LuMonitor, LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
-import marketing4 from '@/assets/images/landing/marketing/img-4.jpg'
-import Image from 'next/image'
+import marketing4 from "@/assets/images/landing/marketing/img-4.jpg";
+import Image from "next/image";
 
 const Features = () => {
   return (
@@ -86,7 +86,7 @@ const Features = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Features
+export default Features;

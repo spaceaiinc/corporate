@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { blogs } from '../data'
-import BlogCard from './BlogCard'
+import Link from "next/link";
+import { blogs } from "../data";
+import BlogCard from "./BlogCard";
 
 const UpdatedBlogs = () => {
   return (
@@ -34,7 +34,7 @@ const UpdatedBlogs = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default UpdatedBlogs
+export default UpdatedBlogs;

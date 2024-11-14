@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { stories } from '../data'
-import { cn } from '@/utils'
-import { LuMoveRight } from 'react-icons/lu'
+import Image from "next/image";
+import Link from "next/link";
+import { stories } from "../data";
+import { cn } from "@/utils";
+import { LuMoveRight } from "react-icons/lu";
 
 const Stories = () => {
   return (
@@ -26,10 +26,10 @@ const Stories = () => {
               <div
                 key={idx}
                 className={cn(
-                  'relative p-10',
+                  "relative p-10",
                   idx == 0
-                    ? 'border-y border-default-200'
-                    : 'border-b border-default-200'
+                    ? "border-y border-default-200"
+                    : "border-b border-default-200",
                 )}
               >
                 <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
@@ -89,7 +89,7 @@ const Stories = () => {
                   className="background absolute left-0 top-0 h-full w-full bg-cover bg-top text-center opacity-0 hover:bg-bottom hover:opacity-100"
                   style={{
                     backgroundImage: `url(${story.backgroundImage.src})`,
-                    transition: 'opacity 0.4s, background-position 10s linear',
+                    transition: "opacity 0.4s, background-position 10s linear",
                   }}
                 >
                   <div className="flex h-full items-center justify-center">
@@ -103,12 +103,12 @@ const Stories = () => {
                   </div>
                 </div>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Stories
+export default Stories;

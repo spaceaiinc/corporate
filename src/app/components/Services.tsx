@@ -121,7 +121,8 @@ const Services = () => {
                 <li className="flex items-center gap-2 py-1">
                   <LuDot className="inline-block h-8 w-8 stroke-primary" />
                   <span className="text-base text-default-950">
-                    We aim to develop Chatbot and Voicebot Services based on Stacks like Local LLM, AudioSynthe and RAG.
+                    We aim to develop Chatbot and Voicebot Services based on
+                    Stacks like Local LLM, AudioSynthe and RAG.
                   </span>
                 </li>
               </ul>

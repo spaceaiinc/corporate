@@ -1,25 +1,25 @@
-'use client'
-import charity11 from '@/assets/images/landing/charity/img-11.jpg'
-import TextFormInput from '@/components/form/TextFormInput'
-import { yupResolver } from '@hookform/resolvers/yup'
-import Image from 'next/image'
-import { useForm } from 'react-hook-form'
-import * as yup from 'yup'
+"use client";
+import charity11 from "@/assets/images/landing/charity/img-11.jpg";
+import TextFormInput from "@/components/form/TextFormInput";
+import { yupResolver } from "@hookform/resolvers/yup";
+import Image from "next/image";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 const Contact = () => {
   const contactFormSchema = yup.object({
     email: yup
       .string()
-      .email('Please enter a valid email')
-      .required('Please enter your email'),
-    fName: yup.string().required('Please enter your first name'),
-    class: yup.string().required('Please enter your class name'),
-    requirement: yup.string().required('Please enter your requirements'),
-  })
+      .email("Please enter a valid email")
+      .required("Please enter your email"),
+    fName: yup.string().required("Please enter your first name"),
+    class: yup.string().required("Please enter your class name"),
+    requirement: yup.string().required("Please enter your requirements"),
+  });
 
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(contactFormSchema),
-  })
+  });
   return (
     <section id="contact" className="py-10 lg:py-20">
       <div className="container">
@@ -97,7 +97,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

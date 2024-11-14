@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
+import Image from "next/image";
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -59,7 +59,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

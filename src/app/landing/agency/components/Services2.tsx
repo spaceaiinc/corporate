@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import agency10 from '@/assets/images/landing/agency/img-10.jpg'
+import Image from "next/image";
+import agency10 from "@/assets/images/landing/agency/img-10.jpg";
 
 const Services2 = () => {
   return (
@@ -38,7 +38,7 @@ const Services2 = () => {
                     Graphic Design
                   </h3>
                   <p className="mt-3 text-base">
-                    {' '}
+                    {" "}
                     Donec venenatis vulputate lorem. Morbi nec metus. Phasellus
                     blandit leo ut odio.
                   </p>
@@ -55,7 +55,7 @@ const Services2 = () => {
                     Web Design
                   </h3>
                   <p className="mt-3 text-base">
-                    {' '}
+                    {" "}
                     Suspendisse enim turpis, dictum sed, iaculis a, condimentum
                     nec, nisi. Praesent nec nisl a purus blandit viverra.
                   </p>
@@ -72,7 +72,7 @@ const Services2 = () => {
                     Digital Marketing
                   </h3>
                   <p className="mt-3 text-base">
-                    {' '}
+                    {" "}
                     Vestibulum rutrum, mi nec elementum vehicula, eros quam
                     gravida nisl, id fringilla neque ante vel mi.
                   </p>
@@ -83,7 +83,7 @@ const Services2 = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services2
+export default Services2;

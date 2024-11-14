@@ -1,39 +1,39 @@
-'use client'
-import { useEffect, useState } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import type { Swiper as SwiperType } from 'swiper'
+"use client";
+import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 import {
   Thumbs,
   Controller,
   Autoplay,
   EffectFade,
   Navigation,
-} from 'swiper/modules'
+} from "swiper/modules";
 
-import { heroSwiperSlides } from '../data'
+import { heroSwiperSlides } from "../data";
 
-import creative1 from '@/assets/images/landing/creative/img-1.jpg'
-import creative2 from '@/assets/images/landing/creative/img-2.jpg'
-import creative3 from '@/assets/images/landing/creative/img-3.jpg'
+import creative1 from "@/assets/images/landing/creative/img-1.jpg";
+import creative2 from "@/assets/images/landing/creative/img-2.jpg";
+import creative3 from "@/assets/images/landing/creative/img-3.jpg";
 
-import 'swiper/css'
-import 'swiper/css/effect-fade'
-import 'swiper/css/navigation'
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
 
-import { LuArrowLeft, LuArrowRight } from 'react-icons/lu'
-import Image from 'next/image'
+import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
+import Image from "next/image";
 
-const thumbImages = [creative2, creative3, creative1]
+const thumbImages = [creative2, creative3, creative1];
 
 const HeroSwiper = () => {
   useEffect(() => {
-    document.body.classList.add('bg-default-100')
+    document.body.classList.add("bg-default-100");
     return () => {
-      document.body.classList.remove('bg-default-100')
-    }
-  }, [])
+      document.body.classList.remove("bg-default-100");
+    };
+  }, []);
 
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null)
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
     <section
@@ -61,7 +61,7 @@ const HeroSwiper = () => {
                   />
                   <div className="absolute inset-0 bg-black/40" />
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
         </div>
@@ -78,8 +78,8 @@ const HeroSwiper = () => {
             }}
             loop
             navigation={{
-              nextEl: '.cre-button-next',
-              prevEl: '.cre-button-prev',
+              nextEl: ".cre-button-next",
+              prevEl: ".cre-button-prev",
             }}
             className="mySwiper2 swiper-hero relative me-10"
           >
@@ -95,7 +95,7 @@ const HeroSwiper = () => {
                     </p>
                   </div>
                 </SwiperSlide>
-              )
+              );
             })}
           </Swiper>
           <div className="absolute inset-x-0 bottom-8 z-10">
@@ -115,7 +115,7 @@ const HeroSwiper = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSwiper
+export default HeroSwiper;

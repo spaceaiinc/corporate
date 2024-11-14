@@ -1,6 +1,6 @@
-import { LuMoveRight } from 'react-icons/lu'
-import PricingCard from './PricingCard'
-import { pricingPlans } from '../data'
+import { LuMoveRight } from "react-icons/lu";
+import PricingCard from "./PricingCard";
+import { pricingPlans } from "../data";
 
 const Pricing = () => {
   return (
@@ -52,7 +52,7 @@ const Pricing = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;

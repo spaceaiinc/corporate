@@ -41,7 +41,7 @@ const MarqueeGroup = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MarqueeGroup
+export default MarqueeGroup;

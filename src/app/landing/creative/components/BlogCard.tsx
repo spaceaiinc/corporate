@@ -1,7 +1,7 @@
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import type { BlogType } from '../types'
-import Image from 'next/image'
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import type { BlogType } from "../types";
+import Image from "next/image";
 
 const BlogCard = ({ blog }: { blog: BlogType }) => {
   return (
@@ -26,7 +26,7 @@ const BlogCard = ({ blog }: { blog: BlogType }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

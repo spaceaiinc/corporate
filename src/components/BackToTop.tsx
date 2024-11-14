@@ -1,22 +1,22 @@
-'use client'
-import { useLayoutContext } from '@/context'
-import { useScrollEvent } from '@/hooks'
-import { LuChevronUp, LuMoon, LuSun } from 'react-icons/lu'
+"use client";
+import { useLayoutContext } from "@/context";
+import { useScrollEvent } from "@/hooks";
+import { LuChevronUp, LuMoon, LuSun } from "react-icons/lu";
 
 const BackToTop = () => {
-  const { scrollY } = useScrollEvent()
+  const { scrollY } = useScrollEvent();
 
-  const { themeMode, updateTheme } = useLayoutContext()
+  const { themeMode, updateTheme } = useLayoutContext();
 
   const toggleThemeMode = () => {
-    updateTheme(themeMode === 'light' ? 'dark' : 'light')
-  }
+    updateTheme(themeMode === "light" ? "dark" : "light");
+  };
 
   return (
     <div className="fixed bottom-5 end-5 z-[40] flex flex-col items-center gap-1">
       <button
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className={`z-10 flex h-10 w-10 items-center justify-center rounded-full text-primary shadow-[inset_0px_0px_12px_0px] shadow-primary/40 backdrop-blur-3xl transition-all duration-500 ${scrollY < 72 && 'translate-x-16'}`}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        className={`z-10 flex h-10 w-10 items-center justify-center rounded-full text-primary shadow-[inset_0px_0px_12px_0px] shadow-primary/40 backdrop-blur-3xl transition-all duration-500 ${scrollY < 72 && "translate-x-16"}`}
       >
         <LuChevronUp className="h-4 w-4" />
       </button>
@@ -34,7 +34,7 @@ const BackToTop = () => {
         </span>
       </button> */}
     </div>
-  )
-}
+  );
+};
 
-export default BackToTop
+export default BackToTop;

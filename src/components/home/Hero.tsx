@@ -1,22 +1,22 @@
-'use client'
-import logoSm from '@/assets/images/logo-sm.svg'
-import { LuAirplay, LuEye } from 'react-icons/lu'
+"use client";
+import logoSm from "@/assets/images/logo-sm.svg";
+import { LuAirplay, LuEye } from "react-icons/lu";
 
-import backgroundLine2 from '@/assets/images/other/bg-lines-2.png'
-import backgroundLine2Dark from '@/assets/images/other/bg-lines-2-dark.png'
+import backgroundLine2 from "@/assets/images/other/bg-lines-2.png";
+import backgroundLine2Dark from "@/assets/images/other/bg-lines-2-dark.png";
 
-import { developmentTools } from './data'
-import { useLayoutContext } from '@/context'
-import Image from 'next/image'
-import Link from 'next/link'
+import { developmentTools } from "./data";
+import { useLayoutContext } from "@/context";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section
       className="bg-default-10 relative border-b border-default-100  py-6 dark:bg-default-50 sm:py-10 md:py-32"
       style={{
-        backgroundImage: `url(${themeMode === 'light' ? backgroundLine2.src : backgroundLine2Dark.src})`,
+        backgroundImage: `url(${themeMode === "light" ? backgroundLine2.src : backgroundLine2Dark.src})`,
       }}
       id="home"
     >
@@ -75,7 +75,7 @@ const Hero = () => {
                         <div className="absolute -bottom-1 start-1/2 -z-10 h-2.5 w-2.5 -translate-x-1/2 rotate-45 rounded-[1px] bg-default-950" />
                       </div>
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -84,7 +84,7 @@ const Hero = () => {
                 href="#demos"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-2 font-semibold text-white backdrop-blur-2xl transition-all duration-500 hover:bg-primary-600"
               >
-                {' '}
+                {" "}
                 Landing Demos <LuEye className="ms-3 h-5 w-5" />
               </a>
               <Link
@@ -92,7 +92,7 @@ const Hero = () => {
                 target="_blank"
                 className="inline-flex items-center justify-center rounded-lg px-6 py-2 font-semibold text-primary backdrop-blur-2xl transition-all duration-500 hover:bg-primary hover:text-white"
               >
-                {' '}
+                {" "}
                 Admin Demos <LuAirplay className="ms-3 h-5 w-5" />
               </Link>
             </div>
@@ -100,7 +100,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

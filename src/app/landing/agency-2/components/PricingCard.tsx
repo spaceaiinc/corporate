@@ -1,9 +1,9 @@
-import { LuDot } from 'react-icons/lu'
-import type { PricingType } from '../types'
-import Link from 'next/link'
+import { LuDot } from "react-icons/lu";
+import type { PricingType } from "../types";
+import Link from "next/link";
 
 const PricingCard = ({ pricingPlan }: { pricingPlan: PricingType }) => {
-  const { day, features, name, price } = pricingPlan
+  const { day, features, name, price } = pricingPlan;
   return (
     <div className="z-2 group relative rounded-md bg-default-100 shadow dark:bg-default-50">
       <div className="p-6 py-8">
@@ -30,7 +30,7 @@ const PricingCard = ({ pricingPlan }: { pricingPlan: PricingType }) => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PricingCard
+export default PricingCard;

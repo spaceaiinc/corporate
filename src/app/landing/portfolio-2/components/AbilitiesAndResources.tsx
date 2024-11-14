@@ -1,4 +1,4 @@
-import { resources } from '../data'
+import { resources } from "../data";
 
 const AbilitiesAndResources = () => {
   return (
@@ -20,7 +20,7 @@ const AbilitiesAndResources = () => {
         </div>
         <div className="flex flex-wrap items-center gap-6">
           {resources.map((resource, idx) => {
-            const Icon = resource.icon
+            const Icon = resource.icon;
             return (
               <div key={idx} className="mx-auto text-center">
                 <div className="flex h-44 w-44 items-center justify-center rounded-full border border-primary/20 bg-primary/10">
@@ -35,12 +35,12 @@ const AbilitiesAndResources = () => {
                   {resource.name}
                 </h2>
               </div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AbilitiesAndResources
+export default AbilitiesAndResources;

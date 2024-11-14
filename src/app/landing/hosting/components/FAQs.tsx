@@ -1,6 +1,6 @@
-import { LuChevronUp } from 'react-icons/lu'
-import { faqContent } from '../data'
-import { cn } from '@/utils'
+import { LuChevronUp } from "react-icons/lu";
+import { faqContent } from "../data";
+import { cn } from "@/utils";
 
 const FAQs = () => {
   return (
@@ -18,8 +18,8 @@ const FAQs = () => {
                 <div key={idx} className="relative z-20 w-full lg:w-full">
                   <div
                     className={cn(
-                      'hs-accordion overflow-hidden border border-default-200 bg-white transition-all duration-500 hs-accordion-active:-translate-y-2 hs-accordion-active:translate-x-2 dark:bg-default-50',
-                      { active: idx == 0 }
+                      "hs-accordion overflow-hidden border border-default-200 bg-white transition-all duration-500 hs-accordion-active:-translate-y-2 hs-accordion-active:translate-x-2 dark:bg-default-50",
+                      { active: idx == 0 },
                     )}
                     id="faq-1"
                   >
@@ -33,8 +33,8 @@ const FAQs = () => {
                     <div
                       id="faq-accordion-1"
                       className={cn(
-                        'hs-accordion-content w-full overflow-hidden transition-[height] duration-300',
-                        { hidden: idx != 0 }
+                        "hs-accordion-content w-full overflow-hidden transition-[height] duration-300",
+                        { hidden: idx != 0 },
                       )}
                       aria-labelledby="faq-1"
                     >
@@ -45,13 +45,13 @@ const FAQs = () => {
                   </div>
                   <div className="absolute left-0 top-0 -z-10 h-full w-full bg-default-950" />
                 </div>
-              )
+              );
             })}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default FAQs
+export default FAQs;

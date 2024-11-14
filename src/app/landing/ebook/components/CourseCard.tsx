@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import { CourseType } from '../types'
-import Image from 'next/image'
+import Link from "next/link";
+import { CourseType } from "../types";
+import Image from "next/image";
 
 const CourseCard = ({ course }: { course: CourseType }) => {
-  const { courseName, date, icons, image, name } = course
+  const { courseName, date, icons, image, name } = course;
   return (
     <div className="mt-6 overflow-hidden rounded-lg bg-white shadow-md dark:bg-default-50">
       <div className="grid sm:grid-cols-5">
@@ -19,19 +19,19 @@ const CourseCard = ({ course }: { course: CourseType }) => {
             <p className="text-base text-default-950">{date}</p>
             <div className="flex items-center gap-4">
               {icons.map((icon, idx) => {
-                const Icon = icon
+                const Icon = icon;
                 return (
                   <Link href="" key={idx}>
                     <Icon className="h-5 w-5 transition-all hover:text-primary" />
                   </Link>
-                )
+                );
               })}
             </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CourseCard
+export default CourseCard;

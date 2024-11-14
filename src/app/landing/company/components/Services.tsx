@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import { services } from '../data'
-import { LuMoveRight } from 'react-icons/lu'
+import Link from "next/link";
+import { services } from "../data";
+import { LuMoveRight } from "react-icons/lu";
 
-import company2 from '@/assets/images/landing/company/img-2.jpg'
-import Image from 'next/image'
+import company2 from "@/assets/images/landing/company/img-2.jpg";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -20,7 +20,7 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 2xl:grid-cols-3">
             {services.map((service, idx) => {
-              const Icon = service.icon
+              const Icon = service.icon;
               return (
                 <div
                   key={idx}
@@ -42,7 +42,7 @@ const Services = () => {
                     </Link>
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -97,7 +97,7 @@ const Services = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

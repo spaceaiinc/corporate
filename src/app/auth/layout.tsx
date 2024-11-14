@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { type ReactNode, Suspense } from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import { type ReactNode, Suspense } from "react";
 
-import authBgImg from '@/assets/images/other/auth-bg.jpg'
-import logoLight from '@/assets/images/logo-light.svg'
-import otherAuthImg from '@/assets/images/other/auth-img.jpg'
+import authBgImg from "@/assets/images/other/auth-bg.jpg";
+import logoLight from "@/assets/images/logo-light.svg";
+import otherAuthImg from "@/assets/images/other/auth-img.jpg";
 
 const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
@@ -47,7 +47,7 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

@@ -1,11 +1,11 @@
-import { IconType } from 'react-icons'
+import { IconType } from "react-icons";
 
 export type ServiceType = {
-  title: string
-  icon: IconType
-}
+  title: string;
+  icon: IconType;
+};
 
 export type FaqType = {
-  title: string
-  description: string
-}
+  title: string;
+  description: string;
+};

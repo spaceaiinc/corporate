@@ -1,11 +1,11 @@
-import { LuArrowRight, LuStar } from 'react-icons/lu'
-import Link from 'next/link'
+import { LuArrowRight, LuStar } from "react-icons/lu";
+import Link from "next/link";
 
 const about = [
-  'Extremely impressed with the service and the outcomes!',
-  'Outstanding service for precision-targeted lead generation.',
+  "Extremely impressed with the service and the outcomes!",
+  "Outstanding service for precision-targeted lead generation.",
   "I've thoroughly enjoyed my collaboration with Resonance.",
-]
+];
 const About = () => {
   return (
     <section id="about" className="py-10 lg:py-20">
@@ -42,11 +42,11 @@ const About = () => {
                           data-lucide="star"
                           className="h-6 w-6 fill-yellow-300 text-yellow-300"
                         />
-                      )
+                      );
                     })}
                   </div>
                 </div>
-              )
+              );
             })}
           </div>
         </div>
@@ -61,7 +61,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,18 +1,17 @@
-'use client'
-import logoutImg from '@/assets/images/other/logout.png'
-import { signOut } from 'next-auth/react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect } from 'react'
+"use client";
+import logoutImg from "@/assets/images/other/logout.png";
+import { signOut } from "next-auth/react";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect } from "react";
 
 const Logout = () => {
-
   useEffect(() => {
-    async function logoutUser () {
-      await signOut({ redirect: false })
+    async function logoutUser() {
+      await signOut({ redirect: false });
     }
-    logoutUser()
-  }, [])
+    logoutUser();
+  }, []);
 
   return (
     <>
@@ -38,7 +37,7 @@ const Logout = () => {
         </Link>
       </p>
     </>
-  )
-}
+  );
+};
 
-export default Logout
+export default Logout;

@@ -1,9 +1,9 @@
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import avatar2 from '@/assets/images/avatars/img-2.jpg'
-import avatar3 from '@/assets/images/avatars/img-3.jpg'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import avatar2 from "@/assets/images/avatars/img-2.jpg";
+import avatar3 from "@/assets/images/avatars/img-3.jpg";
 
-import portfolio10 from '@/assets/images/landing/portfolio-2/img-10.png'
-import Image from 'next/image'
+import portfolio10 from "@/assets/images/landing/portfolio-2/img-10.png";
+import Image from "next/image";
 
 const Hero = () => {
   return (
@@ -79,7 +79,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

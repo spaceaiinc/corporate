@@ -1,12 +1,12 @@
-'use client'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { testimonialSlides } from '../data'
-import { FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules'
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { testimonialSlides } from "../data";
+import { FreeMode, Navigation, Pagination, Thumbs } from "swiper/modules";
 
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import Image from 'next/image'
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import Image from "next/image";
 
 const TestimonialSlider = () => {
   return (
@@ -15,7 +15,7 @@ const TestimonialSlider = () => {
         <Swiper
           modules={[Thumbs, FreeMode, Navigation, Pagination]}
           loop
-          pagination={{ clickable: true, el: '.swiper-pagination' }}
+          pagination={{ clickable: true, el: ".swiper-pagination" }}
           breakpoints={{
             440: {
               slidesPerView: 1,
@@ -33,7 +33,7 @@ const TestimonialSlider = () => {
           className="testimonials_swiper relative"
         >
           {testimonialSlides.map((slide, idx) => {
-            const Icon = slide.icon
+            const Icon = slide.icon;
             return (
               <SwiperSlide key={idx}>
                 <div className="mx-auto max-w-4xl text-center">
@@ -62,13 +62,13 @@ const TestimonialSlider = () => {
                   </div>
                 </div>
               </SwiperSlide>
-            )
+            );
           })}
           <div className="swiper-pagination !static mt-6" />
         </Swiper>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default TestimonialSlider
+export default TestimonialSlider;

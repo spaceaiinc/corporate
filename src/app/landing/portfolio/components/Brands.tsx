@@ -1,15 +1,15 @@
-'use client'
-import { Autoplay, FreeMode, Thumbs } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+"use client";
+import { Autoplay, FreeMode, Thumbs } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import brand1 from '@/assets/images/brand/1.png'
-import brand2 from '@/assets/images/brand/2.png'
-import brand3 from '@/assets/images/brand/3.png'
-import brand4 from '@/assets/images/brand/4.png'
-import brand5 from '@/assets/images/brand/5.png'
+import brand1 from "@/assets/images/brand/1.png";
+import brand2 from "@/assets/images/brand/2.png";
+import brand3 from "@/assets/images/brand/3.png";
+import brand4 from "@/assets/images/brand/4.png";
+import brand5 from "@/assets/images/brand/5.png";
 
-import 'swiper/css'
-import Image from 'next/image'
+import "swiper/css";
+import Image from "next/image";
 
 const brands = [
   brand1,
@@ -22,7 +22,7 @@ const brands = [
   brand3,
   brand4,
   brand5,
-]
+];
 const Brands = () => {
   return (
     <section className="py-10 lg:py-20">
@@ -64,14 +64,14 @@ const Brands = () => {
                   <SwiperSlide key={idx}>
                     <Image alt="brand-image" src={brand} />
                   </SwiperSlide>
-                )
+                );
               })}
             </Swiper>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Brands
+export default Brands;

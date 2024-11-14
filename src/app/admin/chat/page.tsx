@@ -1,10 +1,10 @@
-import { AdminBreadcrumb } from '@/components'
-import ChatApp from './components/ChatApp'
-import type { Metadata } from 'next'
+import { AdminBreadcrumb } from "@/components";
+import ChatApp from "./components/ChatApp";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Chat',
-}
+  title: "Chat",
+};
 
 const Chat = () => {
   return (
@@ -12,7 +12,7 @@ const Chat = () => {
       <AdminBreadcrumb title="Chat" />
       <ChatApp />
     </>
-  )
-}
+  );
+};
 
-export default Chat
+export default Chat;

@@ -1,25 +1,25 @@
-'use client'
-import TextAreaFormInput from '@/components/form/TextAreaFormInput'
-import TextFormInput from '@/components/form/TextFormInput'
-import { yupResolver } from '@hookform/resolvers/yup'
-import { useForm } from 'react-hook-form'
-import { LuSend } from 'react-icons/lu'
-import * as yup from 'yup'
+"use client";
+import TextAreaFormInput from "@/components/form/TextAreaFormInput";
+import TextFormInput from "@/components/form/TextFormInput";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { useForm } from "react-hook-form";
+import { LuSend } from "react-icons/lu";
+import * as yup from "yup";
 
 const ContactUs = () => {
   const contactFormSchema = yup.object({
-    name: yup.string().required('Please enter your name'),
+    name: yup.string().required("Please enter your name"),
     email: yup
       .string()
-      .email('Please enter a valid email')
-      .required('Please enter your email'),
-    subject: yup.string().required('Please enter your subject'),
-    message: yup.string().required('Please enter your message'),
-  })
+      .email("Please enter a valid email")
+      .required("Please enter your email"),
+    subject: yup.string().required("Please enter your subject"),
+    message: yup.string().required("Please enter your message"),
+  });
 
   const { control, handleSubmit } = useForm({
     resolver: yupResolver(contactFormSchema),
-  })
+  });
   return (
     <section id="contact" className="py-10 lg:py-20">
       <div className="container">
@@ -102,7 +102,7 @@ const ContactUs = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;

@@ -1,20 +1,20 @@
-'use client'
-import { LuMoveRight } from 'react-icons/lu'
-import Link from 'next/link'
-import web1 from '@/assets/images/landing/web-designer/img.png'
-import web11 from '@/assets/images/landing/web-designer/img-11.png'
-import web11Dark from '@/assets/images/landing/web-designer/img-11-dark.png'
-import { useLayoutContext } from '@/context'
-import Image from 'next/image'
+"use client";
+import { LuMoveRight } from "react-icons/lu";
+import Link from "next/link";
+import web1 from "@/assets/images/landing/web-designer/img.png";
+import web11 from "@/assets/images/landing/web-designer/img-11.png";
+import web11Dark from "@/assets/images/landing/web-designer/img-11-dark.png";
+import { useLayoutContext } from "@/context";
+import Image from "next/image";
 
 const Hero = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section
       id="home"
       className="relative flex items-center justify-center overflow-hidden  bg-cover bg-no-repeat py-28"
       style={{
-        backgroundImage: `url(${themeMode == 'light' ? web11.src : web11Dark.src})`,
+        backgroundImage: `url(${themeMode == "light" ? web11.src : web11Dark.src})`,
       }}
     >
       <div className="bg- absolute inset-0" />
@@ -65,7 +65,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

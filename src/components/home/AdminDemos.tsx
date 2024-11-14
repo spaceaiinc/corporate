@@ -1,15 +1,15 @@
-import uiDark from '@/assets/images/demo/ui-components-dark.png'
-import ui from '@/assets/images/demo/ui-components.png'
-import PreviewCard from './PreviewCard'
-import { adminDemos, type DemoType } from './data'
+import uiDark from "@/assets/images/demo/ui-components-dark.png";
+import ui from "@/assets/images/demo/ui-components.png";
+import PreviewCard from "./PreviewCard";
+import { adminDemos, type DemoType } from "./data";
 
 const AdminDemos = () => {
   const uiDemo: DemoType = {
     darkImage: uiDark,
     lightImage: ui,
-    link: '/admin/ui-components',
-    name: 'Ui Components',
-  }
+    link: "/admin/ui-components",
+    name: "Ui Components",
+  };
   return (
     <section id="admin-demo" className="py-20">
       <div className="mx-20">
@@ -37,7 +37,7 @@ const AdminDemos = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AdminDemos
+export default AdminDemos;

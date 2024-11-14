@@ -1,20 +1,20 @@
-'use client'
-import bgLine2Img from '@/assets/images/other/bg-lines-2.png'
-import bgLine2DarkImg from '@/assets/images/other/bg-lines-2-dark.png'
-import hero from '@/assets/images/landing/agency-2/hero.png'
-import { LuArrowUpRight } from 'react-icons/lu'
-import Link from 'next/link'
-import { useLayoutContext } from '@/context'
-import Image from 'next/image'
+"use client";
+import bgLine2Img from "@/assets/images/other/bg-lines-2.png";
+import bgLine2DarkImg from "@/assets/images/other/bg-lines-2-dark.png";
+import hero from "@/assets/images/landing/agency-2/hero.png";
+import { LuArrowUpRight } from "react-icons/lu";
+import Link from "next/link";
+import { useLayoutContext } from "@/context";
+import Image from "next/image";
 
 const Hero = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section
       id="home"
-      className={'bg-cover bg-no-repeat py-40'}
+      className={"bg-cover bg-no-repeat py-40"}
       style={{
-        backgroundImage: `url(${themeMode === 'light' ? bgLine2Img.src : bgLine2DarkImg.src})`,
+        backgroundImage: `url(${themeMode === "light" ? bgLine2Img.src : bgLine2DarkImg.src})`,
       }}
     >
       <div className="container">
@@ -25,7 +25,7 @@ const Hero = () => {
                 Better design for your digital products.
               </h2>
               <p className="my-6 text-base">
-                We are a creative studio specializing in UI/UX design, <br />{' '}
+                We are a creative studio specializing in UI/UX design, <br />{" "}
                 development and strategy.
               </p>
               <Link
@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

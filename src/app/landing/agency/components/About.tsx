@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { LuArrowUpRight, LuComponent, LuLayers } from 'react-icons/lu'
-import agency3 from '@/assets/images/landing/agency/img-3.jpg'
-import agency4 from '@/assets/images/landing/agency/img-4.jpg'
-import agency5 from '@/assets/images/landing/agency/img-5.jpg'
+import Link from "next/link";
+import Image from "next/image";
+import { LuArrowUpRight, LuComponent, LuLayers } from "react-icons/lu";
+import agency3 from "@/assets/images/landing/agency/img-3.jpg";
+import agency4 from "@/assets/images/landing/agency/img-4.jpg";
+import agency5 from "@/assets/images/landing/agency/img-5.jpg";
 
 const About = () => {
   return (
@@ -88,7 +88,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

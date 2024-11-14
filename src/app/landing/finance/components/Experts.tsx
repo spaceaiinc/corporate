@@ -1,5 +1,5 @@
-import { experts } from '../data'
-import ExpertCard from './ExpertCard'
+import { experts } from "../data";
+import ExpertCard from "./ExpertCard";
 
 const Experts = () => {
   return (
@@ -23,7 +23,7 @@ const Experts = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Experts
+export default Experts;

@@ -1,11 +1,11 @@
-'use client'
-import TextFormInput from '@/components/form/TextFormInput'
-import { cn } from '@/utils'
-import { yupResolver } from '@hookform/resolvers/yup'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { useForm } from 'react-hook-form'
+"use client";
+import TextFormInput from "@/components/form/TextFormInput";
+import { cn } from "@/utils";
+import { yupResolver } from "@hookform/resolvers/yup";
+import Image from "next/image";
+import Link from "next/link";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useForm } from "react-hook-form";
 import {
   LuDownload,
   LuPaperclip,
@@ -14,22 +14,22 @@ import {
   LuTrash,
   LuUsers,
   LuVideo,
-} from 'react-icons/lu'
-import * as yup from 'yup'
-import { messages, type ChatMessage, type ChatUser } from '../data'
+} from "react-icons/lu";
+import * as yup from "yup";
+import { messages, type ChatMessage, type ChatUser } from "../data";
 
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
 
 const UserMessage = ({
   message,
   toUser,
 }: {
-  message: ChatMessage
-  toUser: ChatUser
+  message: ChatMessage;
+  toUser: ChatUser;
 }) => {
   return (
     <div
-      className={`${message.from.id === toUser.id ? 'ms-auto  flex-row-reverse  text-end' : 'text-start'} group flex w-11/12 items-start gap-3`}
+      className={`${message.from.id === toUser.id ? "ms-auto  flex-row-reverse  text-end" : "text-start"} group flex w-11/12 items-start gap-3`}
     >
       <div className="text-center">
         <Image
@@ -41,27 +41,27 @@ const UserMessage = ({
         />
         <p className="pt-0.5 text-xs">{message.sendOn}</p>
       </div>
-      {message.message.type === 'text' && (
+      {message.message.type === "text" && (
         <div
           className={cn(
-            'max-w-3/4 rounded p-3',
-            message.from.id === toUser.id ? 'bg-primary' : 'bg-default-100'
+            "max-w-3/4 rounded p-3",
+            message.from.id === toUser.id ? "bg-primary" : "bg-default-100",
           )}
         >
           <p
             className={cn(
-              'relative text-xs font-bold',
+              "relative text-xs font-bold",
               message.from.id === toUser.id
-                ? 'block text-white'
-                : 'text-default-700'
+                ? "block text-white"
+                : "text-default-700",
             )}
           >
             {message.from.name}
           </p>
           <p
             className={cn(
-              'pt-1',
-              message.from.id === toUser.id && 'text-white/90'
+              "pt-1",
+              message.from.id === toUser.id && "text-white/90",
             )}
           >
             {message.message.value}
@@ -69,7 +69,7 @@ const UserMessage = ({
         </div>
       )}
 
-      {message.message.type === 'file' && (
+      {message.message.type === "file" && (
         <div className="mt-3 rounded border border-default-200">
           <div className="p-3">
             <div className="flex items-center justify-between gap-3">
@@ -94,19 +94,19 @@ const UserMessage = ({
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
 const ChatArea = ({ selectedUser }: { selectedUser: ChatUser }) => {
-  const [userMessages, setUserMessages] = useState<ChatMessage[]>([])
+  const [userMessages, setUserMessages] = useState<ChatMessage[]>([]);
 
   const toUser = useMemo(() => {
     return {
       id: 9,
-      name: 'Diane B',
+      name: "Diane B",
       avatar: avatar1,
-    }
-  }, [])
+    };
+  }, []);
 
   /*
    *  Fetches the messages for selected user
@@ -117,67 +117,67 @@ const ChatArea = ({ selectedUser }: { selectedUser: ChatUser }) => {
         [...messages].filter(
           (m) =>
             (m.to.id === toUser.id && m.from.id === selectedUser.id) ||
-            (toUser.id === m.from.id && m.to.id === selectedUser.id)
-        )
-      )
+            (toUser.id === m.from.id && m.to.id === selectedUser.id),
+        ),
+      );
     }
-  }, [selectedUser, toUser])
+  }, [selectedUser, toUser]);
 
   useEffect(() => {
-    getMessagesForUser()
-  }, [getMessagesForUser])
+    getMessagesForUser();
+  }, [getMessagesForUser]);
 
   /*
    * form validation schema
    */
   const schemaResolver = yup.object({
-    newMessage: yup.string().required('Please enter your message'),
-  })
+    newMessage: yup.string().required("Please enter your message"),
+  });
 
   const { control, handleSubmit, reset } = useForm({
     resolver: yupResolver(schemaResolver),
-  })
+  });
 
   /**
    * sends the chat message
    */
   const sendChatMessage = (values: { newMessage: string }) => {
-    const newUserMessages = [...userMessages]
+    const newUserMessages = [...userMessages];
     newUserMessages.push({
       id: userMessages.length + 1,
       from: toUser,
       to: selectedUser,
-      message: { type: 'text', value: values.newMessage },
-      sendOn: new Date().getHours() + ':' + new Date().getMinutes(),
-    })
+      message: { type: "text", value: values.newMessage },
+      sendOn: new Date().getHours() + ":" + new Date().getMinutes(),
+    });
     setTimeout(() => {
-      const otherNewMessages = [...newUserMessages]
+      const otherNewMessages = [...newUserMessages];
       otherNewMessages.push({
         id: userMessages.length + 1,
         from: selectedUser,
         to: toUser,
-        message: { type: 'text', value: values.newMessage },
-        sendOn: new Date().getHours() + ':' + new Date().getMinutes(),
-      })
-      setUserMessages(otherNewMessages)
-    }, 1000)
-    setUserMessages(newUserMessages)
-    reset()
-  }
+        message: { type: "text", value: values.newMessage },
+        sendOn: new Date().getHours() + ":" + new Date().getMinutes(),
+      });
+      setUserMessages(otherNewMessages);
+    }, 1000);
+    setUserMessages(newUserMessages);
+    reset();
+  };
 
   const AlwaysScrollToBottom = () => {
-    const elementRef = useRef<HTMLDivElement>(null)
+    const elementRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
       if (
         elementRef &&
         elementRef.current &&
         elementRef.current.scrollIntoView
       ) {
-        elementRef.current.scrollIntoView({ behavior: 'smooth' })
+        elementRef.current.scrollIntoView({ behavior: "smooth" });
       }
-    })
-    return <div ref={elementRef} />
-  }
+    });
+    return <div ref={elementRef} />;
+  };
   return (
     <div className="w-full overflow-hidden rounded-xl border border-default-200 bg-white dark:bg-default-50">
       <div className="border-b border-default-200 px-6 py-3">
@@ -255,7 +255,7 @@ const ChatArea = ({ selectedUser }: { selectedUser: ChatUser }) => {
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ChatArea
+export default ChatArea;

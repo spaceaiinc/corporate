@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import type { ExpertType } from '../types'
-import Image from 'next/image'
+import Link from "next/link";
+import type { ExpertType } from "../types";
+import Image from "next/image";
 
 const ExpertCard = ({ expert }: { expert: ExpertType }) => {
   return (
@@ -28,7 +28,7 @@ const ExpertCard = ({ expert }: { expert: ExpertType }) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ExpertCard
+export default ExpertCard;

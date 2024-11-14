@@ -1,6 +1,6 @@
-import Link from 'next/link'
-import { messages } from './data'
-import { LuMail } from 'react-icons/lu'
+import Link from "next/link";
+import { messages } from "./data";
+import { LuMail } from "react-icons/lu";
 
 const EmailDropdown = () => {
   return (
@@ -27,7 +27,7 @@ const EmailDropdown = () => {
         </div>
         <div className="h-52 overflow-y-auto border-y border-dashed border-default-200 py-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-default-300 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar]:w-1">
           {messages.map((message, idx) => {
-            const Icon = message.icon
+            const Icon = message.icon;
             return (
               <Link
                 href=""
@@ -48,7 +48,7 @@ const EmailDropdown = () => {
                   </p>
                 </span>
               </Link>
-            )
+            );
           })}
         </div>
         <Link
@@ -59,7 +59,7 @@ const EmailDropdown = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default EmailDropdown
+export default EmailDropdown;

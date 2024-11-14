@@ -1,9 +1,9 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
-import backgroundImg from '@/assets/images/landing/marketing-2/bg-2.png'
-import backgroundDarkImg from '@/assets/images/landing/marketing-2/bg-2-dark.jpg'
-import marketing1 from '@/assets/images/landing/marketing-2/img-1.jpg'
+import backgroundImg from "@/assets/images/landing/marketing-2/bg-2.png";
+import backgroundDarkImg from "@/assets/images/landing/marketing-2/bg-2-dark.jpg";
+import marketing1 from "@/assets/images/landing/marketing-2/img-1.jpg";
 
 const Hero = () => {
   return (
@@ -100,7 +100,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

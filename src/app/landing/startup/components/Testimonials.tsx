@@ -1,9 +1,9 @@
-'use client'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { testimonialSlides } from '../data'
-import { LuMoveLeft, LuMoveRight, LuStar } from 'react-icons/lu'
-import { FreeMode, Navigation } from 'swiper/modules'
-import Image from 'next/image'
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { testimonialSlides } from "../data";
+import { LuMoveLeft, LuMoveRight, LuStar } from "react-icons/lu";
+import { FreeMode, Navigation } from "swiper/modules";
+import Image from "next/image";
 
 const Testimonials = () => {
   return (
@@ -41,8 +41,8 @@ const Testimonials = () => {
                 modules={[FreeMode, Navigation]}
                 loop
                 navigation={{
-                  prevEl: '.testimonials-button-prev',
-                  nextEl: '.testimonials-button-next',
+                  prevEl: ".testimonials-button-prev",
+                  nextEl: ".testimonials-button-next",
                 }}
                 className="testimonials relative rounded-md"
               >
@@ -75,13 +75,13 @@ const Testimonials = () => {
                                 key={idx}
                                 className="size-5 fill-yellow-300 text-yellow-300"
                               />
-                            )
+                            );
                           })}
                           <LuStar className="size-5 text-yellow-300" />
                         </div>
                       </div>
                     </SwiperSlide>
-                  )
+                  );
                 })}
               </Swiper>
               <div className="absolute -bottom-14 start-0 z-10">
@@ -103,7 +103,7 @@ const Testimonials = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;

@@ -1,12 +1,12 @@
-'use client'
-import { LuSearch } from 'react-icons/lu'
-import { useLayoutContext } from '@/context'
+"use client";
+import { LuSearch } from "react-icons/lu";
+import { useLayoutContext } from "@/context";
 
-import bgLine from '@/assets/images/other/bg-lines-2.png'
-import bgLineDark from '@/assets/images/other/bg-lines-2-dark.png'
+import bgLine from "@/assets/images/other/bg-lines-2.png";
+import bgLineDark from "@/assets/images/other/bg-lines-2-dark.png";
 
 const DomainNames = () => {
-  const { themeMode } = useLayoutContext()
+  const { themeMode } = useLayoutContext();
   return (
     <section className="py-10 lg:py-20">
       <div className="container">
@@ -14,7 +14,7 @@ const DomainNames = () => {
           <div
             className="bg-cover bg-no-repeat px-6 py-20"
             style={{
-              backgroundImage: `url(${themeMode == 'light' ? bgLine.src : bgLineDark.src})`,
+              backgroundImage: `url(${themeMode == "light" ? bgLine.src : bgLineDark.src})`,
             }}
           >
             <div className="mx-auto text-center">
@@ -25,8 +25,8 @@ const DomainNames = () => {
                 Every exceptional website deserves a remarkable name.
               </h2>
               <p className="mt-6 text-base text-default-950">
-                Your domain name is the address of your website. While <br />{' '}
-                .com names are widely favored, consider options like <br />{' '}
+                Your domain name is the address of your website. While <br />{" "}
+                .com names are widely favored, consider options like <br />{" "}
                 .org, .tech, .co, and beyond.
               </p>
               <form className="mx-auto mt-6 max-w-xl space-y-2">
@@ -51,7 +51,7 @@ const DomainNames = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default DomainNames
+export default DomainNames;
