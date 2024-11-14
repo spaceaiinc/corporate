@@ -35,7 +35,7 @@ const Features = () => {
                         </div>
                       ) : (
                         <div className="inline-flex h-12 w-12 items-center justify-center rounded-md text-primary-600">
-                          <Icon className="h-6 w-6" />
+                          {/* <Icon className="h-6 w-6" /> */}
                         </div>
                       )}
                     </div>
