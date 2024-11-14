@@ -82,7 +82,7 @@ export type DemoType = {
 type FeatureType = {
   title: string;
   description: string;
-  icon: IconType | string;
+  icon: string | StaticImageData | IconType;
 };
 
 const developmentTools: DevelopmentToolType[] = [
