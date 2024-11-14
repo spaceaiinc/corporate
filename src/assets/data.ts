@@ -1,0 +1,182 @@
+import { IconType } from "react-icons";
+import {
+  LuFacebook,
+  LuGithub,
+  LuLinkedin,
+  LuSignalMedium,
+} from "react-icons/lu";
+
+export type FooterLink = {
+  title: string;
+  items: {
+    name: string;
+    link: string;
+    icon?: IconType;
+    newTab?: boolean;
+  }[];
+};
+
+export type LandingPage = {
+  name: string;
+  link: string;
+};
+
+export const footerLinks: FooterLink[] = [
+  {
+    title: "Organization",
+    items: [
+      // {
+      //   name: "About",
+      //   link: "/#about",
+      // },
+      {
+        name: "Services",
+        link: "/#services",
+      },
+      {
+        name: "Media",
+        link: "/#media",
+      },
+      {
+        name: "Misson",
+        link: "/#misson",
+      },
+      {
+        name: "Team",
+        link: "/#team",
+      },
+      {
+        name: "Contact",
+        link: "/#contact",
+      },
+      {
+        name: "Privacy Policy",
+        link: "privacy-policy",
+      },
+      {
+        name: "Term Of Sale",
+        link: "term-of-sale",
+      },
+    ],
+  },
+  {
+    title: "Services",
+    items: [
+      {
+        name: "Auto Scout",
+        link: "autoscout.spaceai.jp",
+        newTab: true,
+      },
+      {
+        name: "V Teacher",
+        link: "vteacher.spaceai.jp",
+        newTab: true,
+      },
+    ],
+  },
+  {
+    title: "Social Media",
+    items: [
+      {
+        name: "GitHub",
+        icon: LuGithub,
+        link: "https://github.com/spaceaiinc",
+        newTab: true,
+      },
+      {
+        name: "Linkedin",
+        icon: LuLinkedin,
+        link: "https://www.linkedin.com/in/hidenari-yuda",
+        newTab: true,
+      },
+      {
+        name: "Facebook",
+        link: "http://facebook.com/hideyuda",
+        icon: LuFacebook,
+      },
+      {
+        name: "Medium",
+        icon: LuSignalMedium,
+        link: "https://medium.com/@hideyuda",
+        newTab: true,
+      },
+      // {
+      //   name: 'Instagram',
+      //   icon: LuInstagram,
+      //   link: ''
+      // },
+      // {
+      //   name: 'X(Twitter)',
+      //   icon: LuTwitter,
+      //   link: ''
+      // },
+    ],
+  },
+];
+
+export const landingPages: LandingPage[] = [
+  {
+    name: "Agency",
+    link: "/landing/agency",
+  },
+  {
+    name: "Agency Two",
+    link: "/landing/agency-2",
+  },
+  {
+    name: "Charity",
+    link: "/landing/charity",
+  },
+  {
+    name: "Company",
+    link: "/landing/company",
+  },
+  {
+    name: "Creative",
+    link: "/landing/creative",
+  },
+  {
+    name: "Ebook",
+    link: "/landing/ebook",
+  },
+  {
+    name: "Finance",
+    link: "/landing/finance",
+  },
+  {
+    name: "Hosting",
+    link: "/landing/hosting",
+  },
+  {
+    name: "Marketing",
+    link: "/landing/marketing",
+  },
+  {
+    name: "Marketing 2",
+    link: "/landing/marketing-2",
+  },
+  {
+    name: "Marketing 3",
+    link: "/landing/marketing-3",
+  },
+  {
+    name: "Photography",
+    link: "/landing/photography",
+  },
+  {
+    name: "Portfolio",
+    link: "/landing/portfolio",
+  },
+  {
+    name: "Portfolio 2",
+    link: "/landing/portfolio-2",
+  },
+  {
+    name: "Startup",
+    link: "/landing/startup",
+  },
+  {
+    name: "Web Designer",
+    link: "/landing/web-designer",
+  },
+];
