@@ -27,3 +27,8 @@ export type BlogType = {
   type: string;
   image: StaticImageData;
 };
+
+export type ServiceType = {
+  title: string;
+  icon: IconType;
+};
