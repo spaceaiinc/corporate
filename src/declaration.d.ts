@@ -9,6 +9,6 @@ declare module "*.jpg" {
 }
 
 declare module "*.svg" {
-  const value: React.FC<React.SVGProps<SVGSVGElement>>;
+  const value: import("next/image").StaticImageData;
   export default value;
 }
