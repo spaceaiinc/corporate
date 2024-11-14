@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
-  const { name, email, content } = await req.json();
+  const { name, email, message } = await req.json();
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -17,16 +17,16 @@ export async function POST(req: NextRequest) {
     to: "hidenariyuda@gmail.com",
     subject: "問い合わせ",
     text: `NAME：${name}\n\nEMAIL:${email}\n\n
-      お問い合わせありがとうございます。\n3営業日以内にご返信いたします。\n\n\nDear ${name},\n\nThank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${content}`,
+      お問い合わせありがとうございます。\n3営業日以内にご返信いたします。\n\n\nDear ${name},\n\nThank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${message}`,
   };
 
   const mailOptionsToUser = {
     from: process.env.EMAIL_ADDRESS,
     to: email,
     subject: "Thank you for your inquiry",
-    text: `Thank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${content}`,
+    text: `Thank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${message}`,
     // subject: "お問い合わせありがとうございます / Thank you for your inquiry",
-    // text: `お問い合わせありがとうございます。\n3営業日以内にご返信いたします。\n\n,\n\nThank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${content}`,
+    // text: `お問い合わせありがとうございます。\n3営業日以内にご返信いたします。\n\n,\n\nThank you for your inquiry. We will contact you as soon as possible.\n\nBest regards,\n\nSpaceAI\n\n\nContent:\n${message}`,
   };
 
   try {

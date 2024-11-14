@@ -1,10 +1,11 @@
 import {
   BlogType,
   PortfolioSliderType,
+  ServiceType,
   StepType,
   TestimonialSlideType,
 } from "./type";
-import { LuMapPin, LuNetwork, LuSend } from "react-icons/lu";
+import { LuClipboardSignature, LuContact2, LuFolderKanban, LuImage, LuMapPin, LuNetwork, LuNewspaper, LuSend, LuStore } from "react-icons/lu";
 
 import marketing2 from "@/assets/images/landing/marketing-2/img-2.jpg";
 import marketing3 from "@/assets/images/landing/marketing-2/img-3.jpg";
@@ -122,4 +123,30 @@ const blogs: BlogType[] = [
   },
 ];
 
-export { portfolioSlides, investmentSteps, testimonialSlides, blogs };
+const services: ServiceType[] = [
+  {
+    title: "Search Engine Optimization",
+    icon: LuNewspaper,
+  },
+  {
+    title: "Social Media Marketing",
+    icon: LuFolderKanban,
+  },
+  {
+    title: "E-commerce Solutions",
+    icon: LuClipboardSignature,
+  },
+  {
+    title: "Pay-Per-Click Advertising",
+    icon: LuStore,
+  },
+  {
+    title: " Branding  Strategy",
+    icon: LuContact2,
+  },
+  {
+    title: "Marketing Copywriting",
+    icon: LuImage,
+  },
+];
+export { portfolioSlides, investmentSteps, testimonialSlides, blogs, services };
