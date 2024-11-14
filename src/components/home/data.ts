@@ -68,8 +68,8 @@ import authReset from "@/assets/images/demo/auth-reset-password.png";
 import type { StaticImageData } from "next/image";
 
 type DevelopmentToolType = {
-  logo: string;
   name: string;
+  logo: string | StaticImageData;
 };
 
 export type DemoType = {
