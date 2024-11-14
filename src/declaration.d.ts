@@ -1,24 +1,14 @@
 declare module "*.png" {
-  const value: string;
+  const value: import("next/image").StaticImageData;
   export default value;
 }
 
 declare module "*.jpg" {
-  const value: string;
-  export default value;
-}
-
-declare module "*.gif" {
-  const value: string;
+  const value: import("next/image").StaticImageData;
   export default value;
 }
 
 declare module "*.svg" {
-  const value: string;
-  export default value;
-}
-
-declare module "*.webp" {
-  const value: string;
+  const value: React.FC<React.SVGProps<SVGSVGElement>>;
   export default value;
 }
