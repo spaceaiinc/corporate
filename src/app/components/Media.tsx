@@ -119,6 +119,7 @@ const Media = () => {
             <Link
               target="_blank"
               rel="noopener noreferrer"
+              passHref
               href="https://medium.com/@hideyuda"
               className="inline-flex items-center justify-center gap-2 rounded-md border border-default-200 px-8 py-2 text-default-950 backdrop-blur-3xl transition-all duration-700 hover:border-primary hover:bg-primary hover:text-white"
             >
@@ -198,6 +199,7 @@ const Media = () => {
               target="_blank"
               rel="noopener noreferrer"
               href="https://medium.com/@hideyuda"
+              passHref
               className="inline-flex items-center justify-center gap-2 rounded-md border border-default-200 px-8 py-2 text-default-950 backdrop-blur-3xl transition-all duration-700 hover:border-primary hover:bg-primary hover:text-white"
             >
               Read More

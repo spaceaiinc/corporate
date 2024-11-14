@@ -93,7 +93,8 @@ const Services = () => {
               <Link
                 target="_blank"
                 rel="noreferrer"
-                href="autoscout.spaceai.jp"
+                href="https://autoscout.spaceai.jp"
+                passHref
                 className="group text-lg font-medium text-default-950"
               >
                 View HR RPA Service
