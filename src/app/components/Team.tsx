@@ -11,6 +11,7 @@ import {
   LuFacebook,
   LuSignalMedium,
 } from "react-icons/lu";
+import Link from "next/link";
 
 const memberData = [
   {
@@ -26,13 +27,13 @@ const memberData = [
         name: "Medium",
         icon: LuSignalMedium,
         link: "https://medium.com/@hideyuda",
-        newTab: true,
+        isExternal: true,
       },
       {
         name: "Linkedin",
         icon: LuLinkedin,
         link: "https://www.linkedin.com/in/hidenari-yuda",
-        newTab: true,
+        isExternal: true,
       },
       {
         name: "Facebook",
@@ -43,7 +44,7 @@ const memberData = [
         name: "GitHub",
         icon: LuGithub,
         link: "https://github.com/hideyuda",
-        newTab: true,
+        isExternal: true,
       },
     ],
   },
@@ -95,14 +96,15 @@ const Team = () => {
               <p className="mt-5 text-lg h-20">{member.description}</p>
               <div className="mt-5 flex items-center gap-2">
                 {member.links.map((link) => (
-                  <a
+                  <Link
                     key={`link-${link.name}`}
                     href={link.link}
-                    target={link.newTab ? "_blank" : "_self"}
+                    target={link.isExternal ? "_blank" : "_self"}
+                    passHref={link.isExternal}
                     className="flex items-center gap-1 text-default-950 hover:text-primary"
                   >
                     <link.icon className="h-5 w-5" />
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>

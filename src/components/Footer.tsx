@@ -83,8 +83,11 @@ const Footer = () => {
                           {Icon ? (
                             <li className="group flex items-center gap-5">
                               <Link
-                                target={item.newTab ? "_blank" : ""}
-                                rel={item.newTab ? "noopener noreferrer" : ""}
+                                target={item.isExternal ? "_blank" : ""}
+                                rel={
+                                  item.isExternal ? "noopener noreferrer" : ""
+                                }
+                                passHref={item.isExternal}
                                 href={`${item.link ? item.link : ""}`}
                                 className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
                               >
@@ -97,8 +100,11 @@ const Footer = () => {
                           ) : (
                             <li>
                               <Link
-                                target={item.newTab ? "_blank" : ""}
-                                rel={item.newTab ? "noopener noreferrer" : ""}
+                                target={item.isExternal ? "_blank" : ""}
+                                rel={
+                                  item.isExternal ? "noopener noreferrer" : ""
+                                }
+                                passHref={item.isExternal}
                                 href={`${item.link ? item.link : ""}`}
                                 className="text-base text-default-700 transition-all hover:text-default-950"
                               >

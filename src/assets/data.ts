@@ -12,7 +12,7 @@ export type FooterLink = {
     name: string;
     link: string;
     icon?: IconType;
-    newTab?: boolean;
+    isExternal?: boolean;
   }[];
 };
 
@@ -64,13 +64,13 @@ export const footerLinks: FooterLink[] = [
     items: [
       {
         name: "Auto Scout",
-        link: "autoscout.spaceai.jp",
-        newTab: true,
+        link: "https://autoscout.spaceai.jp",
+        isExternal: true,
       },
       {
         name: "V Teacher",
-        link: "vteacher.spaceai.jp",
-        newTab: true,
+        link: "https://vteacher.spaceai.jp",
+        isExternal: true,
       },
     ],
   },
@@ -81,13 +81,13 @@ export const footerLinks: FooterLink[] = [
         name: "GitHub",
         icon: LuGithub,
         link: "https://github.com/spaceaiinc",
-        newTab: true,
+        isExternal: true,
       },
       {
         name: "Linkedin",
         icon: LuLinkedin,
         link: "https://www.linkedin.com/in/hidenari-yuda",
-        newTab: true,
+        isExternal: true,
       },
       {
         name: "Facebook",
@@ -98,7 +98,7 @@ export const footerLinks: FooterLink[] = [
         name: "Medium",
         icon: LuSignalMedium,
         link: "https://medium.com/@hideyuda",
-        newTab: true,
+        isExternal: true,
       },
       // {
       //   name: 'Instagram',
