@@ -98,7 +98,12 @@ const ContactUs = () => {
                 <div className="flex justify-center">
                   <button
                     type="submit"
-                    className="flex items-center rounded-md bg-primary/90 px-6 py-2 text-white transition-all hover:bg-primary"
+                    className={`
+                      flex items-center rounded-md
+                      px-6 py-2
+                      bg-transparent border border-primary 
+                      transition-all hover:bg-primary-700 hover:text-white
+                    `}
                   >
                     Send Messages <LuSend className="ms-2 h-5 w-5 rotate-45" />
                   </button>

@@ -6,9 +6,19 @@ import { FreeMode } from "swiper/modules";
 
 import "swiper/css";
 import Image from "next/image";
-import { portfolioSlides } from "./data";
+import { PortfolioSliderType } from "./type";
+import placeholderImg from "@/assets/images/placeholder.jpg";
 
 const Case = () => {
+  const portfolioSlides: PortfolioSliderType[] = [
+    {
+      title:
+        "How Marketing Wire's Support Led to a 70% Increase in Data Accuracy",
+      subTitle: "70% Growth Achieved withs",
+      image: placeholderImg,
+    },
+  ];
+
   return (
     <section id="portfolio" className="py-10 lg:py-20">
       <div className="container">

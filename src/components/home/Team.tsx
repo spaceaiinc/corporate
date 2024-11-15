@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import hideyudaImg from "@/assets/images/hideyuda.jpg";
+import hideyudaImg from "@/assets/images/members/hideyuda.jpg";
 import placeholderImg from "@/assets/images/placeholder.jpg";
 
 import "swiper/css";
