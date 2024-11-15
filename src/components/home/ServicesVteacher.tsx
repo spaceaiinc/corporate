@@ -33,19 +33,19 @@ const ServicesVteacher = () => {
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Made by Native Japanese Speaker
+                  Made by Native Japanese Speakers
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Practice with Interactive Chat
+                  Practice with Interactive And Chill Chat
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Customize your skills and favorites
+                  Customize by Your Level And Interest
                 </span>
               </li>
             </ul>

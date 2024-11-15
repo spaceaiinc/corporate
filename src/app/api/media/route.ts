@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import Parser from "rss-parser";
-import mediumLogo from "@/assets/images/medium.jpg";
-import noteLogo from "@/assets/images/note.svg";
+import mediumLogo from "@/assets/images/brand/medium.png";
+import noteLogo from "@/assets/images/brand/note.svg";
 
 const parser = new Parser({
   customFields: {

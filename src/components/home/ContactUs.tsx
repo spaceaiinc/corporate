@@ -60,7 +60,7 @@ const ContactUs = () => {
                   /> */}
                   <TextFormInput
                     name="email"
-                    label="Email"
+                    label="Email *"
                     type="email"
                     labelClassName="text-default-500"
                     className="bg-default-50 px-3 text-sm"
@@ -73,7 +73,7 @@ const ContactUs = () => {
                 <div className="sm:col-span-2">
                   <TextFormInput
                     name="subject"
-                    label="Subject"
+                    label="Subject *"
                     labelClassName="text-default-500"
                     className="bg-default-50 px-3 text-sm"
                     placeholder="Type subject..."
@@ -85,7 +85,7 @@ const ContactUs = () => {
                 <div className="sm:col-span-2">
                   <TextAreaFormInput
                     name="message"
-                    label="Message"
+                    label="Message *"
                     labelClassName="text-default-500"
                     className="bg-default-50 px-3 text-sm"
                     rows={6}

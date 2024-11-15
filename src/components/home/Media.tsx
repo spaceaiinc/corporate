@@ -60,7 +60,7 @@ const Media = () => {
           <div className="relative">
             <Swiper
               modules={[Autoplay]}
-              loop={articles.note.length > 3}
+              loop={articles.medium.length > 3}
               loopAdditionalSlides={1}
               autoplay={{
                 delay: 2500,
@@ -95,8 +95,8 @@ const Media = () => {
                           <Image
                             alt="slide-Image"
                             src={slide.thumbnail}
-                            width={600}
-                            height={300}
+                            width={432}
+                            height={226}
                             className="h-full w-full scale-[1.2] transition-all duration-700 group-hover:scale-[1]"
                           />
                         </a>
@@ -174,8 +174,8 @@ const Media = () => {
                           <Image
                             alt="slide-Image"
                             src={slide.thumbnail}
-                            width={600}
-                            height={300}
+                            width={432}
+                            height={226}
                             className="h-full w-full scale-[1.2] transition-all duration-700 group-hover:scale-[1]"
                           />
                         </a>
