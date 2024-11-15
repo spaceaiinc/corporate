@@ -6,7 +6,7 @@ import { FreeMode } from "swiper/modules";
 
 import "swiper/css";
 import Image from "next/image";
-import { portfolioSlides } from "../data";
+import { portfolioSlides } from "../../app/data";
 
 const Case = () => {
   return (

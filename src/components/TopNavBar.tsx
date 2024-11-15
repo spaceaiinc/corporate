@@ -3,7 +3,6 @@ import { toSentenceCase } from "@/helpers";
 import { cn } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { LuMail, LuMenu, LuX } from "react-icons/lu";
 
@@ -11,7 +10,7 @@ import logoDark from "@/assets/images/logo-dark.svg";
 import logoLight from "@/assets/images/logo-light.svg";
 
 const TopNavBar = ({
-  menuItems,
+  // menuItems,
   position,
   hasDownloadButton,
 }: {
@@ -21,7 +20,27 @@ const TopNavBar = ({
 }) => {
   const navbarRef = useRef<HTMLDivElement>(null);
   const hash = window.location.hash;
-  const pathname = usePathname();
+  // const pathname = usePathname();
+
+  type MenuItem = {
+    title: string;
+    link: string;
+  };
+
+  const menuItems: MenuItem[] = [
+    {
+      title: "About",
+      link: "/#about",
+    },
+    {
+      title: "Services",
+      link: "/#services",
+    },
+    {
+      title: "Media",
+      link: "/#media",
+    },
+  ];
 
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
@@ -46,16 +65,41 @@ const TopNavBar = ({
     };
   }, []);
 
-  const [activation, setActivation] = useState<string>(menuItems[0]);
+  // const [isDarkBackground, setIsDarkBackground] = useState(true);
+  // const darkSectionRef = useRef(null);
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       setIsDarkBackground(entry.isIntersecting);
+  //     },
+  //     {
+  //       root: null,
+  //       threshold: 0.1,
+  //     }
+  //   );
+
+  //   if (darkSectionRef.current) {
+  //     observer.observe(darkSectionRef.current);
+  //   }
+
+  //   return () => {
+  //     if (darkSectionRef.current) {
+  //       observer.unobserve(darkSectionRef.current);
+  //     }
+  //   };
+  // }, []);
+
+  const [activation, setActivation] = useState<string>(menuItems[0].title);
 
   const activeSection = () => {
     const scrollY = window.scrollY;
 
     for (let i = menuItems.length - 1; i >= 0; i--) {
       const section = menuItems[i];
-      const el: HTMLElement | null = document.getElementById(section);
+      const el: HTMLElement | null = document.getElementById(section.title);
       if (el && el.offsetTop <= scrollY + 100) {
-        setActivation(section);
+        setActivation(section.title);
         return;
       }
     }
@@ -68,7 +112,8 @@ const TopNavBar = ({
         id="navbar"
         className={cn(
           position,
-          "inset-x-0 top-0 z-[60] w-full  border-b border-transparent bg-white transition-all duration-300 dark:bg-default-50 lg:bg-transparent [&.nav-sticky]:bg-white/90 [&.nav-sticky]:shadow-md [&.nav-sticky]:backdrop-blur-3xl dark:[&.nav-sticky]:bg-default-50/80",
+          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent",
+          // { "text-white": isDarkBackground }
         )}
       >
         <div className="flex h-full items-center py-4">
@@ -118,14 +163,14 @@ const TopNavBar = ({
                       key={idx}
                       className={cn(
                         "menu-item mx-2 text-default-800 transition-all duration-300 hover:text-primary [&.active]:text-primary",
-                        activation === item && "active",
+                        activation === item.title && "active",
                       )}
                     >
                       <Link
                         className="inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium capitalize lg:text-base"
-                        href={`#${item}`}
+                        href={item.link}
                       >
-                        {toSentenceCase(item)}
+                        {toSentenceCase(item.title)}
                       </Link>
                     </li>
                   );
@@ -166,9 +211,19 @@ const TopNavBar = ({
                   className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                 >
                   <LuMail className="h-4 w-4 fill-white/40" />
-                  {/* <LuDownloadCloud className="h-4 w-4 fill-white/40" /> */}
                   <span className="hidden sm:block">Contact</span>
                 </Link>
+                {/* <div className="ms-auto shrink gap-2 lg:inline-flex">
+                  <div className="flex items-center gap-2">
+                    <button className="inline-flex items-center gap-2 rounded-full bg-transparent py-1.5 text-base text-primary transition-all">
+                      EN
+                    </button>
+                    /
+                    <button className="inline-flex items-center gap-2 rounded-full bg-transparent py-1.5 text-base text-primary transition-all">
+                      JP
+                    </button>
+                  </div>
+                </div> */}
               </div>
             </nav>
           </div>
@@ -214,8 +269,8 @@ const TopNavBar = ({
                       activation == `${item}` && "active",
                     )}
                   >
-                    <a className="block w-full px-4 py-2.5" href={`#${item}`}>
-                      {toSentenceCase(item)}
+                    <a className="block w-full px-4 py-2.5" href={item.link}>
+                      {toSentenceCase(item.title)}
                     </a>
                   </li>
                 );

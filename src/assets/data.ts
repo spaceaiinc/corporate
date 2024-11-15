@@ -25,10 +25,10 @@ export const footerLinks: FooterLink[] = [
   {
     title: "Organization",
     items: [
-      // {
-      //   name: "About",
-      //   link: "/#about",
-      // },
+      {
+        name: "About",
+        link: "/about",
+      },
       {
         name: "Services",
         link: "/#services",
@@ -38,24 +38,16 @@ export const footerLinks: FooterLink[] = [
         link: "/#media",
       },
       {
-        name: "Misson",
-        link: "/#misson",
-      },
-      {
-        name: "Team",
-        link: "/#team",
-      },
-      {
         name: "Contact",
-        link: "/#contact",
+        link: "/contact",
       },
       {
         name: "Privacy Policy",
-        link: "privacy-policy",
+        link: "/privacy-policy",
       },
       {
-        name: "Term Of Sale",
-        link: "term-of-sale",
+        name: "Transactions Act",
+        link: "/transactions-act",
       },
     ],
   },

@@ -1,12 +1,7 @@
 import TopNavBar from "@/components/TopNavBar";
-import ContactUs from "@/components/home/ContactUs";
-import Hero from "@/components/home/Hero";
-import PortfolioSwiper from "@/components/home/Media";
-import Services from "@/components/home/Services";
 import type { Metadata } from "next";
 import { Footer } from "@/components";
-import About from "@/components/home/About";
-
+import ContactUs from "@/components/home/ContactUs";
 export const metadata: Metadata = {
   title: "Home",
 };
@@ -19,14 +14,6 @@ export default function Home() {
         position="fixed"
         hasDownloadButton
       />
-
-      <Hero />
-
-      <About />
-
-      <Services />
-
-      <PortfolioSwiper />
 
       <ContactUs />
 
