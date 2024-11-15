@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import backgroundImg from "@/assets/images/landing/marketing-2/bg-2.png";
-import backgroundDarkImg from "@/assets/images/landing/marketing-2/bg-2-dark.jpg";
+import backgroundImg from "@/assets/images/bg.png";
+import backgroundDarkImg from "@/assets/images/bg-dark.jpg";
 
 const Hero = () => {
   return (

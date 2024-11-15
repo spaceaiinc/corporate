@@ -6,9 +6,6 @@ const InvestmentSteps = () => {
     <>
       <section className="relative h-full py-16 lg:py-32">
         <div className="container">
-          <div className="absolute inset-0 bg-[url(../images/landing/marketing-2/img-8.jpg)] bg-cover bg-center bg-repeat">
-            <div className="absolute inset-0 h-full w-full bg-black/50" />
-          </div>
           <div className="relative">
             <div className="grid items-center gap-6 sm:grid-cols-3">
               <div className="sm:col-span-2">

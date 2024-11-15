@@ -1,4 +1,3 @@
-import marketing10 from "@/assets/images/landing/marketing-2/img-10.jpg";
 import { LuCheckCircle2 } from "react-icons/lu";
 import Link from "next/link";
 
@@ -8,7 +7,7 @@ const ActionBox = () => {
       <div className="container">
         <div
           className="absolute inset-0 bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${marketing10.src})` }}
+          // style={{ backgroundImage: `url(${marketing10.src})` }}
         >
           <div className="absolute inset-0 h-full w-full bg-black/60" />
         </div>
