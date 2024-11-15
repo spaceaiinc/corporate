@@ -17,16 +17,12 @@ type MenuItem = {
 const TopNavBar = () => {
   const menuItems: MenuItem[] = [
     {
-      title: "About",
-      link: "/#about",
-    },
-    {
-      title: "Services",
-      link: "/#services",
-    },
-    {
       title: "Media",
-      link: "/#media",
+      link: "/hideyuda/#media",
+    },
+    {
+      title: "Experience",
+      link: "/hideyuda/#experience",
     },
   ];
 
@@ -56,31 +52,6 @@ const TopNavBar = () => {
     };
   }, []);
 
-  // const [isDarkBackground, setIsDarkBackground] = useState(true);
-  // const darkSectionRef = useRef(null);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsDarkBackground(entry.isIntersecting);
-  //     },
-  //     {
-  //       root: null,
-  //       threshold: 0.1,
-  //     }
-  //   );
-
-  //   if (darkSectionRef.current) {
-  //     observer.observe(darkSectionRef.current);
-  //   }
-
-  //   return () => {
-  //     if (darkSectionRef.current) {
-  //       observer.unobserve(darkSectionRef.current);
-  //     }
-  //   };
-  // }, []);
-
   const [activation, setActivation] = useState<string>(menuItems[0].title);
 
   const activeSection = () => {
@@ -104,31 +75,15 @@ const TopNavBar = () => {
         className={cn(
           "fixed",
           "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent",
-          // { "text-white": isDarkBackground }
         )}
       >
         <div className="flex h-full items-center py-4">
           <div className="container">
             <nav className="flex flex-wrap items-center justify-between gap-4 lg:flex-nowrap">
               <div className="flex w-full items-center justify-between lg:w-auto">
-                <Link href="/">
-                  <Image
-                    src={logoDark}
-                    alt="logo"
-                    height={40}
-                    width={147}
-                    className="flex h-10 dark:hidden"
-                  />
-                  <Image
-                    src={logoLight}
-                    alt="logo"
-                    height={40}
-                    width={147}
-                    className="hidden h-10 dark:flex"
-                  />
-                </Link>
+                <Link href="/">Hide Yuda</Link>
                 <div className="flex items-center gap-2">
-                  <div className="inline-flex shrink gap-2 lg:hidden">
+                  {/* <div className="inline-flex shrink gap-2 lg:hidden">
                     <Link
                       href="/#contact"
                       className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
@@ -136,7 +91,7 @@ const TopNavBar = () => {
                       <LuMail className="h-4 w-4 fill-white/40" />
                       <span className="hidden sm:block">Contact</span>
                     </Link>
-                  </div>
+                  </div> */}
                   <button
                     className="hs-collapse-toggle inline-block lg:hidden"
                     data-hs-overlay="#mobile-menu"
@@ -164,37 +119,8 @@ const TopNavBar = () => {
                     </li>
                   );
                 })}
-                {/* <li className="menu-item group">
-                  <div className="hs-dropdown relative inline-flex [--trigger:hover] [--placement:bottom]">
-                    <Link
-                      className="hs-dropdown-toggle inline-flex items-center rounded-full px-4 py-2 text-sm font-medium text-default-700 after:absolute after:inset-0 hover:text-primary group-hover:after:-bottom-16 lg:text-base"
-                      href=""
-                    >
-                      Landing <LuChevronDown className="ms-2 h-4 w-4" />
-                    </Link>
-                    <div className="hs-dropdown-menu z-10 mt-4 hidden min-w-48 rounded-lg border border-default-100 bg-white p-1.5 opacity-0 shadow-lg transition-[opacity,margin] hs-dropdown-open:opacity-100 dark:bg-default-50">
-                      <ul className="flex flex-col gap-1">
-                        {landingPages.map((item, idx) => {
-                          return (
-                            <li key={idx}>
-                              <Link
-                                className={cn(
-                                  'flex items-center rounded px-3 py-2 text-sm font-medium text-default-600 transition-all hover:bg-default-400/10 hover:text-default-700 [&.active]:text-primary',
-                                  pathname === item.link && 'active'
-                                )}
-                                href={item.link}
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  </div>
-                </li> */}
               </ul>
-              <div className="ms-auto hidden shrink gap-2 lg:inline-flex">
+              {/* <div className="ms-auto hidden shrink gap-2 lg:inline-flex">
                 <Link
                   href="/#contact"
                   className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
@@ -202,18 +128,7 @@ const TopNavBar = () => {
                   <LuMail className="h-4 w-4 fill-white/40" />
                   <span className="hidden sm:block">Contact</span>
                 </Link>
-                {/* <div className="ms-auto shrink gap-2 lg:inline-flex">
-                  <div className="flex items-center gap-2">
-                    <button className="inline-flex items-center gap-2 rounded-full bg-transparent py-1.5 text-base text-primary transition-all">
-                      EN
-                    </button>
-                    /
-                    <button className="inline-flex items-center gap-2 rounded-full bg-transparent py-1.5 text-base text-primary transition-all">
-                      JP
-                    </button>
-                  </div>
-                </div> */}
-              </div>
+              </div> */}
             </nav>
           </div>
         </div>
@@ -264,38 +179,6 @@ const TopNavBar = () => {
                   </li>
                 );
               })}
-
-              {/* <li className="hs-accordion" id="landing-accordion">
-                <Link
-                  className="hs-accordion-toggle flex items-center rounded px-4 py-2.5 text-sm font-medium capitalize text-default-900 transition-all duration-300 hover:bg-default-100 hover:text-primary hs-accordion-active:bg-default-400/10 [&.active]:bg-default-100 [&.active]:text-primary"
-                  href=""
-                >
-                  Landing
-                  <LuChevronDown className="ms-auto size-5 transition-all hs-accordion-active:rotate-180" />
-                </Link>
-                <div
-                  id="landing-accordion"
-                  className="hs-accordion-content hidden w-full overflow-hidden transition-[height]"
-                >
-                  <ul className="ps-2 pt-2">
-                    {landingPages.map((item, idx) => {
-                      return (
-                        <li key={idx}>
-                          <Link
-                            className={cn(
-                              'flex items-center rounded px-3 py-2 text-sm font-medium text-default-600 transition-all hover:bg-default-400/10 hover:text-default-700 [&.active]:text-primary',
-                              pathname === item.link && 'active'
-                            )}
-                            href={item.link}
-                          >
-                            {item.name}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-              </li> */}
             </ul>
           </nav>
         </div>

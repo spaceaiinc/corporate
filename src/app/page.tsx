@@ -15,11 +15,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <TopNavBar
-        menuItems={["services", "media"]}
-        position="fixed"
-        hasDownloadButton
-      />
+      <TopNavBar />
 
       <Hero />
 

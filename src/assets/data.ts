@@ -22,7 +22,7 @@ export const footerLinks: FooterLink[] = [
     items: [
       {
         name: "About",
-        link: "/about",
+        link: "/#about",
       },
       {
         name: "Services",

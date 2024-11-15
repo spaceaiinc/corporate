@@ -44,27 +44,35 @@ const Footer = () => {
                   />
                 </Link>
                 <ul className="flex flex-col gap-3 mt-6">
-                  <li className="group flex items-center gap-5">
+                  <li>
                     <Link
                       href="tel:080-6144-4748"
-                      className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+                      style={{ textDecoration: "none" }}
                     >
-                      <LuPhone className="h-5 w-5" />
+                      <div className="group flex items-center gap-5">
+                        <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white">
+                          <LuPhone className="h-5 w-5" />
+                        </div>
+                        <h5 className="text-base font-medium text-default-800">
+                          080-6144-4748
+                        </h5>
+                      </div>
                     </Link>
-                    <h5 className="text-base font-medium text-default-800">
-                      080-6144-4748
-                    </h5>
                   </li>
-                  <li className="group flex items-center gap-5">
+                  <li>
                     <Link
                       href="mailto:info@spaceai.jp"
-                      className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+                      style={{ textDecoration: "none" }}
                     >
-                      <LuMail className="h-5 w-5" />
+                      <div className="group flex items-center gap-5">
+                        <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white">
+                          <LuMail className="h-5 w-5" />
+                        </div>
+                        <h5 className="text-base font-medium text-default-800">
+                          info@spaceai.jp
+                        </h5>
+                      </div>
                     </Link>
-                    <h5 className="text-base font-medium text-default-800">
-                      info@spaceai.jp
-                    </h5>
                   </li>
                 </ul>
                 {/* <p className="mt-6  text-base">
@@ -106,7 +114,7 @@ const Footer = () => {
                       return (
                         <Fragment key={idx}>
                           {Icon ? (
-                            <li className="group flex items-center gap-5">
+                            <li>
                               <Link
                                 target={item.isExternal ? "_blank" : ""}
                                 rel={
@@ -114,13 +122,17 @@ const Footer = () => {
                                 }
                                 passHref={item.isExternal}
                                 href={`${item.link ? item.link : ""}`}
-                                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+                                style={{ textDecoration: "none" }}
                               >
-                                <Icon className="h-5 w-5" />
+                                <div className="group flex items-center gap-5">
+                                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white">
+                                    <Icon className="h-5 w-5" />
+                                  </div>
+                                  <h5 className="text-base font-medium text-default-800">
+                                    {item.name}
+                                  </h5>
+                                </div>
                               </Link>
-                              <h5 className="text-base font-medium text-default-800">
-                                {item.name}
-                              </h5>
                             </li>
                           ) : (
                             <li>

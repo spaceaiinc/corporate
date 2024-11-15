@@ -8,11 +8,7 @@ export const metadata: Metadata = {
 const TransactionsAct = () => {
   return (
     <>
-      <TopNavBar
-        menuItems={["services", "media"]}
-        position="fixed"
-        hasDownloadButton
-      />
+      <TopNavBar />
       <div className="container mx-auto p-6 mt-20">
         <h1 className="text-3xl font-bold mb-4">English following Japanese</h1>
         <h1 className="text-3xl font-bold mb-4">特定商取引法に基づく表示</h1>

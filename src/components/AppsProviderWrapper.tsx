@@ -1,6 +1,5 @@
 "use client";
 import { LayoutProvider } from "@/context";
-import { SessionProvider } from "next-auth/react";
 import { usePathname } from "next/navigation";
 import { useEffect, type ReactNode } from "react";
 
@@ -40,11 +39,7 @@ const AppsProviderWrapper = ({
     }, 400);
   }, [pathname]);
 
-  return (
-    <SessionProvider>
-      <LayoutProvider>{children}</LayoutProvider>
-    </SessionProvider>
-  );
+  return <LayoutProvider>{children}</LayoutProvider>;
 };
 
 export default AppsProviderWrapper;

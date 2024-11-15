@@ -53,7 +53,7 @@ const memberData = [
     id: "you",
     name: "You?",
     role: "Future Co-Founder",
-    description: ``,
+    description: "\n\n\n\n\n\n\n",
     image: placeholderImg,
     links: [],
   },
@@ -69,14 +69,11 @@ const Team = () => {
             <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
               Team
             </span>
-            {/* <h2 className="my-4 text-3xl font-medium capitalize text-default-950">
-              Team
-            </h2> */}
           </div>
         </div>
         <div className="grid grid-cols-1 items-center lg:grid-cols-2">
           {memberData.map((member) => (
-            <div className="pb-10 sm:p-10 h-56" key={`member-${member.id}`}>
+            <div className="pb-10 sm:p-10 h-70" key={`member-${member.id}`}>
               <div className="mt-5 flex items-center gap-6">
                 <div>
                   <Image
@@ -94,7 +91,7 @@ const Team = () => {
                   <p className="mt-2 text-base">{member.role}</p>
                 </div>
               </div>
-              <p className="mt-5 text-lg h-20">{member.description}</p>
+              <p className="mt-5 text-lg h-30">{member.description}</p>
               <div className="mt-5 flex items-center gap-2">
                 {member.links.map((link) => (
                   <Link
