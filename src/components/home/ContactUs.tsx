@@ -23,17 +23,15 @@ const ContactUs = () => {
   });
 
   const onSubmit = async (data: any) => {
-    console.log(data);
     try {
-      const response = await axios.post("/api/mail", data, {
+      await axios.post("/api/mail", data, {
         headers: {
           "Content-Type": "application/json",
         },
       });
-
-      console.log("Message sent successfully:", response.data);
-    } catch (error) {
-      console.error("Error sending message:", error);
+      alert("Message sent successfully! We will get back to you soon.");
+    } catch {
+      alert("Failed to send message. Please try again later.");
     }
   };
 
@@ -44,22 +42,12 @@ const ContactUs = () => {
           <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
             Contact Us
           </span>
-          {/* <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
-            Contact Us
-          </h2> */}
-          {/* <p className="mt-5 text-lg">
-            We&apos;re eager to engage with like-minded individuals. Simply
-            greet us, and we&apos;ll embark on a productive collaboration.
-            Launch your own journey to success.
-          </p> */}
+          {/* <p className="mt-5 text-lg"></p> */}
         </div>
         <div className="mx-auto mt-16 max-w-3xl">
           <div>
             <div className="rounded-md border border-default-200 p-8">
               <form onSubmit={handleSubmit(onSubmit)} className="relative">
-                {/* <h2 className="mb-5 text-2xl font-medium text-default-950">
-                  We welcome your feedback
-                </h2> */}
                 <div className="sm:cols-span-2">
                   {/* <TextFormInput
                     name="name"
@@ -82,7 +70,6 @@ const ContactUs = () => {
                     control={control}
                   />
                 </div>
-
                 <div className="sm:col-span-2">
                   <TextFormInput
                     name="subject"

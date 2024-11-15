@@ -95,8 +95,8 @@ const Media = () => {
                           <Image
                             alt="slide-Image"
                             src={slide.thumbnail}
-                            width={800}
-                            height={600}
+                            width={600}
+                            height={300}
                             className="h-full w-full scale-[1.2] transition-all duration-700 group-hover:scale-[1]"
                           />
                         </a>
@@ -174,8 +174,8 @@ const Media = () => {
                           <Image
                             alt="slide-Image"
                             src={slide.thumbnail}
-                            width={800}
-                            height={600}
+                            width={600}
+                            height={300}
                             className="h-full w-full scale-[1.2] transition-all duration-700 group-hover:scale-[1]"
                           />
                         </a>

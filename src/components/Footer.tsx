@@ -6,6 +6,7 @@ import logoDark from "@/assets/images/logo-dark.svg";
 import logoLight from "@/assets/images/logo-light.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { LuMail, LuPhone } from "react-icons/lu";
 
 const Footer = () => {
   // const subscribeFormSchema = yup.object({
@@ -42,6 +43,30 @@ const Footer = () => {
                     className="hidden h-10 dark:flex"
                   />
                 </Link>
+                <ul className="flex flex-col gap-3 mt-6">
+                  <li className="group flex items-center gap-5">
+                    <Link
+                      href="tel:080-6144-4748"
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+                    >
+                      <LuPhone className="h-5 w-5" />
+                    </Link>
+                    <h5 className="text-base font-medium text-default-800">
+                      080-6144-4748
+                    </h5>
+                  </li>
+                  <li className="group flex items-center gap-5">
+                    <Link
+                      href="mailto:info@spaceai.jp"
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+                    >
+                      <LuMail className="h-5 w-5" />
+                    </Link>
+                    <h5 className="text-base font-medium text-default-800">
+                      info@spaceai.jp
+                    </h5>
+                  </li>
+                </ul>
                 {/* <p className="mt-6  text-base">
                   Integer auctor aliquet martor, sed lorem malesuada eros
                   blandit eget. Proin lacinia mortoc id odio vestibulum.

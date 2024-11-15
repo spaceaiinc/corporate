@@ -5,7 +5,17 @@ import {
   StepType,
   TestimonialSlideType,
 } from "./type";
-import { LuClipboardSignature, LuContact2, LuFolderKanban, LuImage, LuMapPin, LuNetwork, LuNewspaper, LuSend, LuStore } from "react-icons/lu";
+import {
+  LuClipboardSignature,
+  LuContact2,
+  LuFolderKanban,
+  LuImage,
+  LuMapPin,
+  LuNetwork,
+  LuNewspaper,
+  LuSend,
+  LuStore,
+} from "react-icons/lu";
 
 import marketing2 from "@/assets/images/landing/marketing-2/img-2.jpg";
 import marketing3 from "@/assets/images/landing/marketing-2/img-3.jpg";
