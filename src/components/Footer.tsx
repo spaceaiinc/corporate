@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="border-y border-default-200">
+      <div className="border-t border-default-200">
         <div className="container py-20">
           <div className="grid gap-10 md:grid-cols-3 lg:gap-16 xl:grid-cols-5">
             <div className="md:col-span-3 xl:col-span-2">
@@ -146,12 +146,12 @@ const Footer = () => {
             })}
           </div>
         </div>
-      </div>
-      <div className="py-4">
-        <div className="container flex h-full flex-wrap items-center justify-center text-center md:justify-between md:text-start">
-          <p className="text-base text-default-900">
-            © {new Date().getFullYear()} Space AI
-          </p>
+        <div className="py-4">
+          <div className="container flex h-full flex-wrap items-center justify-center text-center md:justify-between md:text-start">
+            <p className="text-base text-default-900">
+              © {new Date().getFullYear()} Space AI
+            </p>
+          </div>
         </div>
       </div>
     </footer>

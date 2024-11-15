@@ -1,5 +1,5 @@
 import { LuPlay } from "react-icons/lu";
-import { investmentSteps } from "../../app/data";
+import { investmentSteps } from "./data";
 
 const InvestmentSteps = () => {
   return (
