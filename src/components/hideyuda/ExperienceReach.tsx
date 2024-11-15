@@ -19,47 +19,65 @@ const ExperienceReach = () => {
             <strong>Key Contributions:</strong>
             <ul className="mt-4 text-left">
               <li>
-                Collaborated with sales-side directors to define necessary
+                - Collaborated with sales-side directors to define necessary
                 features and screens.
-              </li>
+              </li>{" "}
+              <br />
               <li>
-                Developed pages for creating, updating, and managing job and
+                - Developed pages for creating, updating, and managing job and
                 applicant data.
-              </li>
+              </li>{" "}
+              <br />
               <li>
-                Implemented functionality to generate resumes and CVs from
+                - Implemented functionality to generate resumes and CVs from
                 entered applicant information.
-              </li>
+              </li>{" "}
+              <br />
               <li>
-                Built LINE login and Messaging API features for communication
+                - Built LINE login and Messaging API features for communication
                 with applicants.
-              </li>
+              </li>{" "}
+              <br />
               <li>
-                Developed REST APIs using Go, Docker with clean architecture and
-                domain-driven design.
-              </li>
+                - Developed REST APIs using Go, Docker with clean architecture
+                and domain-driven design.
+              </li>{" "}
+              <br />
               <li>
-                Created Gmail API integration to import applicant data triggered
-                by entry emails from scouting platforms.
-              </li>
+                - Created Gmail API integration to import applicant data
+                triggered by entry emails from scouting platforms.
+              </li>{" "}
+              <br />
               <li>
-                Built RPA for scheduled scouting email sending via scouting
+                - Built RPA for scheduled scouting email sending via scouting
                 platforms.
-              </li>
-              <li>Added new tables and columns to the database as needed.</li>
+              </li>{" "}
+              <br />
+              <li>- Added new tables and columns to the database as needed.</li>
               <li>
-                Integrated Firebase Auth for user login via email and Google
+                - Integrated Firebase Auth for user login via email and Google
                 authentication.
-              </li>
+              </li>{" "}
+              <br />
             </ul>
             <br />
-            <strong>Backend:</strong> Go, Docker, Echo, sqlx
+            <strong>Backend</strong>
+            <ul className="mt-4 text-center">
+              <li> Go, Echo, sqlx</li>
+            </ul>{" "}
             <br />
-            <strong>Frontend:</strong> React, Next.js, TypeScript (State
-            management with Recoil)
+            <strong>Frontend</strong>
+            <ul className="mt-4 text-center">
+              <li>React, Next.js, TypeScript, Recoil, MUI</li>
+            </ul>{" "}
             <br />
-            <strong>Infrastructure:</strong> Google Cloud (Firebase Hosting,
-            Cloud Run, Artifact Repository, Cloud Load Balancer, Cloud SQL)
+            <strong>Infrastructure</strong>
+            <ul className="mt-4 text-center">
+              <li>
+                MySQL, Docker, Google Cloud (Firebase App Hosting, Cloud Run,
+                Artifact Repository, Cloud Load Balancer, Cloud SQL)
+              </li>
+            </ul>
           </p>
         </div>
       </div>
