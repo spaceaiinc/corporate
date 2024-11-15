@@ -39,6 +39,7 @@ const memberData = [
         name: "Facebook",
         link: "http://facebook.com/hideyuda",
         icon: LuFacebook,
+        isExternal: true,
       },
       {
         name: "GitHub",

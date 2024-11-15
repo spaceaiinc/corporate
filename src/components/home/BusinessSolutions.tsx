@@ -1,4 +1,4 @@
-import { services } from "../../app/data";
+import { services } from "./data";
 
 const BusinessSolutions = () => {
   return (

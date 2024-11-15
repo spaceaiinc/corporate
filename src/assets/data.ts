@@ -85,6 +85,7 @@ export const footerLinks: FooterLink[] = [
         name: "Facebook",
         link: "http://facebook.com/hideyuda",
         icon: LuFacebook,
+        isExternal: true,
       },
       {
         name: "Medium",
