@@ -1,20 +1,19 @@
 import {
   LuBoxes,
   LuDot,
-  LuFileText,
   LuMoveRight,
   LuRocket,
   LuWebhook,
 } from "react-icons/lu";
 import Link from "next/link";
 
-const Services = () => {
+const ServicesDev = () => {
   return (
     <section id="services" className="py-10 lg:py-20">
       <div className="container">
         <div className="mx-auto mb-14 max-w-xl text-center">
           <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-            Services
+            Services | Dev
           </span>
           <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
             Developement Service
@@ -142,4 +141,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesDev;

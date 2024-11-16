@@ -4,7 +4,7 @@ import { cn } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { LuMail, LuMenu, LuX } from "react-icons/lu";
+import { LuMenu, LuX } from "react-icons/lu";
 
 import logoDark from "@/assets/images/logo-dark.svg";
 import logoLight from "@/assets/images/logo-light.svg";
@@ -81,7 +81,7 @@ const TopNavBar = () => {
           <div className="container">
             <nav className="flex flex-wrap items-center justify-between gap-4 lg:flex-nowrap">
               <div className="flex w-full items-center justify-between lg:w-auto">
-                <Link href="/">Hide Yuda</Link>
+                <Link href="/hideyuda">Hide Yuda</Link>
                 <div className="flex items-center gap-2">
                   {/* <div className="inline-flex shrink gap-2 lg:hidden">
                     <Link

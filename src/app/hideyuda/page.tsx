@@ -3,7 +3,7 @@ import Media from "@/components/home/Media";
 import ExperienceReach from "@/components/hideyuda/ExperienceReach";
 import Hero from "@/components/hideyuda/Hero";
 import ExperienceOS from "@/components/hideyuda/ExperienceOS";
-import NavBar from "@/components/hideyuda/NavBar";
+import TopNavBar from "@/components/hideyuda/TopNavBar";
 export const metadata: Metadata = {
   title: "Home",
 };
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <NavBar />
+      <TopNavBar />
 
       <Hero />
 
