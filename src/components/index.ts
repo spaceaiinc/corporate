@@ -1,6 +1,6 @@
 export * from "./form";
 
-export { default as TopNavBar } from "./TopNavBar";
+export { default as TopNavBar } from "./home/TopNavBar";
 export { default as ProjectSwiper } from "./ProjectSwiper";
 export { default as ServicesMarquee } from "./ServicesMarquee";
 export { default as Footer } from "./Footer";

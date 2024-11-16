@@ -1,9 +1,10 @@
-import TopNavBar from "@/components/home/TopNavBar";
 import type { Metadata } from "next";
 import { Footer } from "@/components";
-import ContactUs from "@/components/home/ContactUs";
+import TopNavBar from "@/components/home/TopNavBar";
+import NotFound from "@/components/NotFound";
+
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Not Found",
 };
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
     <>
       <TopNavBar />
 
-      <ContactUs />
+      <NotFound />
 
       <Footer />
     </>

@@ -5,8 +5,8 @@ import { useEffect, type ReactNode } from "react";
 
 const handleChangeTitle = () => {
   if (document.visibilityState == "hidden")
-    document.title = "SpaceAI - Come back!";
-  else document.title = "SpaceAI";
+    document.title = "Space AI - Come back!";
+  else document.title = "Space AI";
 };
 
 const AppsProviderWrapper = ({

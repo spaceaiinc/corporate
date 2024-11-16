@@ -1,12 +1,12 @@
-import TopNavBar from "@/components/TopNavBar";
-import ContactUs from "@/components/home/ContactUs";
-import Hero from "@/components/home/Hero";
-import Services from "@/components/home/Services";
 import type { Metadata } from "next";
 import { Footer } from "@/components";
+import TopNavBar from "@/components/home/TopNavBar";
+import ContactUs from "@/components/home/ContactUs";
+import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Media from "@/components/home/Media";
 import ServicesVteacher from "@/components/home/ServicesVteacher";
+import ServicesDev from "@/components/home/ServicesDev";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -21,7 +21,7 @@ export default function Home() {
 
       <About />
 
-      <Services />
+      <ServicesDev />
 
       <ServicesVteacher />
 
