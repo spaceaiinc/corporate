@@ -1,19 +1,32 @@
 # Space AI Corporate Site
 
+## Prerequisites
+
+Please follow the steps below to install and set up all prerequisites:
+
+### Node.js
+
+In order to use build tools, you will need to download and install Node.js. If Node.js is not already installed, you can get it by downloading the package installer from the official website. Please make sure to download the **stable version** of Node.js (LTS).
+
+[Download Via asdf](https://github.com/asdf-vm/asdf-nodejs)
+
+[Download Via Official Site](https://nodejs.org/)
+
 ## Getting Started
 
 1. Clone
 ```bash
-git clone https://github.com/spaceaiinc/autoscout.git
+git clone https://github.com/spaceaiinc/corporate.git
 ```
 
-2. Install Deps
-```
-npm i
+2. Get env.local file from Admin
+
+3. Install Deps
+```bash
+npm install
 ```
 
-3. Run the development server:
-
+4. Run the development server:
 ```bash
 npm run dev
 ```
