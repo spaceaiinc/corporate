@@ -10,7 +10,7 @@ import "@/assets/css/style.css";
 
 const AppProvidersWrapper = dynamic(
   () => import("@/components/AppsProviderWrapper"),
-  { ssr: false }
+  { ssr: false },
 );
 const BackToTop = dynamic(() => import("@/components/BackToTop"));
 

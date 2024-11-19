@@ -96,17 +96,24 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="flex justify-center">
-                  <button
-                    type="submit"
-                    className={`
-                      flex items-center rounded-md
+                  <div className="relative inline-flex mt-10 group">
+                    <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
+
+                    <button
+                      type="submit"
+                      className={`
+                      relative flex items-center rounded-md
                       px-6 py-2
-                      bg-transparent border border-primary 
+                      text-primary-700
+                      bg-white
+                      border border-primary 
                       transition-all hover:bg-primary-700 hover:text-white
                     `}
-                  >
-                    Send Messages <LuSend className="ms-2 h-5 w-5 rotate-45" />
-                  </button>
+                    >
+                      Send Messages
+                      <LuSend className="ms-2 h-5 w-5 rotate-45" />
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
