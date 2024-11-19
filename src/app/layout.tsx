@@ -81,7 +81,7 @@ export default function RootLayout({
             style={{ height: "10%", width: "auto" }}
           />
         </div>
-        <NextTopLoader color="#ea580c" showSpinner={false} />
+        <NextTopLoader color="#71717a" showSpinner={false} />
         <div id="__next_splash">
           <AppProvidersWrapper>
             {children}
