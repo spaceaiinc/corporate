@@ -50,26 +50,27 @@ const ServicesVteacher = () => {
               </li>
             </ul>
             <div className="mt-10 flex justify-center h-100 w-100">
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                passHref
-                href="https://vteacher.spaceai.jp"
-                className={`
-            text-white text-lg font-medium
-            inline-flex items-center justify-center 
-            gap-3 rounded-lg 
-            px-16 py-4 
-            backdrop-blur-3xl bg-gradient-to-r 
-            shadow-lg
-            transition-all 
-            from-[#d6e6f2] via-[#e3d6f2] to-[#f2d6e3] 
-            hover:from-[#f2e6d6] hover:via-[#f2d6e3] hover:to-[#e3d6f2] hover:text-white
-            `}
-              >
-                Get Started
-                <LuArrowRight className="h-6 w-6" />
-              </Link>
+              <div className="relative inline-flex mt-10 group">
+                <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 "></div>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  passHref
+                  href="https://vteacher.spaceai.jp"
+                  className={`
+                  relative inline-flex items-center justify-center 
+                  gap-3 rounded-lg 
+                  px-16 py-4 
+                  text-primary-700 text-lg font-medium
+                  bg-white
+                  border border-primary 
+                  transition-all hover:bg-primary-700 hover:text-white
+                  `}
+                >
+                  Get Started
+                  <LuArrowRight className="h-6 w-6" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
