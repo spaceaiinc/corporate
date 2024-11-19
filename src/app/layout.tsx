@@ -4,6 +4,7 @@ import { type ReactNode } from "react";
 import NextTopLoader from "nextjs-toploader";
 import dynamic from "next/dynamic";
 import { Toaster } from "sonner";
+import Image from "next/image";
 
 import "@/assets/css/style.css";
 
@@ -65,18 +66,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png" />
         <style>{splashScreenStyles}</style>
       </head>
 
       <body className={rem.className}>
         <div id="splash-screen">
-          {/* <Image
+          <Image
             alt="Logo"
             width={355}
             height={83}
-            src={'/logo-dark.svg'}
-            style={{ height: '10%', width: 'auto' }}
-          /> */}
+            src={"/logo-light.svg"}
+            style={{ height: "10%", width: "auto" }}
+          />
         </div>
         <NextTopLoader color="#ea580c" showSpinner={false} />
         <div id="__next_splash">
