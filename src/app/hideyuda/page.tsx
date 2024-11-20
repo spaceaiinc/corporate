@@ -6,6 +6,11 @@ import ExperienceOS from "@/components/hideyuda/ExperienceOS";
 import TopNavBar from "@/components/hideyuda/TopNavBar";
 export const metadata: Metadata = {
   title: "Home",
+  description: "Hideyuda's Portfolio",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function Home() {
