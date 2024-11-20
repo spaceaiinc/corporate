@@ -220,14 +220,14 @@ const TopNavBar = () => {
               alt="logo"
               height={40}
               width={147}
-              className="flex h-10 dark:hidden sm:hidden"
+              className="hidden flex h-10 lg:flex"
             />
             <Image
               src={logoDark}
               alt="logo"
-              height={40}
-              width={147}
-              className="flex h-10 dark:hidden"
+              height={20}
+              width={73}
+              className="flex h-10 dark:hidden lg:hidden"
             />
             <Image
               src={logoLight}

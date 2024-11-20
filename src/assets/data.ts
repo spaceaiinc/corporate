@@ -63,6 +63,11 @@ export const footerLinks: FooterLink[] = [
         link: "https://vteacher.spaceai.jp",
         isExternal: true,
       },
+      {
+        name: "Space AI Lab",
+        link: "https://lab.spaceai.jp",
+        isExternal: true,
+      },
     ],
   },
   {
