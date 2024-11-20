@@ -44,7 +44,7 @@ const ExperienceOS = () => {
           <div className="relative">
             <Swiper
               modules={[Autoplay]}
-              loop={true}
+              loop
               loopAdditionalSlides={1}
               autoplay={{
                 delay: 2500,
