@@ -3,6 +3,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Transactions Act",
+  description: "Transactions Act for Space AI",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const TransactionsAct = () => {
