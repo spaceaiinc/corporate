@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     template: "%s | SpaceAI",
   },
   description: "SpaceAI",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const splashScreenStyles = `
@@ -67,7 +71,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
         <style>{splashScreenStyles}</style>
       </head>
 
@@ -81,7 +85,7 @@ export default function RootLayout({
             style={{ height: "10%", width: "auto" }}
           />
         </div>
-        <NextTopLoader color="#ea580c" showSpinner={false} />
+        <NextTopLoader color="#71717a" showSpinner={false} />
         <div id="__next_splash">
           <AppProvidersWrapper>
             {children}

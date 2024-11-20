@@ -3,6 +3,11 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
+  description: "Space AI Privacy Policy",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const PrivacyPolicy = () => {
