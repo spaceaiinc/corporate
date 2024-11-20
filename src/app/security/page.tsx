@@ -183,10 +183,6 @@ const Security = () => {
             protection of personal data for EU and UK users.
           </li>
           <li>
-            PCI DSS: Vercel supports PCI DSS compliance for customers processing
-            payment information.
-          </li>
-          <li>
             HIPAA Compliance: Vercel supports HIPAA compliance by safeguarding
             Protected Health Information (PHI).
           </li>
@@ -199,6 +195,70 @@ const Security = () => {
             target="_blank"
           >
             Vercel&apos;s Security Documentation
+          </a>
+          .
+        </p>
+        <h2 className="text-2xl font-semibold mb-2">Post Hog Security</h2>
+        <p className="mb-4">
+          We use Post Hog to analyze user behavior and improve our services.
+          Post Hog is committed to maintaining the highest standards of security
+          and compliance to protect your data. Key security features include:
+        </p>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            SOC 2 Type II Compliance: Post Hog is certified as SOC 2 Type II
+            compliant, following an external audit.
+          </li>
+          <li>
+            GDPR Compliance: Post Hog is GDPR compliant and acts as a Data
+            Processor for customers using Post Hog Cloud.
+          </li>
+          <li>
+            CCPA Compliance: Post Hog is a Service Provider to Post Hog Cloud
+            customers and includes a CCPA Addendum in its Privacy Policy.
+          </li>
+        </ul>
+        <p className="mb-4">
+          For more details, visit{" "}
+          <a
+            href="https://posthog.com/handbook/company/security"
+            className="text-blue-500 underline"
+            target="_blank"
+          >
+            Post Hog&apos;s Security Overview
+          </a>
+          .
+        </p>
+        <h2 className="text-2xl font-semibold mb-2">Loop Security</h2>
+        <p className="mb-4">
+          We use Loops to enhance our email communications and improve our
+          services. Loops provides secure data processing and encryption to keep
+          your information safe. Key security features include:
+        </p>
+        <ul className="list-disc list-inside mb-4">
+          <li>
+            Data Encryption: All communications with Loops are encrypted using
+            TLS, ensuring that data transmitted between our services and Loops
+            remains secure.
+          </li>
+          <li>
+            Data Processing: Loops collects and processes personal data in
+            accordance with their Privacy Policy, which outlines how they handle
+            user information.
+          </li>
+          <li>
+            User Control: Users have the ability to manage their communication
+            preferences and opt out of marketing communications at any time.
+          </li>
+        </ul>
+        <p className="mb-4">
+          For more details, please refer to{" "}
+          <a
+            href="https://www.loops.io/privacy"
+            className="text-blue-500 underline"
+            target="_blank"
+          >
+            Loops&apos; Privacy Policy
           </a>
           .
         </p>
