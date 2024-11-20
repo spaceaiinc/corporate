@@ -10,6 +10,11 @@ import ServicesDev from "@/components/home/ServicesDev";
 
 export const metadata: Metadata = {
   title: "Home",
+  description: "Home",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function Home() {
