@@ -10,7 +10,7 @@ import "@/assets/css/style.css";
 
 const AppProvidersWrapper = dynamic(
   () => import("@/components/AppsProviderWrapper"),
-  { ssr: false },
+  { ssr: false }
 );
 const BackToTop = dynamic(() => import("@/components/BackToTop"));
 
@@ -70,8 +70,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="76x76"
+          href="/apple-touch-icon.png"
+        />
         <style>{splashScreenStyles}</style>
       </head>
 
