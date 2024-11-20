@@ -56,31 +56,6 @@ const TopNavBar = () => {
     };
   }, []);
 
-  // const [isDarkBackground, setIsDarkBackground] = useState(true);
-  // const darkSectionRef = useRef(null);
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(
-  //     ([entry]) => {
-  //       setIsDarkBackground(entry.isIntersecting);
-  //     },
-  //     {
-  //       root: null,
-  //       threshold: 0.1,
-  //     }
-  //   );
-
-  //   if (darkSectionRef.current) {
-  //     observer.observe(darkSectionRef.current);
-  //   }
-
-  //   return () => {
-  //     if (darkSectionRef.current) {
-  //       observer.unobserve(darkSectionRef.current);
-  //     }
-  //   };
-  // }, []);
-
   const [activation, setActivation] = useState<string>(menuItems[0].title);
 
   const activeSection = () => {
@@ -103,8 +78,7 @@ const TopNavBar = () => {
         id="navbar"
         className={cn(
           "fixed",
-          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent",
-          // { "text-white": isDarkBackground }
+          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent"
         )}
       >
         <div className="flex h-full items-center py-4">
@@ -117,15 +91,29 @@ const TopNavBar = () => {
                     alt="logo"
                     height={40}
                     width={147}
-                    className="flex h-10 dark:hidden"
+                    className="hidden flex h-10 lg:flex"
                   />
                   <Image
+                    src={logoDark}
+                    alt="logo"
+                    height={20}
+                    width={73}
+                    className="flex h-10 dark:hidden lg:hidden"
+                  />
+                  {/* <Image
                     src={logoLight}
                     alt="logo"
                     height={40}
                     width={147}
                     className="hidden h-10 dark:flex"
                   />
+                  <Image
+                    src={logoLight}
+                    alt="logo"
+                    height={20}
+                    width={73}
+                    className="hidden h-10 dark:flex"
+                  /> */}
                 </Link>
                 <div className="flex items-center gap-2">
                   <div className="inline-flex shrink gap-2 lg:hidden">
@@ -152,7 +140,7 @@ const TopNavBar = () => {
                       key={idx}
                       className={cn(
                         "menu-item mx-2 text-default-800 transition-all duration-300 hover:text-primary [&.active]:text-primary",
-                        activation === item.title && "active",
+                        activation === item.title && "active"
                       )}
                     >
                       <Link
@@ -232,6 +220,13 @@ const TopNavBar = () => {
               alt="logo"
               height={40}
               width={147}
+              className="flex h-10 dark:hidden sm:hidden"
+            />
+            <Image
+              src={logoDark}
+              alt="logo"
+              height={40}
+              width={147}
               className="flex h-10 dark:hidden"
             />
             <Image
@@ -255,7 +250,7 @@ const TopNavBar = () => {
                     key={idx}
                     className={cn(
                       "rounded text-sm font-medium capitalize text-default-900 transition-all duration-300 hover:bg-default-100 hover:text-primary [&.active]:bg-default-100 [&.active]:text-primary",
-                      activation == `${item}` && "active",
+                      activation == `${item}` && "active"
                     )}
                   >
                     <a className="block w-full px-4 py-2.5" href={item.link}>
