@@ -41,6 +41,10 @@ export const footerLinks: FooterLink[] = [
         link: "/privacy-policy",
       },
       {
+        name: "Security",
+        link: "/security",
+      },
+      {
         name: "Transactions Act",
         link: "/transactions-act",
       },
