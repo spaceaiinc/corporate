@@ -107,75 +107,62 @@ const Hero = () => {
         <div className="relative">
           <div className="grid items-center gap-6 lg:grid-cols-2">
             <div className="mx-auto max-w-md lg:ms-0 lg:text-base">
-              {memberData.map((member) => (
-                <>
-                  <div
-                    className="pb-10 sm:p-10 h-70"
-                    key={`member-${member.id}`}
-                  >
-                    <div className="mt-5 flex items-center gap-6">
-                      <div>
-                        <Image
-                          alt="slide-image"
-                          height={56}
-                          width={56}
-                          src={member.image}
-                          className="h-14 rounded-full"
-                        />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-medium text-default-950">
-                          {member.name}
-                        </h3>
-                        <p className="mt-2 text-base">{member.role}</p>
-                      </div>
+              {memberData.map((member, idx) => (
+                <div className="pb-10 sm:p-10 h-70" key={`member-${idx}`}>
+                  <div className="mt-5 flex items-center gap-6">
+                    <div>
+                      <Image
+                        alt="slide-image"
+                        height={56}
+                        width={56}
+                        src={member.image}
+                        className="h-14 rounded-full"
+                      />
                     </div>
-                    <p className="mt-5 mb-15 text-lg h-30">
-                      {member.description} <br />
-                      <br />
-                      Favorite: Programming, Football, Music, Three Kingdoms
-                      <br />
-                      <br />
-                    </p>
-                    <p className="text-lg h-30">Stacks</p>
-                    <div className="mt-5 flex items-center gap-2">
-                      {member.stacks.map((link) => (
-                        <div
-                          key={`link-${link.img}`}
-                          className="flex items-center gap-1 text-default-950 hover:text-primary"
-                        >
-                          <Image
-                            alt="stack"
-                            src={link.img}
-                            className="h-7 w-7"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                    <p className="text-lg h-30">
-                      {" "}
-                      <br />
-                      SNS
-                    </p>
-                    <div className="mt-5 flex items-center gap-2">
-                      {member.links.map((link) => (
-                        <Link
-                          key={`link-${link.name}`}
-                          href={link.link}
-                          target={link.isExternal ? "_blank" : "_self"}
-                          passHref={link.isExternal}
-                          className="flex items-center gap-1 text-default-950 hover:text-primary"
-                        >
-                          <Image
-                            alt="link"
-                            src={link.img}
-                            className="h-7 w-7"
-                          />
-                        </Link>
-                      ))}
+                    <div>
+                      <h3 className="text-2xl font-medium text-default-950">
+                        {member.name}
+                      </h3>
+                      <p className="mt-2 text-base">{member.role}</p>
                     </div>
                   </div>
-                </>
+                  <p className="mt-5 mb-15 text-lg h-30">
+                    {member.description} <br />
+                    <br />
+                    Favorite: Programming, Football, Music, Three Kingdoms
+                    <br />
+                    <br />
+                  </p>
+                  <p className="text-lg h-30">Stacks</p>
+                  <div className="mt-5 flex items-center gap-2">
+                    {member.stacks.map((link, idx) => (
+                      <div
+                        key={`link-${idx}`}
+                        className="flex items-center gap-1 text-default-950 hover:text-primary"
+                      >
+                        <Image alt="stack" src={link.img} className="h-7 w-7" />
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-lg h-30">
+                    {" "}
+                    <br />
+                    SNS
+                  </p>
+                  <div className="mt-5 flex items-center gap-2">
+                    {member.links.map((link) => (
+                      <Link
+                        key={`link-${link.name}`}
+                        href={link.link}
+                        target={link.isExternal ? "_blank" : "_self"}
+                        passHref={link.isExternal}
+                        className="flex items-center gap-1 text-default-950 hover:text-primary"
+                      >
+                        <Image alt="link" src={link.img} className="h-7 w-7" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
             <div>

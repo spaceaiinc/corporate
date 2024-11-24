@@ -47,21 +47,6 @@ const Footer = () => {
                   <li>
                     <div className="group flex items-center gap-5">
                       <Link
-                        href="tel:080-6144-4748"
-                        style={{ textDecoration: "none" }}
-                      >
-                        <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white">
-                          <LuPhone className="h-5 w-5" />
-                        </div>
-                      </Link>
-                      <h5 className="text-base font-medium text-default-800">
-                        080-6144-4748
-                      </h5>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="group flex items-center gap-5">
-                      <Link
                         href="mailto:info@spaceai.jp"
                         style={{ textDecoration: "none" }}
                       >
