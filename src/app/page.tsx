@@ -7,6 +7,7 @@ import About from "@/components/home/About";
 import Media from "@/components/home/Media";
 import ServicesVteacher from "@/components/home/ServicesVteacher";
 import ServicesDev from "@/components/home/ServicesDev";
+import ServicesLab from "@/components/home/ServicesLab";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -29,6 +30,10 @@ export default function Home() {
       <ServicesDev />
 
       <ServicesVteacher />
+
+      <ServicesLab />
+
+      {/* <ServicesAutoScout /> */}
 
       <Media />
 
