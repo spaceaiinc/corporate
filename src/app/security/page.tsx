@@ -15,21 +15,20 @@ const Security = () => {
     <>
       <TopNavBar />
       <div className="container mx-auto p-6 mt-20">
-        <h1 className="text-3xl font-bold mb-4">About Security</h1>
+        <h1 className="text-3xl font-bold mb-4">Security</h1>
         <p className="mb-4">
-          Security is one of our highest priorities because our services handle
-          information that is sensitive to your privacy. All of our employees
-          work together to ensure the confidentiality, integrity, and
-          availability of your data.
+          Security is one of our highest priorities. All of our employees work
+          together to ensure the confidentiality, integrity, and availability of
+          your data.
         </p>
 
         <h2 className="text-2xl font-semibold mb-2">
           Our Efforts to Protect Your Data
         </h2>
         <p className="mb-4">
-          Only the user himself/herself has access to the data. All user data
-          stored in “Amazing Resume” is set at the infrastructure level so that
-          only the user himself/herself can view the data.
+          Only the user has access to the data. All user data stored on our
+          services is set at the infrastructure level so that only the user can
+          view the data.
         </p>
         <h2 className="text-2xl font-semibold mb-2">Encrypted Communication</h2>
         <p className="mb-4">
@@ -69,35 +68,12 @@ const Security = () => {
 
         <h2 className="text-2xl font-semibold mb-2">Stripe Security</h2>
         <p className="mb-4">
-          We use Stripe to process payments securely. Stripe is a PCI-certified
-          Service Provider at Level 1, the most stringent certification level in
-          the payments industry. Stripe’s security posture evolves continually
-          to meet global financial industry standards. Features include:
+          We use Stripe to process payments securely. As a PCI Level 1 certified
+          provider, Stripe meets the highest standards in the payments industry.
+          User data is encrypted, and systems are regularly audited to ensure
+          compliance and security, giving you peace of mind when using our
+          service.
         </p>
-        <ul className="list-disc list-inside mb-4">
-          <li>
-            PCI Compliance: Stripe is audited annually for PCI Service Provider
-            Level 1 certification, covering Card Data Vault (CDV) and secure
-            software development.
-          </li>
-          <li>
-            SOC Reports: Stripe’s systems and processes comply with SOC 1 and
-            SOC 2 standards, with annual SOC 3 reports available.
-          </li>
-          <li>
-            Encryption: All communications are encrypted using TLS, with AES-256
-            encryption at rest for sensitive data.
-          </li>
-          <li>
-            Access Control: The Stripe Dashboard supports MFA, SAML 2.0 single
-            sign-on, and detailed role-based access to ensure least privilege.
-          </li>
-          <li>
-            Infrastructure Security: Stripe infrastructure undergoes frequent
-            penetration testing, red team exercises, and vulnerability scans to
-            maintain resilience.
-          </li>
-        </ul>
         <p className="mb-4">
           For more details, visit{" "}
           <a
@@ -112,45 +88,11 @@ const Security = () => {
 
         <h2 className="text-2xl font-semibold mb-2">Supabase Security</h2>
         <p className="mb-4">
-          We use Supabase to store user data securely. Supabase is trusted by
-          thousands of developers for building and deploying secure
-          applications. Key security features include:
+          Supabase Security We use Supabase to store user data securely. With
+          advanced encryption, multi-factor authentication, and compliance with
+          strict standards like SOC 2 and HIPAA, your information is always
+          protected.
         </p>
-        <ul className="list-disc list-inside mb-4">
-          <li>
-            Multi-factor Authentication (MFA): Adds an extra layer of security
-            by requiring a second factor to verify user identity.
-          </li>
-          <li>
-            SOC 2 Type 2 Compliance: Ensures secure handling of sensitive
-            customer data.
-          </li>
-          <li>
-            HIPAA Compliance: Allows storing Protected Health Information (PHI)
-            with a signed Business Associate Agreement (BAA).
-          </li>
-          <li>
-            Data Encryption: AES-256 encryption for data at rest and TLS for
-            data in transit. Sensitive information like tokens is encrypted at
-            the application level.
-          </li>
-          <li>
-            Role-based Access Control (RBAC): Fine-grained permissions for
-            organizational resources.
-          </li>
-          <li>
-            Backups and Recovery: Daily backups with Point in Time Recovery for
-            Pro Plan users.
-          </li>
-          <li>
-            Vulnerability Management: Regular penetration testing and
-            vulnerability scanning with tools like GitHub, Vanta, and Snyk.
-          </li>
-          <li>
-            DDoS Protection: Mitigates Distributed Denial of Service attacks
-            with Cloudflare, fail2ban, and rate limits for critical APIs.
-          </li>
-        </ul>
         <p className="mb-4">
           For more details, visit{" "}
           <a
@@ -163,7 +105,7 @@ const Security = () => {
           .
         </p>
 
-        <h2 className="text-2xl font-semibold mb-2">Vercel Security</h2>
+        {/* <h2 className="text-2xl font-semibold mb-2">Vercel Security</h2>
         <p className="mb-4">
           We use Vercel to host our services. Vercel employs advanced security
           measures to ensure the protection of your data and compliance with
@@ -261,7 +203,7 @@ const Security = () => {
             Loops&apos; Privacy Policy
           </a>
           .
-        </p>
+        </p> */}
         <h2 className="text-2xl font-semibold mb-2">
           Organizational and Individual Employee Initiatives
         </h2>
@@ -270,11 +212,10 @@ const Security = () => {
           employee commitment to data is also important to enhance security.
         </p>
         <p className="mb-4">
-          We require all employees/contractors to sign a confidentiality
+          We require all our employees/contractors to sign a confidentiality
           agreement and only have access to the resources necessary for their
           role. In addition, all employees are required to set strong passwords
-          for all major services on which their awesome resumes depend, and
-          two-factor authentication is mandatory.
+          and two-factor authentication on services we are using.
         </p>
         <p className="mb-4">
           These efforts are reviewed on a regular basis to ensure that your data

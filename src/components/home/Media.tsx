@@ -51,11 +51,11 @@ const Media = () => {
         <div className="container">
           <div className="mx-auto mb-14 max-w-3xl text-center">
             <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-              Media
+              Media | Tech Blog
             </span>
-            <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
+            {/* <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
               Tech Blog
-            </h2>
+            </h2> */}
           </div>
           <div className="relative">
             <Swiper
@@ -132,9 +132,12 @@ const Media = () => {
       <section className="py-10 lg:py-20">
         <div className="container">
           <div className="mx-auto mb-14 max-w-3xl text-center">
-            <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
+            <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+              Media | Tech Blog In JP
+            </span>
+            {/* <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
               Tech Blog In Japanese
-            </h2>
+            </h2> */}
           </div>
           <div className="relative">
             <Swiper
