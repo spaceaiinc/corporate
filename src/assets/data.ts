@@ -54,18 +54,18 @@ export const footerLinks: FooterLink[] = [
     title: "Services",
     items: [
       {
-        name: "Auto Scout",
-        link: "https://autoscout.spaceai.jp",
-        isExternal: true,
-      },
-      {
         name: "V Teacher",
         link: "https://vteacher.spaceai.jp",
         isExternal: true,
       },
       {
-        name: "Space AI Lab",
+        name: "Lab",
         link: "https://lab.spaceai.jp",
+        isExternal: true,
+      },
+      {
+        name: "Auto Scout",
+        link: "https://autoscout.spaceai.jp",
         isExternal: true,
       },
     ],
