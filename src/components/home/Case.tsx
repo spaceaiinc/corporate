@@ -24,11 +24,11 @@ const Case = () => {
       <div className="container">
         <div className="mx-auto mb-14 max-w-3xl text-center">
           <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-            Media
+            Media | Tech Blog In Japanese
           </span>
-          <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
+          {/* <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
             Tech Blog In Japanese
-          </h2>
+          </h2> */}
           {/* <p className="mt-5 text-lg">
             We assist brands and enterprises in distinguishing themselves in the
             evolving digital terrain.
