@@ -144,7 +144,7 @@ const TransactionsAct = () => {
             </tbody>
           </table>
         </div>
-        <p className="mt-4">最終更新日 2024年11月10日</p>
+        <p className="mt-4">最終更新日 2025年1月18日</p>
       </div>
       <div className="container mx-auto p-6 mt-20">
         <h1 className="text-3xl font-bold mb-4">
@@ -292,7 +292,7 @@ const TransactionsAct = () => {
             </tbody>
           </table>
         </div>
-        <p className="mt-4">Established on November 100, 2024</p>
+        <p className="mt-4">Established on Jan 18, 2025</p>
       </div>
       <Footer />
     </>
