@@ -8,6 +8,7 @@ import Media from "@/components/home/Media";
 import ServicesVteacher from "@/components/home/ServicesVteacher";
 import ServicesDev from "@/components/home/ServicesDev";
 import ServicesLab from "@/components/home/ServicesLab";
+import ServicesLinked from "@/components/home/ServicesLinked";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -29,8 +30,10 @@ export default function Home() {
 
       <ServicesDev />
 
-      <ServicesVteacher />
+      {/* <ServicesVteacher /> */}
 
+      <ServicesLinked />
+      
       <ServicesLab />
 
       {/* <ServicesAutoScout /> */}
