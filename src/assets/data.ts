@@ -54,8 +54,8 @@ export const footerLinks: FooterLink[] = [
     title: "Services",
     items: [
       {
-        name: "V Teacher",
-        link: "https://vteacher.spaceai.jp",
+        name: "Linked",
+        link: "https://linked.spaceai.jp",
         isExternal: true,
       },
       {
@@ -63,9 +63,14 @@ export const footerLinks: FooterLink[] = [
         link: "https://lab.spaceai.jp",
         isExternal: true,
       },
+      // {
+      //   name: "Auto Scout",
+      //   link: "https://autoscout.spaceai.jp",
+      //   isExternal: true,
+      // },
       {
-        name: "Auto Scout",
-        link: "https://autoscout.spaceai.jp",
+        name: "V Teacher",
+        link: "https://vteacher.spaceai.jp",
         isExternal: true,
       },
     ],
