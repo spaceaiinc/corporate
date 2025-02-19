@@ -5,7 +5,6 @@ import ContactUs from "@/components/home/ContactUs";
 import Hero from "@/components/home/Hero";
 import About from "@/components/home/About";
 import Media from "@/components/home/Media";
-import ServicesVteacher from "@/components/home/ServicesVteacher";
 import ServicesDev from "@/components/home/ServicesDev";
 import ServicesLab from "@/components/home/ServicesLab";
 import ServicesLinked from "@/components/home/ServicesLinked";
@@ -33,10 +32,10 @@ export default function Home() {
       {/* <ServicesVteacher /> */}
 
       <ServicesLinked />
-      
-      <ServicesLab />
 
       {/* <ServicesAutoScout /> */}
+
+      <ServicesLab />
 
       <Media />
 
