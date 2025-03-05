@@ -7,57 +7,51 @@ const ExperienceReach = () => {
             Experience | Reach
           </span>
           <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
-            CRM System &quot;Reach&quot; Development and Maintenance
+            CRMシステム「Reach」の開発
           </h2>
           <p className="mt-5 text-base">
-            February 2022 - September 2024: Worked on the release, maintenance,
-            and operation of the CRM system &quot;Reach&quot; for recruitment
-            agencies. Responsibilities spanned backend, frontend, and
-            infrastructure, from requirements definition to implementation.
+            2022年2月 - 2024年9月:
+            採用エージェント向けCRMシステム「Reach」のリリース、メンテナンス、運用に従事。要件定義から実装まで、Backend、Frontend、Infrastracture全般を担当。
             <br />
             <br />
-            <strong>Key Contributions:</strong>
+            <strong>主な業務:</strong>
             <ul className="mt-4 text-center">
+              <li>- 営業部門と協力し、必要な機能と画面を定義。</li> <br />
               <li>
-                - Collaborated with sales-side directors to define necessary
-                features and screens.
+                - 求人と応募者データの作成、更新、管理のためのページを開発。
               </li>{" "}
               <br />
               <li>
-                - Developed pages for creating, updating, and managing job and
-                applicant data.
+                -
+                入力された応募者情報から履歴書および職務経歴書を生成する機能を実装。
               </li>{" "}
               <br />
               <li>
-                - Implemented functionality to generate resumes and CVs from
-                entered applicant information.
+                -
+                応募者とのコミュニケーションのためのLINEログインおよびメッセージングAPIの機能を構築。
               </li>{" "}
               <br />
               <li>
-                - Built LINE login and Messaging API features for communication
-                with applicants.
+                -
+                クリーンアーキテクチャとドメイン駆動設計を用いて、GoとDockerでREST
+                APIを開発。
               </li>{" "}
               <br />
               <li>
-                - Developed REST APIs using Go, Docker with clean architecture
-                and domain-driven design.
+                -
+                スカウティングプラットフォームからのエントリーメールをトリガーとして、Gmail
+                APIを統合し応募者データをインポートの自動化。
               </li>{" "}
               <br />
               <li>
-                - Created Gmail API integration to import applicant data
-                triggered by entry emails from scouting platforms.
+                -
+                スカウティングプラットフォーム経由で定期的なスカウトメール送信のためのRPAを構築。
               </li>{" "}
               <br />
               <li>
-                - Built RPA for scheduled scouting email sending via scouting
-                platforms.
-              </li>{" "}
-              <br />
-              <li>- Added new tables and columns to the database as needed.</li>
-              <li>
-                - Integrated Firebase Auth for user login via email and Google
-                authentication.
-              </li>{" "}
+                - 必要に応じて、データベースに新しいテーブルと列を追加、修正。
+              </li>
+              <li>- メールおよびGoogle認証によるFirebase Authを実装。</li>{" "}
               <br />
             </ul>
             <br />
@@ -70,7 +64,8 @@ const ExperienceReach = () => {
             <ul className="mt-4 text-center">
               <li>React, Next.js, TypeScript, Recoil, MUI</li>
             </ul>{" "}
-            <strong>Infrastructure</strong>
+            <br />
+            <strong>Infrastracture</strong>
             <ul className="mt-4 text-center">
               <li>
                 MySQL, Docker, Google Cloud (Firebase App Hosting, Cloud Run,
