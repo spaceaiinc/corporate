@@ -16,14 +16,40 @@ type MenuItem = {
 };
 
 const TopNavBar = () => {
+  // urlのsubPathを取得
+  const path = window.location.pathname;
+  const subPath = path.split("/")[1];
+
+  const [currentLanguage, setCurrentLanguage] = useState<string>("");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (subPath === "ja") {
+      setCurrentLanguage("ja");
+    }
+  }, []);
+
+  const handleLanguageChange = (lng: string) => {
+    console.log(lng);
+    if (lng === "" && subPath === "ja") {
+      setCurrentLanguage("");
+      window.location.href = path.replace("ja/", "");
+      router.push(path.replace("ja/", ""));
+    } else if (lng === "ja" && currentLanguage === "") {
+      setCurrentLanguage("ja");
+      window.location.href = `/ja${path}`;
+      router.push(`/ja${path}`);
+    }
+  };
+
   const menuItems: MenuItem[] = [
     {
       title: "Experience",
-      link: "/hideyuda/#experience",
+      link: `hideyuda#experience`,
     },
     {
       title: "Media",
-      link: "/hideyuda/#media",
+      link: `hideyuda#media`,
     },
   ];
 
@@ -54,36 +80,6 @@ const TopNavBar = () => {
   }, []);
 
   const [activation, setActivation] = useState<string>(menuItems[0].title);
-  // const { i18n } = useTranslation();
-  // const currentLanguage = i18n.language || 'en';
-  // console.log(currentLanguage);
-
-  // urlのsubPathを取得
-  const path = window.location.pathname;
-  const subPath = path.split("/")[1];
-
-  const [currentLanguage, setCurrentLanguage] = useState<string>("en");
-
-  useEffect(() => {
-    if (subPath === "ja") {
-      setCurrentLanguage("ja");
-    }
-  }, []);
-
-  const router = useRouter();
-
-  const handleLanguageChange = (lng: string) => {
-    console.log(lng);
-    if (lng === "en" && subPath === "ja") {
-      setCurrentLanguage("en");
-      window.location.href = path.replace("ja/", "");
-      router.push(path.replace("ja/", ""));
-    } else if (lng === "ja" && currentLanguage === "en") {
-      setCurrentLanguage("ja");
-      window.location.href = `/ja${path}`;
-      router.push(`/ja${path}`);
-    }
-  };
 
   const activeSection = () => {
     const scrollY = window.scrollY;
@@ -152,10 +148,10 @@ const TopNavBar = () => {
                 })}
                 <li className="flex items-center gap-1">
                   <button
-                    onClick={() => handleLanguageChange("en")}
+                    onClick={() => handleLanguageChange("")}
                     className={cn(
                       "px-2 py-0.5 text-sm font-medium rounded-full",
-                      currentLanguage === "en"
+                      currentLanguage === ""
                         ? "text-primary bg-primary/10"
                         : "text-default-800 hover:text-primary",
                     )}

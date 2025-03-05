@@ -17,8 +17,8 @@ const Terms = () => {
       <div className="container mx-auto p-6 mt-20">
         <h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
         <p className="mb-4">
-          Thank you very much for using Space AI Lab (hereinafter, “the Service”)
-          provided by Space AI (hereinafter, “we/our/us”).
+          Thank you very much for using Space AI Lab (hereinafter, “the
+          Service”) provided by Space AI (hereinafter, “we/our/us”).
           <br />
           Users are kindly requested to follow the Terms when using the Service.
         </p>
