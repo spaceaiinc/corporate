@@ -19,55 +19,15 @@ const ExperienceLinked = () => {
             サービスの詳細は以下のリンクからご覧いただけます。
             <br />
             <br />
-            <a href="https://linked.spaceai.jp/auth" target="_blank">
-              https://linked.spaceai.jp/auth
+            <a href="https://linked.spaceai.jp/" target="_blank">
+              https://linked.spaceai.jp/
             </a>
             <br />
             <br />
-            {/* <strong>実装機能:</strong>
-            <ul className="mt-4 text-center">
-              <li>- 営業部門の幹部と協力し、必要な機能と画面を定義。</li> <br />
-              <li>
-                - 求人と応募者データの作成、更新、管理のためのページを開発。
-              </li>{" "}
-              <br />
-              <li>
-                -
-                入力された応募者情報から履歴書および職務経歴書を生成する機能を実装。
-              </li>{" "}
-              <br />
-              <li>
-                -
-                応募者とのコミュニケーションのためのLINEログインおよびメッセージングAPIの機能を構築。
-              </li>{" "}
-              <br />
-              <li>
-                -
-                クリーンアーキテクチャとドメイン駆動設計を用いて、GoとDockerでREST
-                APIを開発。
-              </li>{" "}
-              <br />
-              <li>
-                -
-                スカウティングプラットフォームからのエントリーメールをトリガーとして、Gmail
-                APIを統合し応募者データをインポート。
-              </li>{" "}
-              <br />
-              <li>
-                -
-                スカウティングプラットフォーム経由で定期的なスカウトメール送信のためのRPAを構築。
-              </li>{" "}
-              <br />
-              <li>- 必要に応じて、データベースに新しいテーブルと列を追加。</li>
-              <li>
-                - メールおよびGoogleによる認証のためのFirebase Authを統合。
-              </li>{" "}
-              <br />
-            </ul> */}
             <br />
             <strong>Frontend</strong>
             <ul className="mt-4 text-center">
-              <li>TypeScript, React, Next.js, Page Router, Recoil</li>
+              <li>TypeScript, React, Next.js, Page Router, jotai</li>
             </ul>{" "}
             <br />
             <strong>Backend</strong>

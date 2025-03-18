@@ -11,7 +11,7 @@ const ExperienceReach = () => {
           </h2>
           <p className="mt-5 text-base">
             2022年2月 - 2024年9月:
-            採用エージェント向けCRMシステム「Reach」のリリース、メンテナンス、運用に従事。要件定義から実装まで、Backend、Frontend、Infrastracture全般を担当。
+            アンドイーズ株式会社にて、2022年2月から2024年9月まで人材紹介会社向けCRMシステム、業務自動化ツールの開発。設計から実装までをフルスタックに担当。
             <br />
             <br />
             <strong>主な業務:</strong>
@@ -68,7 +68,7 @@ const ExperienceReach = () => {
             <strong>Infrastracture</strong>
             <ul className="mt-4 text-center">
               <li>
-                MySQL, Docker, Google Cloud (Firebase App Hosting, Cloud Run,
+                MySQL, Docker, Google Cloud (Firebase, Cloud Run,
                 Artifact Repository, Cloud Load Balancer, Cloud SQL, Cloud
                 Pub/Sub, Gmail API)
               </li>
