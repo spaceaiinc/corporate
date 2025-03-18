@@ -20,8 +20,8 @@ const ExperienceLinked = () => {
             You can view the details of the service at the following link:
             <br />
             <br />
-            <a href="https://linked.spaceai.jp/auth" target="_blank">
-              https://linked.spaceai.jp/auth
+            <a href="https://linked.spaceai.jp/" target="_blank">
+              https://linked.spaceai.jp/
             </a>
             <br />
             <br />
