@@ -1,5 +1,7 @@
 # Space AI Corporate Site
 
+※Closedで開発しておりましたが、選考用に臨時でPublicにしております。データ・コードの悪用などご容赦ください。
+
 ## Prerequisites
 
 Please follow the steps below to install and set up all prerequisites:
