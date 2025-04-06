@@ -68,9 +68,9 @@ const ExperienceReach = () => {
             <strong>Infrastracture</strong>
             <ul className="mt-4 text-center">
               <li>
-                MySQL, Docker, Google Cloud (Firebase, Cloud Run,
-                Artifact Repository, Cloud Load Balancer, Cloud SQL, Cloud
-                Pub/Sub, Gmail API)
+                MySQL, Docker, Google Cloud (Firebase, Cloud Run, Artifact
+                Repository, Cloud Load Balancer, Cloud SQL, Cloud Pub/Sub, Gmail
+                API)
               </li>
             </ul>
             <br />

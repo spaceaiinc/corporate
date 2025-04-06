@@ -59,6 +59,11 @@ export const footerLinks: FooterLink[] = [
         isExternal: true,
       },
       {
+        name: "Persona LP",
+        link: "https://personalp.spaceai.jp",
+        isExternal: true,
+      },
+      {
         name: "Lab",
         link: "https://lab.spaceai.jp",
         isExternal: true,

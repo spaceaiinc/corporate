@@ -32,7 +32,7 @@ const Hero = () => {
               <h2 className="my-5 text-4xl font-medium text-default-950 md:text-5xl/tight">
                 We Make Space
                 <br />
-                to Enjoy Your Moments
+                for Your Moments
               </h2>
               <p className="mb-10 text-base">Space AI</p>
               {/* <Link

@@ -89,16 +89,16 @@ const ServicesDev = () => {
                   </span>
                 </li>
               </ul>
-              <Link
+              {/* <Link
                 target="_blank"
                 rel="noreferrer"
-                href="https://autoscout.spaceai.jp"
+                href="https://linked.spaceai.jp"
                 passHref
                 className="group text-lg font-medium text-default-950"
               >
                 View HR RPA Service
                 <LuMoveRight className="inline-block h-6 w-6 opacity-0 transition-all duration-500 will-change-transform group-hover:translate-x-2 group-hover:opacity-100" />
-              </Link>
+              </Link> */}
             </div>
             <div className="p-6">
               <div className="mx-auto">

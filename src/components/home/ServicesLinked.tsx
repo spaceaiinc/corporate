@@ -1,6 +1,6 @@
 import { LuArrowRight, LuDot } from "react-icons/lu";
 
-import bgImg from "@/assets/images/lab.webp";
+import bgImg from "@/assets/images/demo/lead-report.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -23,25 +23,30 @@ const ServicesLinked = () => {
           </div>
           <div className="order-2 lg:order-1">
             <h2 className="mt-5 text-4xl font-medium text-default-950">
-              Automate LinkedIn
+              Automate LinkedIn Sales
             </h2>
             <p className="mt-4 text-base">
-              Tools on Lab will help you automate your daily tasks with AI and
-              RPA.
+              Linked is a powerful tool that automates LinkedIn
+              outreach and lead generation. It helps you find and connect with
+              potential clients, partners, and collaborators on LinkedIn.
             </p>
             <ul role="list" className="mt-6 text-sm text-default-700">
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
-                <span className="text-base font-medium">Easy to Use</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <LuDot className="inline-block h-9 w-9 text-primary" />
-                <span className="text-base font-medium">Free to Use</span>
+                <span className="text-base font-medium">
+                  Automate LinkedIn Outreach
+                </span>
               </li>
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Customize as You Like
+                  Find and Connect with Potential Clients
+                </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <LuDot className="inline-block h-9 w-9 text-primary" />
+                <span className="text-base font-medium">
+                  Generate Leads and Build Relationships
                 </span>
               </li>
             </ul>

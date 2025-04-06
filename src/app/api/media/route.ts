@@ -3,15 +3,12 @@ import Parser from "rss-parser";
 import mediumLogo from "@/assets/images/brand/medium.png";
 import noteLogo from "@/assets/images/brand/note.png";
 
-const parser = new Parser({
-  customFields: {
-    item: ["media:thumbnail"],
-  },
-});
-
-// bgColor: #f3f3f3
-
 export async function GET() {
+  const parser = new Parser({
+    customFields: {
+      item: ["media:thumbnail"],
+    },
+  });
   const noteFeed = await parser.parseURL("https://note.com/hideyuda/rss");
   const mediumFeed = await parser.parseURL("https://medium.com/feed/@hideyuda");
 

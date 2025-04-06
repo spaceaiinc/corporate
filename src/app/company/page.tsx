@@ -15,7 +15,9 @@ const Company = () => {
     <>
       <TopNavBar />
       <div className="container mx-auto p-6 mt-20">
-        <h1 className="text-3xl font-bold mb-4">運営情報</h1>
+        <h1 className="text-3xl font-bold mb-4">
+          About Us
+        </h1>
         <p className="mb-4"></p>
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white border border-gray-200">
