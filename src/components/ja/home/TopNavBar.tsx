@@ -3,12 +3,14 @@ import { toSentenceCase } from "@/helpers";
 import { cn } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { LuMail, LuMenu, LuX } from "react-icons/lu";
-import { usePathname } from "next/navigation"; // Import usePathname
 
 import logoDark from "@/assets/images/logo-dark.svg";
-import logoLight from "@/assets/images/logo-light.svg"; // Uncommented logoLight import
+import logoLight from "@/assets/images/logo-light.svg";
+import { useRouter } from "next/navigation";
+import { languageAtom } from "@/utils/atom";
+import { useAtom } from "jotai";
 import { useLocaleSwitcher } from "@/hooks/useLocaleSwitcher";
 
 type MenuItem = {
@@ -17,26 +19,25 @@ type MenuItem = {
 };
 
 const TopNavBar = () => {
-  const pathname = usePathname();
-  const isJapanese = pathname.startsWith("/ja");
-
-  const menuItems: MenuItem[] = isJapanese
-    ? [
-        { title: "サービス", link: "/ja/#services" },
-        { title: "メディア", link: "/ja/#media" },
-      ]
-    : [
-        { title: "About", link: "/#about" },
-        { title: "Services", link: "/#services" },
-        { title: "Media", link: "/#media" },
-      ];
+  const menuItems: MenuItem[] = [
+    {
+      title: "サービス",
+      link: "/ja/#services",
+    },
+    // {
+    //   title: "私たちについて",
+    //   link: "/#about",
+    // },
+    {
+      title: "メディア",
+      link: "/ja/#media",
+    },
+  ];
 
   const navbarRef = useRef<HTMLDivElement>(null);
-  // Using window.location.hash directly in useEffect is better for client-side rendering
-  // const hash = window.location.hash;
+  const hash = window.location.hash;
 
   useEffect(() => {
-    const hash = window.location.hash; // Get hash inside useEffect
     document.addEventListener("scroll", (e) => {
       e.preventDefault();
       activeSection();
@@ -110,21 +111,6 @@ const TopNavBar = () => {
                     width={73}
                     className="flex h-10 dark:hidden lg:hidden"
                   />
-                  {/* <Image
-                    src={logoLight}
-                    alt="logo"
-                    height={40}
-                    width={147}
-                    className="hidden h-10 dark:flex"
-                    priority
-                  />
-                  <Image
-                    src={logoLight}
-                    alt="logo"
-                    height={20}
-                    width={73}
-                    className="hidden h-10 dark:flex"
-                  /> */}
                 </Link>
                 <div className="flex items-center gap-2">
                   {/* Mobile Contact Button */}
@@ -134,13 +120,11 @@ const TopNavBar = () => {
                       className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                     >
                       <LuMail className="h-4 w-4 fill-white/40" />
-                      <span className="hidden sm:block">
-                        {isJapanese ? "お問い合わせ" : "Contact"}
-                      </span>
+                      <span className="hidden sm:block">お問い合わせ</span>
                     </Link>
                   </div>
                   {/* Mobile Language Switcher */}
-                  <div className="lg:hidden">
+                  <div className="flex items-center gap-2 lg:hidden">
                     <button
                       onClick={handleSwitch}
                       className={
@@ -184,13 +168,11 @@ const TopNavBar = () => {
               {/* Desktop Contact & Language Switcher */}
               <div className="ms-auto hidden shrink gap-2 lg:inline-flex">
                 <Link
-                  href="/#contact"
+                  href="/ja/#contact"
                   className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                 >
                   <LuMail className="h-4 w-4 fill-white/40" />
-                  <span className="hidden sm:block">
-                    {isJapanese ? "お問い合わせ" : "Contact"}
-                  </span>
+                  <span className="hidden sm:block">お問い合わせ</span>
                 </Link>
                 {/* Desktop Language Switcher */}
                 <div className="flex items-center gap-2 pl-4">
@@ -238,7 +220,6 @@ const TopNavBar = () => {
               height={40}
               width={147}
               className="hidden h-10 dark:flex"
-              priority
             />
           </Link>
           <div data-hs-overlay="#mobile-menu" className="hs-collapse-toggle">
@@ -263,6 +244,38 @@ const TopNavBar = () => {
                   </li>
                 );
               })}
+
+              {/* <li className="hs-accordion" id="landing-accordion">
+                <Link
+                  className="hs-accordion-toggle flex items-center rounded px-4 py-2.5 text-sm font-medium capitalize text-default-900 transition-all duration-300 hover:bg-default-100 hover:text-primary hs-accordion-active:bg-default-400/10 [&.active]:bg-default-100 [&.active]:text-primary"
+                  href=""
+                >
+                  Landing
+                  <LuChevronDown className="ms-auto size-5 transition-all hs-accordion-active:rotate-180" />
+                </Link>
+                <div
+                  id="landing-accordion"
+                  className="hs-accordion-content hidden w-full overflow-hidden transition-[height]"
+                >
+                  <ul className="ps-2 pt-2">
+                    {landingPages.map((item, idx) => {
+                      return (
+                        <li key={idx}>
+                          <Link
+                            className={cn(
+                              'flex items-center rounded px-3 py-2 text-sm font-medium text-default-600 transition-all hover:bg-default-400/10 hover:text-default-700 [&.active]:text-primary',
+                              pathname === item.link && 'active'
+                            )}
+                            href={item.link}
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </li> */}
             </ul>
           </nav>
         </div>
