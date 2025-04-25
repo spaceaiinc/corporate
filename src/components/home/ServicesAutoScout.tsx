@@ -22,7 +22,7 @@ const ServicesAutoScout = () => {
             />
           </div>
           <div className="order-2 lg:order-1">
-            <h2 className="mt-5 text-4xl font-medium text-default-950">
+            <h2 className="mt-5 text-2xl font-medium text-default-950">
               Automate Your Daily Scout
             </h2>
             <p className="mt-4 text-base">
