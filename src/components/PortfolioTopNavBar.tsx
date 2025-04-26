@@ -23,102 +23,62 @@ const TopNavBar = () => {
   // Dynamically set menu items based on locale
   const menuItems: MenuItem[] = isJapanese
     ? [
+        { title: "Services", link: "/ja/hideyuda#services" },
         { title: "Experience", link: "/ja/hideyuda#experience" },
         { title: "Media", link: "/ja/hideyuda#media" },
       ]
     : [
+        { title: "Services", link: "/hideyuda#services" },
         { title: "Experience", link: "/hideyuda#experience" },
         { title: "Media", link: "/hideyuda#media" },
       ];
 
-  const navbarRef = useRef<HTMLDivElement>(null);
-  const [activation, setActivation] = useState<string>(""); // Initialize empty
+ const navbarRef = useRef<HTMLDivElement>(null);
+ useEffect(() => {
+   const hash = window.location.hash; // Get hash inside useEffect
+   document.addEventListener("scroll", (e) => {
+     e.preventDefault();
+     activeSection();
+     if (navbarRef.current) {
+       if (window.scrollY >= 80) navbarRef.current.classList.add("nav-sticky");
+       else navbarRef.current.classList.remove("nav-sticky");
+     }
+   });
 
-  const { currentLocale, switchLocale } = useLocaleSwitcher();
+   const timeout = setTimeout(() => {
+     if (hash) {
+       const element = document.querySelector(hash);
+       if (element) element.scrollIntoView({ behavior: "instant" });
+     }
+   }, 0);
 
-  const handleSwitch = () => {
-    const nextLocale = currentLocale === "en" ? "ja" : "en";
-    switchLocale(nextLocale);
-  };
+   return () => {
+     clearTimeout(timeout);
+     window.removeEventListener("scroll", activeSection);
+   };
+ }, []);
 
-  useEffect(() => {
-    const hash = window.location.hash; // Get hash inside useEffect
+ const [activation, setActivation] = useState<string>(menuItems[0].title);
 
-    // Initial activation check and hash scroll handling
-    if (hash) {
-      // Extract ID from hash (e.g., #experience -> experience)
-      const targetId = hash.substring(1);
-      // Find menu item title matching the ID (case-insensitive)
-      const initialSection = menuItems.find(
-        (item) => item.title.toLowerCase() === targetId.toLowerCase()
-      );
-      if (initialSection) {
-        setActivation(initialSection.title);
-      } else if (menuItems.length > 0) {
-        // Default to first item if hash doesn't match or is empty
-        setActivation(menuItems[0].title);
-      }
-      const element = document.querySelector(hash);
-      // Use setTimeout to ensure element is available after initial render
-      const timeout = setTimeout(() => {
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" }); // Use smooth scroll
-        }
-      }, 100); // Small delay might be needed
-      // No cleanup needed for this specific timeout logic inside useEffect
-      // return () => clearTimeout(timeout); // Not strictly necessary here
-    } else if (menuItems.length > 0) {
-      // Activate first item by default if no hash
-      setActivation(menuItems[0].title);
-    }
+ const activeSection = () => {
+   const scrollY = window.scrollY;
 
-    // Scroll listener for sticky navbar and active section highlighting
-    const handleScroll = () => {
-      activeSection(); // Highlight active section based on scroll position
-      if (navbarRef.current) {
-        if (window.scrollY >= 80) {
-          navbarRef.current.classList.add("nav-sticky");
-        } else {
-          navbarRef.current.classList.remove("nav-sticky");
-        }
-      }
-    };
+   for (let i = menuItems.length - 1; i >= 0; i--) {
+     const section = menuItems[i];
+     const el: HTMLElement | null = document.getElementById(section.title);
+     if (el && el.offsetTop <= scrollY + 100) {
+       setActivation(section.title);
+       return;
+     }
+   }
+ };
 
-    document.addEventListener("scroll", handleScroll);
+ const { currentLocale, switchLocale } = useLocaleSwitcher();
 
-    // Cleanup function for scroll listener
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-      // Note: The timeout from above will clear itself if the component unmounts before it fires.
-      // If you need to cancel it explicitly on unmount or re-run, add clearTimeout here.
-    };
-  }, [menuItems]); // Add menuItems dependency
-
-  const activeSection = () => {
-    const scrollY = window.scrollY;
-    let newActivation = activation; // Keep current if no section matches
-
-    // Iterate from bottom to top
-    for (let i = menuItems.length - 1; i >= 0; i--) {
-      const section = menuItems[i];
-      // Extract ID from link hash (e.g., /ja/hideyuda#experience -> experience)
-      const hashIndex = section.link.indexOf("#");
-      if (hashIndex === -1) continue; // Skip if no hash
-      const elementId = section.link.substring(hashIndex + 1);
-
-      const el: HTMLElement | null = document.getElementById(elementId); // Find element by ID
-
-      // Adjust offset check (e.g., 150 pixels from top)
-      if (el && el.offsetTop <= scrollY + 150) {
-        newActivation = section.title;
-        break; // Found the active section
-      }
-    }
-    // Update state only if activation changed
-    if (newActivation !== activation) {
-      setActivation(newActivation);
-    }
-  };
+ const handleSwitch = () => {
+   const nextLocale = currentLocale === "en" ? "ja" : "en";
+   switchLocale(nextLocale);
+ };
 
   return (
     <>
@@ -127,7 +87,7 @@ const TopNavBar = () => {
         id="navbar"
         className={cn(
           "fixed",
-          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent",
+          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent"
         )}
       >
         <div className="flex h-full items-center py-4">

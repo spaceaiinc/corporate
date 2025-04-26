@@ -9,7 +9,7 @@ const ExperienceLinked = () => {
           <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
             LinkedInマーケティングサービスの開発
           </h2>
-          <p className="mt-5 text-base">
+          <div className="mt-5 text-base">
             2025年2月 - 現在
             LinkedInマーケティングサービスの開発(PhantomBusterのようなサービス)の開発。
             <br />
@@ -47,7 +47,7 @@ const ExperienceLinked = () => {
             <ul className="mt-4 text-center">
               <li>Stripe, Posthog</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </section>

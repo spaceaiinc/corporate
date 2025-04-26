@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ServicesLinked = () => {
   return (
-    <section id="lab" className="py-10 lg:py-20">
+    <section id="services" className="py-10 lg:py-20">
       <div className="container">
         <div className="mx-auto max-w-xl text-center mb-14">
           <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">

@@ -22,8 +22,9 @@ const TopNavBar = () => {
 
   const menuItems: MenuItem[] = isJapanese
     ? [
-        { title: "サービス", link: "/ja/#services" },
-        { title: "メディア", link: "/ja/#media" },
+        { title: "About", link: "/ja/#about" },
+        { title: "Services", link: "/ja/#services" },
+        { title: "Media", link: "/ja/#media" },
       ]
     : [
         { title: "About", link: "/#about" },
@@ -32,9 +33,6 @@ const TopNavBar = () => {
       ];
 
   const navbarRef = useRef<HTMLDivElement>(null);
-  // Using window.location.hash directly in useEffect is better for client-side rendering
-  // const hash = window.location.hash;
-
   useEffect(() => {
     const hash = window.location.hash; // Get hash inside useEffect
     document.addEventListener("scroll", (e) => {
@@ -184,7 +182,7 @@ const TopNavBar = () => {
               {/* Desktop Contact & Language Switcher */}
               <div className="ms-auto hidden shrink gap-2 lg:inline-flex">
                 <Link
-                  href="/#contact"
+                  href={isJapanese ? "/ja/#contact" : "/#contact"}
                   className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                 >
                   <LuMail className="h-4 w-4 fill-white/40" />

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import TopNavBar from "@/components/ja/home/TopNavBar";
+import TopNavBar from "@/components/TopNavBar";
 import ContactUs from "@/components/ja/home/ContactUs";
 import Hero from "@/components/ja/home/Hero";
 import About from "@/components/ja/home/About";
 import Media from "@/components/ja/home/Media";
 import ServicesDev from "@/components/ja/home/ServicesDev";
 import ServicesLinked from "@/components/ja/home/ServicesLinked";
-import Footer from "@/components/ja/Footer";
-import Team from "@/components/ja/home/Team";
+import Footer from "@/components/Footer";
+import ServicesVteacher from "@/components/ja/home/ServicesVteacher";
+import Strengths from "@/components/ja/home/Strengths";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -25,15 +26,17 @@ export default function Home() {
 
       <Hero />
 
+      <About />
+
       <ServicesLinked />
+
+      <ServicesVteacher />
 
       <ServicesDev />
 
-      <About />
+      <Strengths />
 
       <Media />
-
-      {/* <Team /> */}
 
       <ContactUs />
 

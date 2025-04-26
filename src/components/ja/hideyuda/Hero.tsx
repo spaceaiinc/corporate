@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 
 import backgroundImg from "@/assets/images/bg.png";
 import backgroundDarkImg from "@/assets/images/bg-dark.jpg";
@@ -17,7 +19,32 @@ import mySQLLogo from "@/assets/images/brand/MySQL-Light.svg";
 import postgreSQLLogo from "@/assets/images/brand/PostgreSQL-Light.svg";
 import githubLogo from "@/assets/images/brand/Github-Light.svg";
 import linkedInLogo from "@/assets/images/brand/LinkedIn.svg";
-import Link from "next/link";
+import linkedImg from "@/assets/images/demo/lead-report.png";
+import vteacherImg from "@/assets/images/vteacher/bg-c.png";
+import ServicesSwiper from "../../ServcicesSwiper";
+
+const services = [
+  {
+    id: 1,
+    href: "https://linked.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    image: linkedImg,
+    title: "Linked(リンクト)",
+    description:
+      "LinkedInリード獲得効率化サービス。リスト抽出からつながり申請、レポート分析までLinkedIn上での営業・採用・マーケティングを効率化できます。",
+  },
+  {
+    id: 2,
+    href: "https://vteacher.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    image: vteacherImg,
+    title: "V Teacher",
+    description:
+      "オンライン日本語学習サービス。AIキャラクターを活用し、楽しく実践的な日本語と文化を学ぶことができます。",
+  },
+];
 
 const Hero = () => {
   const memberData = [
@@ -40,47 +67,19 @@ const Hero = () => {
           link: "https://www.linkedin.com/in/hidenari-yuda/",
           isExternal: true,
         },
-        // {
-        //   name: "Facebook",
-        //   link: "http://facebook.com/hideyuda",
-        //   icon: LuFacebook,
-        //   isExternal: true,
-        // },
       ],
       stacks: [
-        {
-          img: golangLogo,
-        },
-        {
-          img: pythonLogo,
-        },
-        {
-          img: typeScriptLogo,
-        },
-        {
-          img: reactLogo,
-        },
-        {
-          img: nextJsLogo,
-        },
-        {
-          img: firebaseLogo,
-        },
-        {
-          img: gcpLogo,
-        },
-        {
-          img: awsLogo,
-        },
-        {
-          img: postgreSQLLogo,
-        },
-        {
-          img: mySQLLogo,
-        },
-        {
-          img: dockerLogo,
-        },
+        { img: golangLogo },
+        { img: pythonLogo },
+        { img: typeScriptLogo },
+        { img: reactLogo },
+        { img: nextJsLogo },
+        { img: firebaseLogo },
+        { img: gcpLogo },
+        { img: awsLogo },
+        { img: postgreSQLLogo },
+        { img: mySQLLogo },
+        { img: dockerLogo },
       ],
     },
   ];
@@ -94,62 +93,59 @@ const Hero = () => {
         <Image
           alt="background-image"
           src={backgroundImg}
-          className="h-full w-full dark:hidden"
+          className="h-full w-full object-cover dark:hidden"
         />
         <Image
           alt="background-imageDark"
           src={backgroundDarkImg}
-          className="hidden h-full w-full dark:block"
+          className="hidden h-full w-full object-cover dark:block"
         />
         <div id="canvas_container"></div>
       </div>
-      <div className="container">
+      <div className="container px-4 mx-auto">
         <div className="relative">
           <div className="grid items-center gap-6 lg:grid-cols-2">
-            <div className="mx-auto max-w-md lg:ms-0 lg:text-base">
+            <div className="mx-auto max-w-full w-full lg:ms-0 lg:text-base">
               {memberData.map((member, idx) => (
-                <div className="pb-10 sm:p-10 h-70" key={`member-${idx}`}>
-                  <div className="mt-5 flex items-center gap-6">
+                <div className="pb-6 sm:pb-10 w-full" key={`member-${idx}`}>
+                  <div className="mt-5 flex items-center gap-4">
                     <div>
                       <Image
                         alt="slide-image"
                         height={56}
                         width={56}
                         src={member.image}
-                        className="h-14 rounded-full"
+                        className="h-14 w-14 rounded-full"
                       />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-medium text-default-950">
+                      <h3 className="text-xl sm:text-2xl font-medium text-default-950">
                         {member.name}
                       </h3>
-                      <p className="mt-2 text-base">{member.role}</p>
+                      <p className="mt-1 text-sm sm:text-base">{member.role}</p>
                     </div>
                   </div>
-                  <p className="mt-5 mb-15 text-lg h-30">
-                    {/* {member.description} <br /> */}
-                    {/* <br /> */}
-                    {/* Favorite: Programming, Football, Music, Three Kingdoms */}
+                  <div className="mt-4 mb-6 text-base sm:text-lg">
                     <br />
                     <br />
-                  </p>
-                  <p className="text-lg h-30">Stacks</p>
-                  <div className="mt-5 flex items-center gap-2">
+                  </div>
+                  <p className="text-base sm:text-lg mb-2">Stacks</p>
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
                     {member.stacks.map((link, idx) => (
                       <div
                         key={`link-${idx}`}
                         className="flex items-center gap-1 text-default-950 hover:text-primary"
                       >
-                        <Image alt="stack" src={link.img} className="h-7 w-7" />
+                        <Image
+                          alt="stack"
+                          src={link.img}
+                          className="h-6 w-6 sm:h-7 sm:w-7"
+                        />
                       </div>
                     ))}
                   </div>
-                  <p className="text-lg h-30">
-                    {" "}
-                    <br />
-                    SNS
-                  </p>
-                  <div className="mt-5 flex items-center gap-2">
+                  <p className="text-base sm:text-lg mt-6 mb-2">SNS</p>
+                  <div className="mt-2 flex items-center gap-2">
                     {member.links.map((link) => (
                       <Link
                         key={`link-${link.name}`}
@@ -158,19 +154,19 @@ const Hero = () => {
                         passHref={link.isExternal}
                         className="flex items-center gap-1 text-default-950 hover:text-primary"
                       >
-                        <Image alt="link" src={link.img} className="h-7 w-7" />
+                        <Image
+                          alt="link"
+                          src={link.img}
+                          className="h-6 w-6 sm:h-7 sm:w-7"
+                        />
                       </Link>
                     ))}
                   </div>
                 </div>
               ))}
             </div>
-            <div>
-              <div className="relative">
-                <div className="hidden xl:block">
-                  <div className="absolute -end-40 bottom-20 top-auto"></div>
-                </div>
-              </div>
+            <div className="w-full overflow-hidden">
+              <ServicesSwiper services={services} />
             </div>
           </div>
         </div>

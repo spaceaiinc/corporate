@@ -1,32 +1,43 @@
 "use client";
 import Image from "next/image";
-
 import backgroundImg from "@/assets/images/bg.png";
 import backgroundDarkImg from "@/assets/images/bg-dark.jpg";
 import linkedImg from "@/assets/images/demo/lead-report.png";
+import vteacherImg from "@/assets/images/vteacher/bg-c.png";
 import devImg from "@/assets/images/dev/logo.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import Link from "next/link";
-import { LuArrowRight } from "react-icons/lu";
+import ServicesSwiper from "../../ServcicesSwiper";
 
-// Define your services
 const services = [
   {
     id: 1,
-    href: "/ja/#services",
+    href: "https://linked.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
     image: linkedImg,
     title: "Linked(リンクト)",
     description:
-      "LinkedInリード獲得効率化サービス。リスト抽出からつながり申請、レポート分析までLinkedIn上での営業・採用・マーケティングを自動化！",
+      "LinkedInリード獲得効率化サービス。リスト抽出からつながり申請、レポート分析までLinkedIn上での営業・採用・マーケティングを効率化できます。",
   },
   {
     id: 2,
+    href: "https://vteacher.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    image: vteacherImg,
+    title: "V Teacher",
+    description:
+      "オンライン日本語学習サービス。AIキャラクターを活用し、楽しく実践的な日本語と文化を学ぶことができます。",
+    // "You can Learn Japanese language and culture with our virtual teacher anytime! Goodbye boring methods.",
+  },
+  {
+    id: 3,
     href: "/ja/#services-dev",
+    target: "_self",
+    rel: "noopener noreferrer",
     image: devImg,
     title: "ソフトウェア開発受託",
     description:
-      "お客様のWEBアプリ、ネイティブアプリ等を開発支援します。完成品をイメージできる試作から実際の完成品に至るまで、少人数でスピーディーな開発を提供しております。",
+      "WEBアプリ、ネイティブアプリ等を開発支援します。試作から実際の完成品に至るまで、少人数でスピーディーな開発を提供しております。",
   },
 ];
 
@@ -34,7 +45,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center overflow-hidden min-h-screen"
+      className="relative flex items-center justify-center overflow-hidden h-screen"
     >
       <div className="absolute inset-0">
         <Image
@@ -60,64 +71,17 @@ const Hero = () => {
               <h2 className="my-5 text-3xl sm:text-4xl font-medium text-default-950 md:text-5xl/tight">
                 We Make Space
                 <br />
-                You Like
+                for Your Moments
               </h2>
-              <p className="mb-6 sm:mb-10 text-base">Space AI</p>
-            </div>
-
-            {/* Right section - Swiper */}
-            <div className="w-full max-w-lg mx-auto lg:max-w-none">
-              <Swiper
-                modules={[Autoplay]}
-                // loop={true}
-                loopAdditionalSlides={1}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                slidesPerView={1}
-                spaceBetween={20}
-                className="services_swiper relative"
+              <p className="mb-10 text-base">Space AI</p>
+              {/* <Link
+                href=""
+                className="rounded-md bg-primary px-6 py-3 text-white transition-all duration-300 hover:bg-primary-700"
               >
-                {services.map((service) => (
-                  <SwiperSlide key={service.id}>
-                    <div className="overflow-hidden">
-                      <div className="group relative overflow-hidden">
-                        <div className="overflow-hidden rounded-2xl">
-                          <div className="aspect-w-16 aspect-h-9 sm:aspect-w-4 sm:aspect-h-3">
-                            <Image
-                              alt={`service-${service.id}`}
-                              src={service.image}
-                              className="mx-auto rounded-2xl h-full w-full object-cover scale-[1.05] transition-all duration-700 group-hover:scale-[1]"
-                              width={500}
-                              height={300}
-                            />
-                          </div>
-                        </div>
-                        <div className="mt-4 text-center">
-                          <h3 className="text-xl font-medium text-default-950 transition-all duration-700 group-hover:text-primary">
-                            {service.title}
-                          </h3>
-                          <p className="mt-2 text-base text-default-900">
-                            {service.description}
-                          </p>
-                          <div className="mt-6 sm:mt-10 flex justify-center">
-                            <Link
-                              href={service.href}
-                              passHref
-                              className="inline-flex items-center justify-center gap-2 rounded-md border border-default-200 px-6 sm:px-8 py-2 text-default-950 backdrop-blur-3xl transition-all duration-700 hover:border-primary hover:bg-primary hover:text-white"
-                            >
-                              詳しく見る
-                              <LuArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                Reach Out to Us
+              </Link> */}
             </div>
+            <ServicesSwiper services={services} />
           </div>
         </div>
       </div>
