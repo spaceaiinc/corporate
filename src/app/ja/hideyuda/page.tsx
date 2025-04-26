@@ -3,8 +3,9 @@ import Media from "@/components/home/Media";
 import ExperienceReach from "@/components/ja/hideyuda/ExperienceReach";
 import Hero from "@/components/ja/hideyuda/Hero";
 import ExperienceOS from "@/components/ja/hideyuda/ExperienceOS";
-import TopNavBar from "@/components/ja/hideyuda/TopNavBar";
 import ExperienceLinked from "@/components/ja/hideyuda/ExperienceLinked";
+import ServicesLinked from "@/components/ja/home/ServicesLinked";
+import TopNavBar from "@/components/PortfolioTopNavBar";
 export const metadata: Metadata = {
   title: "Home",
   description: "Hideyuda's Portfolio",
@@ -21,9 +22,11 @@ export default function Home() {
 
       <Hero />
 
-      <ExperienceReach />
+      <ServicesLinked />
 
       <ExperienceLinked />
+
+      <ExperienceReach />
 
       <ExperienceOS />
 

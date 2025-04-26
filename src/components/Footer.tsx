@@ -1,14 +1,263 @@
 "use client";
-import { footerLinks } from "@/assets/data";
 import { Fragment } from "react";
-
+import { usePathname } from "next/navigation"; // Import usePathname
 import logoDark from "@/assets/images/logo-dark.svg";
 import logoLight from "@/assets/images/logo-light.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { LuMail, LuPhone } from "react-icons/lu";
+import { LuMail } from "react-icons/lu";
+
+import { IconType } from "react-icons";
+import {
+  LuFacebook,
+  LuGithub,
+  LuLinkedin,
+  LuSignalMedium,
+} from "react-icons/lu";
+
+export type FooterLink = {
+  title: string;
+  items: {
+    name: string;
+    link: string;
+    icon?: IconType;
+    isExternal?: boolean;
+  }[];
+};
+
+export const enFooterLinks: FooterLink[] = [
+  {
+    title: "Organization",
+    items: [
+      {
+        name: "About",
+        link: "/#about",
+      },
+      {
+        name: "Services",
+        link: "/#services",
+      },
+      {
+        name: "Media",
+        link: "/#media",
+      },
+      {
+        name: "Contact",
+        link: "/contact",
+      },
+      {
+        name: "Privacy Policy",
+        link: "/privacy-policy",
+      },
+      {
+        name: "Security",
+        link: "/security",
+      },
+      {
+        name: "Transactions Act",
+        link: "/transactions-act",
+      },
+    ],
+  },
+  {
+    title: "Services",
+    items: [
+      {
+        name: "Linked",
+        link: "https://linked.spaceai.jp",
+        isExternal: true,
+      },
+      {
+        name: "V Teacher",
+        link: "https://vteacher.spaceai.jp",
+        isExternal: true,
+      },
+    ],
+  },
+  {
+    title: "Social Media",
+    items: [
+      {
+        name: "GitHub",
+        icon: LuGithub,
+        link: "https://github.com/spaceaiinc",
+        isExternal: true,
+      },
+      {
+        name: "Linkedin",
+        icon: LuLinkedin,
+        link: "https://www.linkedin.com/in/hidenari-yuda",
+        isExternal: true,
+      },
+      {
+        name: "Facebook",
+        link: "http://facebook.com/hideyuda",
+        icon: LuFacebook,
+        isExternal: true,
+      },
+      {
+        name: "Medium",
+        icon: LuSignalMedium,
+        link: "https://medium.com/@hideyuda",
+        isExternal: true,
+      },
+    ],
+  },
+];
+
+export const jaFooterLinks: FooterLink[] = [
+  {
+    title: "運営情報",
+    items: [
+      {
+        name: "私たちについて",
+        link: "/ja/#about",
+      },
+      {
+        name: "サービス",
+        link: "/ja/#services",
+      },
+      {
+        name: "メディア",
+        link: "/ja/#media",
+      },
+      {
+        name: "お問い合わせ",
+        link: "/ja/contact",
+      },
+      {
+        name: "プライバシーポリシー",
+        link: "/ja/privacy-policy",
+      },
+      {
+        name: "セキュリティについて",
+        link: "/ja/security",
+      },
+      {
+        name: "特定商取引法に基づく表示",
+        link: "/ja/transactions-act",
+      },
+    ],
+  },
+  {
+    title: "サービス",
+    items: [
+      {
+        name: "Linked",
+        link: "https://linked.spaceai.jp",
+        isExternal: true,
+      },
+      {
+        name: "V Teacher",
+        link: "https://vteacher.spaceai.jp",
+        isExternal: true,
+      },
+    ],
+  },
+  {
+    title: "SNS",
+    items: [
+      {
+        name: "GitHub",
+        icon: LuGithub,
+        link: "https://github.com/spaceaiinc",
+        isExternal: true,
+      },
+      {
+        name: "Linkedin",
+        icon: LuLinkedin,
+        link: "https://www.linkedin.com/in/hidenari-yuda",
+        isExternal: true,
+      },
+      {
+        name: "Facebook",
+        link: "http://facebook.com/hideyuda",
+        icon: LuFacebook,
+        isExternal: true,
+      },
+      {
+        name: "Medium",
+        icon: LuSignalMedium,
+        link: "https://medium.com/@hideyuda",
+        isExternal: true,
+      },
+    ],
+  },
+];
+
+// export const landingPages: LandingPage[] = [
+//   {
+//     name: "Agency",
+//     link: "/landing/agency",
+//   },
+//   {
+//     name: "Agency Two",
+//     link: "/landing/agency-2",
+//   },
+//   {
+//     name: "Charity",
+//     link: "/landing/charity",
+//   },
+//   {
+//     name: "Company",
+//     link: "/landing/company",
+//   },
+//   {
+//     name: "Creative",
+//     link: "/landing/creative",
+//   },
+//   {
+//     name: "Ebook",
+//     link: "/landing/ebook",
+//   },
+//   {
+//     name: "Finance",
+//     link: "/landing/finance",
+//   },
+//   {
+//     name: "Hosting",
+//     link: "/landing/hosting",
+//   },
+//   {
+//     name: "Marketing",
+//     link: "/landing/marketing",
+//   },
+//   {
+//     name: "Marketing 2",
+//     link: "/landing/marketing-2",
+//   },
+//   {
+//     name: "Marketing 3",
+//     link: "/landing/marketing-3",
+//   },
+//   {
+//     name: "Photography",
+//     link: "/landing/photography",
+//   },
+//   {
+//     name: "Portfolio",
+//     link: "/landing/portfolio",
+//   },
+//   {
+//     name: "Portfolio 2",
+//     link: "/landing/portfolio-2",
+//   },
+//   {
+//     name: "Startup",
+//     link: "/landing/startup",
+//   },
+//   {
+//     name: "Web Designer",
+//     link: "/landing/web-designer",
+//   },
+// ];
 
 const Footer = () => {
+  const pathname = usePathname();
+  const isJapanese = pathname.startsWith("/ja");
+
+  const footerLinks = isJapanese ? jaFooterLinks : enFooterLinks;
+
   // const subscribeFormSchema = yup.object({
   //   email: yup
   //     .string()
@@ -146,7 +395,7 @@ const Footer = () => {
         <div className="py-4">
           <div className="container flex h-full flex-wrap items-center justify-center text-center md:justify-between md:text-start">
             <p className="text-base text-default-900">
-              © {new Date().getFullYear()} Space AI
+              © {new Date().getFullYear()} Space AI{isJapanese ? " Inc." : ""}
             </p>
           </div>
         </div>

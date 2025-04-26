@@ -1,4 +1,4 @@
-import TopNavBar from "@/components/home/TopNavBar";
+import TopNavBar from "@/components/TopNavBar";
 import type { Metadata } from "next";
 import { Footer } from "@/components";
 import ContactUs from "@/components/home/ContactUs";

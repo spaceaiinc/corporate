@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components";
-import TopNavBar from "@/components/home/TopNavBar";
+import TopNavBar from "@/components/TopNavBar";
 import ContactUs from "@/components/home/ContactUs";
 import Hero from "@/components/home/Hero";
-import About from "@/components/home/About";
 import Media from "@/components/home/Media";
 import ServicesDev from "@/components/home/ServicesDev";
-import ServicesLab from "@/components/home/ServicesLab";
 import ServicesLinked from "@/components/home/ServicesLinked";
+import ServicesVteacher from "@/components/home/ServicesVteacher";
+import Strengths from "@/components/home/Strengths";
+import About from "@/components/home/About";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -27,15 +28,13 @@ export default function Home() {
 
       <About />
 
-      <ServicesDev />
-
-      {/* <ServicesVteacher /> */}
-
       <ServicesLinked />
 
-      {/* <ServicesAutoScout /> */}
+      <ServicesVteacher />
 
-      {/* <ServicesLab /> */}
+      <ServicesDev />
+
+      <Strengths />
 
       <Media />
 

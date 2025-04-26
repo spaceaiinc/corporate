@@ -9,7 +9,7 @@ const ExperienceReach = () => {
           <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
             CRMシステム「Reach」の開発
           </h2>
-          <p className="mt-5 text-base">
+          <div className="mt-5 text-base">
             2022年2月 - 2024年9月:
             アンドイーズ株式会社にて、2022年2月から2024年9月まで人材紹介会社向けCRMシステム、業務自動化ツールの開発。設計から実装までをフルスタックに担当。
             <br />
@@ -78,7 +78,7 @@ const ExperienceReach = () => {
             <ul className="mt-4 text-center">
               <li>LINE Login, Messaging API, SendGrid</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </section>

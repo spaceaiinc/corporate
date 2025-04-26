@@ -7,7 +7,7 @@ const About = () => {
             About
           </span>
           <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
-            We Make Space to Enjoy Your Moments
+            We Make Space for Your Moments
           </h2>
           <p className="mt-5 text-base">
             We aim to provide the best service to reduce inefficiencies and make
@@ -17,15 +17,15 @@ const About = () => {
             customers.
           </p>
         </div>
-        {/* <div className="mt-10 flex justify-center">
-          <Link
+        <div className="mt-10 flex justify-center">
+          {/* <Link
             href=""
             className="inline-flex items-center justify-center gap-2 rounded-md border border-default-200 px-8 py-2 text-default-950 backdrop-blur-3xl transition-all hover:border-primary hover:bg-primary hover:text-white"
           >
             Read More
             <LuArrowRight className="h-6 w-6" />
-          </Link>
-        </div> */}
+          </Link> */}
+        </div>
       </div>
     </section>
   );
