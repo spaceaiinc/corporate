@@ -9,7 +9,7 @@ const ExperienceReach = () => {
           <h2 className="mt-4 text-4xl/tight font-medium text-default-950">
             CRM System &quot;Reach&quot; Development and Maintenance
           </h2>
-          <p className="mt-5 text-base">
+          <div className="mt-5 text-base">
             February 2022 - September 2024: Worked on the release, maintenance,
             and operation of the CRM system &quot;Reach&quot; for recruitment
             agencies. Responsibilities spanned backend, frontend, and
@@ -83,7 +83,7 @@ const ExperienceReach = () => {
             <ul className="mt-4 text-center">
               <li>LINE Login, Messaging API, SendGrid</li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </section>

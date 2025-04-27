@@ -81,6 +81,7 @@ export default function RootLayout({
       <body className={rem.className}>
         <div id="splash-screen">
           <Image
+            priority
             alt="Logo"
             width={355}
             height={83}

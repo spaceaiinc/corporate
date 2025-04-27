@@ -289,6 +289,7 @@ const Footer = () => {
                     height={40}
                     width={147}
                     alt="logo"
+                    priority
                     className="hidden h-10 dark:flex"
                   />
                 </Link>

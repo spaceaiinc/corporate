@@ -191,6 +191,7 @@ const TopNavBar = () => {
             <Image
               src={logoLight}
               alt="Site Logo"
+              priority
               height={32} // Adjusted size
               width={118} // Adjusted size
               className="hidden h-8 dark:flex"
