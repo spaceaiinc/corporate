@@ -86,44 +86,39 @@ const TopNavBar = () => {
         id="navbar"
         className={cn(
           "fixed",
-          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-transparent"
+          "inset-x-0 top-0 z-[60] w-full border-b border-transparent bg-transparent transition-all duration-300 lg:bg-transparent [&.nav-sticky]:bg-white/80 [&.nav-sticky]:shadow-md [&.nav-sticky]:dark:bg-default-50/80" // Sticky時の背景と影を追加 (例)
         )}
       >
         <div className="flex h-full items-center py-4">
           <div className="container">
             <nav className="flex flex-wrap items-center justify-between gap-4 lg:flex-nowrap">
               <div className="flex w-full items-center justify-between lg:w-auto">
-                <Link href="/">
+                <Link
+                  href={isJapanese ? "/ja" : "/"}
+                  aria-label="Go to homepage" // アクセシビリティ向上のためaria-labelを追加
+                >
+                  {/* --- ロゴ修正箇所 (ヘッダー) --- */}
+                  {/* ライトモード用ロゴ (デフォルト表示、ダークモード非表示) */}
                   <Image
                     src={logoDark}
                     alt="logo"
-                    height={40}
-                    priority
-                    width={147}
-                    className="hidden flex h-10 lg:flex"
-                  />
-                  <Image
-                    src={logoDark}
-                    alt="logo"
-                    height={20}
+                    height={30}
                     width={73}
-                    className="flex h-10 dark:hidden lg:hidden"
+                    className="flex h-10 dark:hidden" // lg:flex を削除し、モバイルでも表示されるように修正（元のコードに基づく）
+                    priority // LCP要素の可能性があればpriorityを追加
                   />
-                  {/* <Image
-                    src={logoLight}
-                    alt="logo"
-                    height={40}
-                    width={147}
-                    className="hidden h-10 dark:flex"
-                    priority
-                  />
+                  {/* ダークモード用ロゴ (ダークモード表示、白いドロップシャドウ付き) */}
                   <Image
-                    src={logoLight}
+                    src={logoDark} // ダークモードでも同じ黒ロゴを使用
                     alt="logo"
-                    height={20}
+                    height={30}
                     width={73}
-                    className="hidden h-10 dark:flex"
-                  /> */}
+                    // `hidden dark:flex` でダークモード時のみ表示
+                    // `dark:filter dark:drop-shadow-[...]` で白いドロップシャドウを適用
+                    className="hidden h-10 dark:flex dark:filter dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.75)]"
+                    priority // LCP要素の可能性があればpriorityを追加
+                  />
+                  {/* --- ロゴ修正箇所 ここまで --- */}
                 </Link>
                 <div className="flex items-center gap-2">
                   {/* Mobile Contact Button */}
@@ -132,7 +127,7 @@ const TopNavBar = () => {
                       href="/#contact"
                       className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                     >
-                      <LuMail className="h-4 w-4 fill-white/40" />
+                      <LuMail className="h-4 w-4" /> {/* fillを削除 */}
                       <span className="hidden sm:block">{"Contact"}</span>
                     </Link>
                   </div>
@@ -141,9 +136,13 @@ const TopNavBar = () => {
                     <button
                       onClick={handleSwitch}
                       className={
-                        "px-2 py-0.5 text-sm font-medium rounded-full text-default-800 hover:text-primary"
+                        "rounded-full px-2 py-0.5 text-sm font-medium text-default-800 hover:text-primary"
                       }
-                      aria-label="Switch to English"
+                      aria-label={
+                        currentLocale === "en"
+                          ? "Switch to Japanese"
+                          : "Switch to English"
+                      }
                     >
                       {currentLocale === "en" ? "JP" : "EN"}
                     </button>
@@ -152,6 +151,8 @@ const TopNavBar = () => {
                   <button
                     className="hs-collapse-toggle inline-block lg:hidden"
                     data-hs-overlay="#mobile-menu"
+                    aria-controls="mobile-menu" // アクセシビリティ向上のためaria-controlsを追加
+                    aria-expanded="false" // 初期状態は閉じてる想定
                   >
                     <LuMenu className="h-7 w-7 text-default-600 hover:text-default-900" />
                   </button>
@@ -164,13 +165,20 @@ const TopNavBar = () => {
                     <li
                       key={idx}
                       className={cn(
-                        "menu-item mx-2 text-default-800 transition-all duration-300 hover:text-primary [&.active]:text-primary",
+                        // text-default-800 を削除し、nav-sticky時に対応できるようにする
+                        "menu-item mx-2 text-default-700 transition-all duration-300 hover:text-primary dark:text-default-300 [&.active]:text-primary",
+                        // nav-sticky 時のテキスト色も考慮
+                        navbarRef.current?.classList.contains("nav-sticky")
+                          ? "dark:text-default-300"
+                          : "dark:text-white",
                         activation === item.title && "active"
                       )}
                     >
                       <Link
                         className="inline-flex items-center rounded-full px-2 py-0.5 text-sm font-medium capitalize lg:text-base"
                         href={item.link}
+                        // 現在のページとリンクが一致する場合にaria-currentを追加 (例)
+                        // aria-current={activation === item.title ? "page" : undefined}
                       >
                         {toSentenceCase(item.title)}
                       </Link>
@@ -184,7 +192,7 @@ const TopNavBar = () => {
                   href={isJapanese ? "/ja/#contact" : "/#contact"}
                   className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                 >
-                  <LuMail className="h-4 w-4 fill-white/40" />
+                  <LuMail className="h-4 w-4" /> {/* fillを削除 */}
                   <span className="hidden sm:block">{"Contact"}</span>
                 </Link>
                 {/* Desktop Language Switcher */}
@@ -192,9 +200,14 @@ const TopNavBar = () => {
                   <button
                     onClick={handleSwitch}
                     className={
-                      "px-2 py-0.5 text-sm font-medium rounded-full text-default-800 hover:text-primary"
+                      // text-default-800 を sticky 時も考慮して調整
+                      "rounded-full px-2 py-0.5 text-sm font-medium text-default-700 hover:text-primary dark:text-default-300"
                     }
-                    aria-label="Switch to English"
+                    aria-label={
+                      currentLocale === "en"
+                        ? "Switch to Japanese"
+                        : "Switch to English"
+                    }
                   >
                     {currentLocale === "en" ? "JP" : "EN"}
                   </button>
@@ -208,53 +221,63 @@ const TopNavBar = () => {
       {/* mobile menu */}
       <div
         id="mobile-menu"
-        className="hs-overlay fixed bottom-0 left-0 top-0 z-[61] hidden h-screen w-full max-w-[270px] -translate-x-full transform border-r border-default-200 bg-white transition-all [--body-scroll:false] [--overlay-backdrop:false] hs-overlay-open:translate-x-0 dark:bg-default-50"
+        className="hs-overlay fixed bottom-0 left-0 top-0 z-[61] hidden h-screen w-full max-w-[270px] -translate-x-full transform border-r border-default-200 bg-white transition-all [--body-scroll:false] [--overlay-backdrop:true] hs-overlay-open:translate-x-0 dark:bg-default-50" // backdropを有効にする例
         tabIndex={-1}
       >
         <div className="flex h-[74px] items-center justify-between border-b border-dashed border-default-200 px-4 transition-all duration-300">
-          <Link href="/">
+          <Link href={isJapanese ? "/ja" : "/"} aria-label="Go to homepage">
+            {/* --- ロゴ修正箇所 (モバイルメニュー) --- */}
+            {/* ライトモード用ロゴ (デフォルト表示、ダークモード非表示) */}
             <Image
               src={logoDark}
               alt="logo"
-              height={40}
-              width={147}
-              className="hidden flex h-10 lg:flex"
+              height={30} // サイズをヘッダーと合わせるか検討 (元は40)
+              width={73} // サイズをヘッダーと合わせるか検討 (元は147)
+              className="flex h-10 dark:hidden" // 表示条件を修正
             />
+            {/* ダークモード用ロゴ (ダークモード表示、白いドロップシャドウ付き) */}
             <Image
-              src={logoDark}
+              src={logoDark} // ダークモードでも同じ黒ロゴを使用
               alt="logo"
-              height={20}
-              width={73}
-              className="flex h-10 dark:hidden lg:hidden"
+              height={30} // サイズをヘッダーと合わせるか検討
+              width={73} // サイズをヘッダーと合わせるか検討
+              // `hidden dark:flex` でダークモード時のみ表示
+              // `dark:filter dark:drop-shadow-[...]` で白いドロップシャドウを適用
+              className="hidden h-10 dark:flex dark:filter dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.75)]"
+              priority // メニューが開いたときに表示されるならpriority
             />
-            <Image
-              src={logoLight}
-              alt="logo"
-              height={40}
-              width={147}
-              className="hidden h-10 dark:flex"
-              priority
-            />
+            {/* --- ロゴ修正箇所 ここまで --- */}
           </Link>
-          <div data-hs-overlay="#mobile-menu" className="hs-collapse-toggle">
+          <button // ボタンに変更し、アクセシビリティ向上
+            type="button" // type="button"を追加
+            data-hs-overlay="#mobile-menu"
+            className="hs-collapse-toggle -mr-2 inline-flex items-center justify-center rounded-md p-2 text-default-600 hover:bg-default-100 hover:text-default-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary dark:text-default-400 dark:hover:bg-default-100 dark:hover:text-default-800"
+            aria-label="Close mobile menu" // ラベルを追加
+          >
             <LuX size={24} />
-          </div>
+          </button>
         </div>
-        <div className="h-[calc(100%-4rem)] overflow-y-auto">
+        <div className="h-[calc(100%-74px)] overflow-y-auto">
+          {" "}
+          {/* 高さを修正 */}
           <nav className="hs-accordion-group flex h-full w-full flex-col flex-wrap p-4">
             <ul className="space-y-1">
               {menuItems.map((item, idx) => {
                 return (
-                  <li
-                    key={idx}
-                    className={cn(
-                      "rounded text-sm font-medium capitalize text-default-900 transition-all duration-300 hover:bg-default-100 hover:text-primary [&.active]:bg-default-100 [&.active]:text-primary",
-                      activation == `${item}` && "active"
-                    )}
-                  >
-                    <a className="block w-full px-4 py-2.5" href={item.link}>
+                  <li key={idx}>
+                    {" "}
+                    {/* classNameをLink(a)要素に移動 */}
+                    <Link // aタグをNext.jsのLinkコンポーネントに変更
+                      className={cn(
+                        "block w-full rounded px-4 py-2.5 text-sm font-medium capitalize text-default-700 transition-all duration-300 hover:bg-default-100 hover:text-primary dark:text-default-300 dark:hover:bg-default-100 dark:hover:text-primary [&.active]:bg-default-100 [&.active]:text-primary"
+                        // activation === item.title && "active" // Link コンポーネントでアクティブ状態を管理する場合、別の方法が必要
+                      )}
+                      href={item.link}
+                      // モバイルメニューを閉じる処理を追加する必要がある場合
+                      // onClick={() => document.querySelector('[data-hs-overlay="#mobile-menu"]').click()}
+                    >
                       {toSentenceCase(item.title)}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
