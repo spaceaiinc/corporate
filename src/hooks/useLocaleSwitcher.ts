@@ -69,7 +69,7 @@ export function useLocaleSwitcher() {
       // Persist the *target* locale preference in localStorage
       try {
         localStorage.setItem(LOCALE_STORAGE_KEY, targetLocale);
-        console.log(`Saved preferred locale: ${targetLocale}`);
+        // console.log(`Saved preferred locale: ${targetLocale}`);
       } catch (error) {
         console.error(
           "Failed to save locale preference to localStorage:",
@@ -78,9 +78,9 @@ export function useLocaleSwitcher() {
       }
 
       // Navigate to the new path
-      console.log(
-        `Switching locale from ${currentPathLocale} to ${targetLocale}, navigating to: ${newPath}`,
-      );
+      // console.log(
+      //   `Switching locale from ${currentPathLocale} to ${targetLocale}, navigating to: ${newPath}`,
+      // );
       router.push(newPath);
     },
     [pathname, router],

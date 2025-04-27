@@ -41,6 +41,7 @@ const ServicesSwiper = ({ services }: ServicesSwiperProps) => {
                     <Image
                       alt={`service-${service.id}`}
                       src={service.image}
+                      priority
                       className="mx-auto rounded-2xl h-full w-full object-cover scale-[1.05] transition-all duration-700 group-hover:scale-[1]"
                       width={500}
                       height={300}

@@ -22,7 +22,7 @@ const Credits = () => {
           inspire us to keep building and innovating.
         </p>
         <h2 className="text-2xl font-semibold mb-2">Services</h2>
-        <p className="mb-4">
+        <div className="mb-4">
           <ul>
             <li>- ChatVRM - https://github.com/pixiv/ChatVRM</li>
             <li>- AI Tuber Kit - https://github.com/tegnike/aituber-kit</li>
@@ -37,7 +37,7 @@ const Credits = () => {
             <li>- Supabase - https://supabase.io/</li>
             <li>- Stripe - https://stripe.com/</li>
           </ul>
-        </p>
+        </div>
         <h2 className="text-2xl font-semibold mb-2">Model Assets</h2>
         <p className="mb-4">
           <ul>

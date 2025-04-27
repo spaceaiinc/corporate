@@ -39,20 +39,20 @@ const Credits = () => {
           </ul>
         </p>
         <h2 className="text-2xl font-semibold mb-2">Model Assets</h2>
-        <p className="mb-4">
+        <div className="mb-4">
           <ul>
             <li>
               - Character animation credits to pixiv Inc.&apos;s VRoid Project
             </li>
             <li>- siroihakumai - https://siroihakumai.booth.pm/</li>
           </ul>
-        </p>
+        </div>
         <h2 className="text-2xl font-semibold mb-2">Music</h2>
-        <p className="mb-4">
+        <div className="mb-4">
           <ul>
             <li>- 2:23 AM / しゃろう</li>
           </ul>
-        </p>
+        </div>
       </div>
       <Footer />
     </>
