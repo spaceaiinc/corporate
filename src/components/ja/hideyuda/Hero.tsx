@@ -102,7 +102,7 @@ const Hero = () => {
         />
         <div id="canvas_container"></div>
       </div>
-      <div className="container px-4 mx-auto mt-10">
+      <div className="container px-4 mx-auto mt-60 lg:mt-0">
         <div className="relative">
           <div className="grid items-center gap-6 lg:grid-cols-2">
             <div className="mx-auto max-w-full w-full lg:ms-0 lg:text-base">
