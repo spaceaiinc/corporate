@@ -170,7 +170,7 @@ const Privacy = () => {
         <p className="mb-4">
           本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。
           <br />
-          Eメールアドレス： info@spceai.jp
+          Eメールアドレス： info@spaceai.jp
         </p>
         <p className="mt-8">最終更新日 2025年3月18日</p>
       </div>

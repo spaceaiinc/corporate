@@ -46,6 +46,10 @@ export const enFooterLinks: FooterLink[] = [
         link: "/contact",
       },
       {
+        name: "Organization",
+        link: "/company",
+      },
+      {
         name: "Privacy Policy",
         link: "/privacy-policy",
       },
@@ -124,6 +128,10 @@ export const jaFooterLinks: FooterLink[] = [
       {
         name: "お問い合わせ",
         link: "/ja/contact",
+      },
+      {
+        name: "運営情報",
+        link: "/ja/company",
       },
       {
         name: "プライバシーポリシー",
@@ -396,7 +404,7 @@ const Footer = () => {
         <div className="py-4">
           <div className="container flex h-full flex-wrap items-center justify-center text-center md:justify-between md:text-start">
             <p className="text-base text-default-900">
-              © {new Date().getFullYear()} Space AI{isJapanese ? " Inc." : ""}
+              © {new Date().getFullYear()} Space AI
             </p>
           </div>
         </div>

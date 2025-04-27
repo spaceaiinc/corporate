@@ -95,36 +95,30 @@ const TopNavBar = () => {
               <div className="flex w-full items-center justify-between lg:w-auto">
                 <Link
                   href={isJapanese ? "/ja" : "/"}
-                  aria-label="Go to homepage" // アクセシビリティ向上のためaria-labelを追加
+                  aria-label="Home"
                 >
-                  {/* --- ロゴ修正箇所 (ヘッダー) --- */}
-                  {/* ライトモード用ロゴ (デフォルト表示、ダークモード非表示) */}
                   <Image
                     src={logoDark}
                     alt="logo"
                     height={30}
                     width={73}
-                    className="flex h-10 dark:hidden" // lg:flex を削除し、モバイルでも表示されるように修正（元のコードに基づく）
-                    priority // LCP要素の可能性があればpriorityを追加
+                    className="flex h-10 dark:hidden"
+                    priority
                   />
-                  {/* ダークモード用ロゴ (ダークモード表示、白いドロップシャドウ付き) */}
                   <Image
-                    src={logoDark} // ダークモードでも同じ黒ロゴを使用
+                    src={logoLight}
                     alt="logo"
                     height={30}
                     width={73}
-                    // `hidden dark:flex` でダークモード時のみ表示
-                    // `dark:filter dark:drop-shadow-[...]` で白いドロップシャドウを適用
-                    className="hidden h-10 dark:flex dark:filter dark:drop-shadow-[0_1px_1px_rgba(255,255,255,0.75)]"
-                    priority // LCP要素の可能性があればpriorityを追加
+                    className="hidden h-10 dark:flex dark:filter"
+                    priority
                   />
-                  {/* --- ロゴ修正箇所 ここまで --- */}
                 </Link>
                 <div className="flex items-center gap-2">
                   {/* Mobile Contact Button */}
                   <div className="inline-flex shrink gap-2 lg:hidden">
                     <Link
-                      href="/#contact"
+                      href={isJapanese ? "/ja/#contact" : "/#contact"}
                       className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                     >
                       <LuMail className="h-4 w-4" /> {/* fillを削除 */}
