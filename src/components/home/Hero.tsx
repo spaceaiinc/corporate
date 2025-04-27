@@ -46,7 +46,7 @@ const Hero = () => {
       id="home"
       className="relative flex items-center justify-center overflow-hidden h-screen"
     >
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 w-full h-full">
         <Image
           alt="background-image"
           src={backgroundImg}
