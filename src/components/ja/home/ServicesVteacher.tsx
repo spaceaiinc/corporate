@@ -10,7 +10,7 @@ const ServicesVteacher = () => {
       <div className="container">
         <div className="mx-auto max-w-xl text-center mb-14">
           <span className="rounded-md border border-primary px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-            Services | Vteacher
+            サービス | V Teacher
           </span>
         </div>
         <div className="grid items-center gap-6 lg:grid-cols-2">
@@ -23,29 +23,28 @@ const ServicesVteacher = () => {
           </div>
           <div className="order-2 lg:order-1">
             <h2 className="mt-5 text-2xl font-medium text-default-950">
-              Learn Japanese With V Tubers
+              AIキャラクター×日本語学習
             </h2>
             <p className="mt-4 text-base">
-              Goodbye boring methods. You can learn more about Japanese language
-              and culture with our virtual teacher anytime and anywhere!
+              AIキャラクターを活用し、楽しく実践的な日本語と文化を学ぶことができます。
             </p>
             <ul role="list" className="mt-6 text-sm text-default-700">
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Made by Native Japanese Speakers
+                  インタラクティブでリラックスした会話を通じて学べます
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Practice with Interactive And Chill Chat
+                  レベルと興味に合わせて内容をカスタマイズ
                 </span>
               </li>
               <li className="flex items-center gap-2">
                 <LuDot className="inline-block h-9 w-9 text-primary" />
                 <span className="text-base font-medium">
-                  Customize by Your Level And Interest
+                  日本語だけでなく、日本文化や趣味についても学べます
                 </span>
               </li>
             </ul>
@@ -67,7 +66,7 @@ const ServicesVteacher = () => {
                   transition-all hover:bg-primary-700 hover:text-white
                   `}
                 >
-                  Get Started
+                  使ってみる
                   <LuArrowRight className="h-6 w-6" />
                 </Link>
               </div>

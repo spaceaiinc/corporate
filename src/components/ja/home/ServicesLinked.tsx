@@ -23,7 +23,7 @@ const ServicesLinked = () => {
           </div>
           <div className="order-2 lg:order-1">
             <h2 className="mt-5 text-2xl font-medium text-default-950">
-              LinkedInリード獲得効率化サービス
+              LinkedInリード獲得効率化
             </h2>
             <p className="mt-4 text-base">
               リスト抽出からつながり申請、レポート分析まで
