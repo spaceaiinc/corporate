@@ -87,50 +87,57 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center overflow-hidden h-screen"
+      className="relative flex items-center justify-center overflow-hidden py-16 md:py-24"
     >
-      <div className="absolute inset-0 w-full h-full">
+      <div className="absolute inset-0 w-full h-full -z-10">
         <Image
           alt="background-image"
           src={backgroundImg}
-          className="h-full w-full object-cover dark:hidden"
+          fill
+          style={{ objectFit: "cover" }}
+          className="dark:hidden"
+          priority
         />
         <Image
           alt="background-imageDark"
           src={backgroundDarkImg}
-          className="hidden h-full w-full object-cover dark:block"
+          fill
+          style={{ objectFit: "cover" }}
+          className="hidden dark:block"
+          priority
         />
-        <div id="canvas_container"></div>
+        {/* <div id="canvas_container"></div> */}
       </div>
-      <div className="container px-4 mx-auto mt-60 lg:mt-0">
+
+      <div className="container px-4 mx-auto">
         <div className="relative">
-          <div className="grid items-center gap-6 lg:grid-cols-2">
-            <div className="mx-auto max-w-full w-full lg:ms-0 lg:text-base">
+          <div className="grid items-center gap-4 lg:grid-cols-2">
+            {/* Left column - Member information */}
+            {/* ↓↓↓ lg:ps-16 を追加 ↓↓↓ */}
+            <div className="mx-auto max-w-full w-full lg:ms-0 lg:text-base overflow-y-auto overflow-x-hidden pr-2 lg:ps-16">
               {memberData.map((member, idx) => (
-                <div className="pb-6 sm:pb-10 w-full" key={`member-${idx}`}>
-                  <div className="mt-5 flex items-center gap-4">
+                <div className="pb-4 sm:pb-6 w-full" key={`member-${idx}`}>
+                  {/* ... member content ... */}
+                  <div className="mt-3 flex items-center gap-3">
                     <div>
                       <Image
-                        alt="slide-image"
-                        height={56}
-                        width={56}
+                        alt="member-image"
+                        height={48}
+                        width={48}
                         src={member.image}
-                        className="h-14 w-14 rounded-full"
+                        className="h-12 w-12 rounded-full"
                       />
                     </div>
                     <div>
-                      <h3 className="text-xl sm:text-2xl font-medium text-default-950">
+                      <h3 className="text-lg sm:text-xl font-medium text-default-950">
                         {member.name}
                       </h3>
-                      <p className="mt-1 text-sm sm:text-base">{member.role}</p>
+                      <p className="text-xs sm:text-sm">{member.role}</p>
                     </div>
                   </div>
-                  <div className="mt-4 mb-6 text-base sm:text-lg">
-                    <br />
-                    <br />
-                  </div>
-                  <p className="text-base sm:text-lg mb-2">Stacks</p>
-                  <div className="mt-2 flex flex-wrap items-center gap-2">
+                  <div className="mt-3 mb-4 text-sm sm:text-base"></div>
+                  <p className="text-sm sm:text-base mb-1">Stacks</p>
+                  <div className="flex flex-wrap items-center gap-2">
                     {member.stacks.map((link, idx) => (
                       <div
                         key={`link-${idx}`}
@@ -139,13 +146,13 @@ const Hero = () => {
                         <Image
                           alt="stack"
                           src={link.img}
-                          className="h-6 w-6 sm:h-7 sm:w-7"
+                          className="h-5 w-5 sm:h-6 sm:w-6"
                         />
                       </div>
                     ))}
                   </div>
-                  <p className="text-base sm:text-lg mt-6 mb-2">SNS</p>
-                  <div className="mt-2 flex items-center gap-2">
+                  <p className="text-sm sm:text-base mt-4 mb-1">SNS</p>
+                  <div className="flex items-center gap-2">
                     {member.links.map((link) => (
                       <Link
                         key={`link-${link.name}`}
@@ -157,7 +164,7 @@ const Hero = () => {
                         <Image
                           alt="link"
                           src={link.img}
-                          className="h-6 w-6 sm:h-7 sm:w-7"
+                          className="h-5 w-5 sm:h-6 sm:w-6"
                         />
                       </Link>
                     ))}
@@ -165,6 +172,8 @@ const Hero = () => {
                 </div>
               ))}
             </div>
+
+            {/* Right column - Services Swiper */}
             <div className="w-full overflow-hidden">
               <ServicesSwiper services={services} />
             </div>

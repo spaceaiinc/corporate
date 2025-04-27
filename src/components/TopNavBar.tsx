@@ -133,9 +133,7 @@ const TopNavBar = () => {
                       className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                     >
                       <LuMail className="h-4 w-4 fill-white/40" />
-                      <span className="hidden sm:block">
-                        {isJapanese ? "お問い合わせ" : "Contact"}
-                      </span>
+                      <span className="hidden sm:block">{"Contact"}</span>
                     </Link>
                   </div>
                   {/* Mobile Language Switcher */}
@@ -187,9 +185,7 @@ const TopNavBar = () => {
                   className="inline-flex items-center gap-2 rounded-full border border-primary bg-transparent px-6 py-1.5 text-base text-primary transition-all hover:bg-primary-700 hover:text-white"
                 >
                   <LuMail className="h-4 w-4 fill-white/40" />
-                  <span className="hidden sm:block">
-                    {isJapanese ? "お問い合わせ" : "Contact"}
-                  </span>
+                  <span className="hidden sm:block">{"Contact"}</span>
                 </Link>
                 {/* Desktop Language Switcher */}
                 <div className="flex items-center gap-2 pl-4">
