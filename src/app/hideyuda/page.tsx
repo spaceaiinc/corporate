@@ -7,6 +7,7 @@ import TopNavBar from "@/components/PortfolioTopNavBar";
 import ExperienceLinked from "@/components/hideyuda/ExperienceLinked";
 import ServicesLinked from "@/components/home/ServicesLinked";
 import ServicesVteacher from "@/components/home/ServicesVteacher";
+import ServicesSchedule from "@/components/home/ServicesSchedule";
 export const metadata: Metadata = {
   title: "Home",
   description: "Hideyuda's Portfolio",
@@ -25,6 +26,7 @@ export default function Home() {
 
       <ServicesLinked />
 
+      <ServicesSchedule />
       <ServicesVteacher />
 
       <ExperienceLinked />

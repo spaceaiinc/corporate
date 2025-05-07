@@ -22,10 +22,9 @@ const ServicesSwiper = ({ services }: ServicesSwiperProps) => {
     <div className="w-full max-w-lg mx-auto lg:max-w-none">
       <Swiper
         modules={[Autoplay]}
-        loop={services.length > 2}
-        loopAdditionalSlides={services.length > 2 ? 1 : 0}
+        loop
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         slidesPerView={1}
@@ -37,7 +36,7 @@ const ServicesSwiper = ({ services }: ServicesSwiperProps) => {
             <div className="overflow-hidden">
               <div className="group relative overflow-hidden">
                 <div className="overflow-hidden rounded-2xl">
-                  <div className="aspect-w-16 aspect-h-9 sm:aspect-w-4 sm:aspect-h-3">
+                  <div className="aspect-w-16 aspect-h-9">
                     <Image
                       alt={`service-${service.id}`}
                       src={service.image}

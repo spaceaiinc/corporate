@@ -22,6 +22,7 @@ import linkedInLogo from "@/assets/images/brand/LinkedIn.svg";
 import linkedImg from "@/assets/images/demo/lead-report.png";
 import vteacherImg from "@/assets/images/vteacher/bg-c.png";
 import ServicesSwiper from "../../ServcicesSwiper";
+import scheduleImg from "@/assets/images/demo/schedule/landing.png";
 
 const services = [
   {
@@ -36,6 +37,16 @@ const services = [
   },
   {
     id: 2,
+    href: "https://schedule.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    image: scheduleImg,
+    title: "Schedule AI(スケジュール AI)",
+    description:
+      "希望日時をテキストや画像で入力するだけで、先方のGoogleカレンダーと自動的に照合し、最適な日程をリコメンド。ログイン不要で使えるシンプルさと、複数カレンダー連携による柔軟性を兼ね備え、ビジネスシーンでの時間管理を効率化します。",
+  },
+  {
+    id: 3,
     href: "https://vteacher.spaceai.jp",
     target: "_blank",
     rel: "noopener noreferrer",

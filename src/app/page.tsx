@@ -6,6 +6,7 @@ import Hero from "@/components/home/Hero";
 import Media from "@/components/home/Media";
 import ServicesDev from "@/components/home/ServicesDev";
 import ServicesLinked from "@/components/home/ServicesLinked";
+import ServicesSchedule from "@/components/home/ServicesSchedule";
 import ServicesVteacher from "@/components/home/ServicesVteacher";
 import Strengths from "@/components/home/Strengths";
 import About from "@/components/home/About";
@@ -29,6 +30,8 @@ export default function Home() {
       <About />
 
       <ServicesLinked />
+
+      <ServicesSchedule />
 
       <ServicesVteacher />
 

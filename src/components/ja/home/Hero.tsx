@@ -6,7 +6,7 @@ import linkedImg from "@/assets/images/demo/lead-report.png";
 import vteacherImg from "@/assets/images/vteacher/bg-c.png";
 import devImg from "@/assets/images/dev/logo.png";
 import ServicesSwiper from "../../ServcicesSwiper";
-
+import scheduleImg from "@/assets/images/demo/schedule/landing.png";
 const services = [
   {
     id: 1,
@@ -20,6 +20,16 @@ const services = [
   },
   {
     id: 2,
+    href: "https://schedule.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    image: scheduleImg,
+    title: "Schedule AI(スケジュール AI)",
+    description:
+      "希望日時をテキストや画像で入力するだけで、先方のGoogleカレンダーと自動的に照合し、最適な日程をリコメンド。ログイン不要で使えるシンプルさと、複数カレンダー連携による柔軟性を兼ね備え、ビジネスシーンでの時間管理を効率化します。",
+  },
+  {
+    id: 3,
     href: "https://vteacher.spaceai.jp",
     target: "_blank",
     rel: "noopener noreferrer",
@@ -30,7 +40,7 @@ const services = [
     // "You can Learn Japanese language and culture with our virtual teacher anytime! Goodbye boring methods.",
   },
   {
-    id: 3,
+    id: 4,
     href: "/ja/#services-dev",
     target: "_self",
     rel: "noopener noreferrer",

@@ -23,6 +23,7 @@ import linkedImg from "@/assets/images/demo/lead-report.png";
 import vteacherImg from "@/assets/images/vteacher/bg-c.png";
 import ServicesSwiper from "../ServcicesSwiper";
 import devImg from "@/assets/images/dev/logo.png";
+import scheduleImg from "@/assets/images/demo/schedule/landing.png";
 
 const services = [
   {
@@ -37,6 +38,16 @@ const services = [
   },
   {
     id: 2,
+    href: "https://schedule.spaceai.jp",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    image: scheduleImg,
+    title: "Schedule AI",
+    description:
+      " With Schedule AI, you simply inputs your preferred dates and times via text or screenshot, and the system automatically cross-references with your opponent&apos;s Google Calendar to recommend optimal scheduling options.",
+  },
+  {
+    id: 3,
     href: "https://vteacher.spaceai.jp",
     target: "_blank",
     rel: "noopener noreferrer",
@@ -46,7 +57,7 @@ const services = [
       "You can Learn Japanese language and culture with our virtual teacher anytime! Goodbye boring methods.",
   },
   {
-    id: 3,
+    id: 4,
     href: "#services-dev",
     target: "_blank",
     rel: "noopener noreferrer",

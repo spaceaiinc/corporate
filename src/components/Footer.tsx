@@ -72,6 +72,11 @@ export const enFooterLinks: FooterLink[] = [
         isExternal: true,
       },
       {
+        name: "Schedule AI",
+        link: "https://schedule.spaceai.jp",
+        isExternal: true,
+      },
+      {
         name: "V Teacher",
         link: "https://vteacher.spaceai.jp",
         isExternal: true,
@@ -153,6 +158,11 @@ export const jaFooterLinks: FooterLink[] = [
       {
         name: "Linked",
         link: "https://linked.spaceai.jp",
+        isExternal: true,
+      },
+      {
+        name: "Schedule AI",
+        link: "https://schedule.spaceai.jp",
         isExternal: true,
       },
       {

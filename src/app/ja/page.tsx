@@ -9,6 +9,7 @@ import ServicesLinked from "@/components/ja/home/ServicesLinked";
 import Footer from "@/components/Footer";
 import ServicesVteacher from "@/components/ja/home/ServicesVteacher";
 import Strengths from "@/components/ja/home/Strengths";
+import ServicesSchedule from "@/components/ja/home/ServicesSchedule";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -29,6 +30,8 @@ export default function Home() {
       <About />
 
       <ServicesLinked />
+
+      <ServicesSchedule />
 
       <ServicesVteacher />
 
